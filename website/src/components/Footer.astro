@@ -33,15 +33,29 @@ const year = new Date().getFullYear();
       <div>
         <h3 class="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-3">About</h3>
         <p class="text-sm text-gray-400 leading-relaxed">
-          A research project by the University of Queensland. Data sources include
-          GEM GIST, ClimateTrace, TPI, and company annual reports.
+          A research collaboration between the University of Oxford and the University of Queensland.
+          Data sources include GEM GIST, ClimateTrace, TPI, and company annual reports.
         </p>
       </div>
     </div>
 
-    <div class="border-t border-gray-800 mt-8 pt-8 text-center">
-      <p class="text-xs text-gray-500">
-        &copy; {year} Open Assets. Built with open data for a transparent climate future.
+    <!-- Disclaimer -->
+    <div class="border-t border-gray-800 mt-8 pt-8">
+      <div class="rounded-lg border border-amber-500/20 bg-amber-500/5 px-4 py-3 mb-6">
+        <div class="flex items-start gap-2">
+          <svg class="w-4 h-4 text-amber-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
+          </svg>
+          <p class="text-xs text-amber-200/70 leading-relaxed">
+            <span class="font-semibold text-amber-200">Beta.</span>
+            This platform is under active development. Data, methodologies, and coverage are preliminary
+            and subject to change. Emissions estimates are derived from publicly available sources and
+            modelling &mdash; they should not be treated as verified figures. Use at your own discretion.
+          </p>
+        </div>
+      </div>
+      <p class="text-xs text-gray-500 text-center">
+        &copy; {year} Open Assets. A collaboration between the University of Oxford and the University of Queensland.
       </p>
     </div>
   </div>
