@@ -1,0 +1,84 @@
+---
+---
+
+<section class="py-20 border-t border-gray-800/50">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <!-- Left: Description -->
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-medium uppercase tracking-wider mb-4">
+          First sector available
+        </div>
+        <h2 class="text-3xl font-bold text-white mb-4">Steel Sector</h2>
+        <p class="text-gray-400 leading-relaxed mb-6">
+          The steel industry accounts for approximately 7% of global CO<sub>2</sub> emissions.
+          Our dataset covers 26 of the world's largest steel producers, tracking emissions
+          from over 800 individual plants using asset-level data from GEM GIST.
+        </p>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-brand-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="text-sm text-gray-300">Plant-level emissions using country-specific, time-varying emission factors</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-brand-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="text-sm text-gray-300">Technology-specific tracking: BF-BOF, EAF, and DRI processes</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-brand-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="text-sm text-gray-300">Cross-validated with ClimateTrace, company reports, and Kampmann ALD</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-brand-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="text-sm text-gray-300">Ownership transparency with equity share tracking</span>
+          </li>
+        </ul>
+        <a
+          href="/steel/"
+          class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-brand-500 text-white font-semibold text-sm hover:bg-brand-400 transition-colors"
+        >
+          View Steel Data
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Right: Company preview grid -->
+      <div class="rounded-xl border border-gray-800 bg-gray-900/50 p-6">
+        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">Companies Tracked</h3>
+        <div class="grid grid-cols-2 gap-3">
+          {[
+            { name: 'ArcelorMittal', country: 'Netherlands', tech: 'BF-BOF/EAF', ef: '1.78' },
+            { name: 'Nippon Steel', country: 'Japan', tech: 'BF-BOF', ef: '1.97' },
+            { name: 'POSCO Holdings', country: 'South Korea', tech: 'BF-BOF', ef: '1.64' },
+            { name: 'Tata Steel', country: 'India', tech: 'BF-BOF', ef: '2.65' },
+            { name: 'Nucor', country: 'United States', tech: 'EAF', ef: '0.04' },
+            { name: 'JSW Steel', country: 'India', tech: 'BF-BOF', ef: '3.05' },
+            { name: 'ThyssenKrupp', country: 'Germany', tech: 'BF-BOF', ef: '1.63' },
+            { name: 'Baoshan Iron & Steel', country: 'China', tech: 'BF-BOF', ef: '1.88' },
+          ].map((company) => (
+            <div class="rounded-lg border border-gray-700/50 bg-gray-800/30 px-3 py-2.5">
+              <div class="text-sm font-medium text-white truncate">{company.name}</div>
+              <div class="flex items-center justify-between mt-1">
+                <span class="text-xs text-gray-500">{company.country}</span>
+                <span class="text-xs text-brand-400 font-mono">{company.ef} tCO&#8322;/t</span>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div class="mt-3 text-center">
+          <span class="text-xs text-gray-500">+ 18 more companies</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

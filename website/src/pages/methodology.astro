@@ -1,0 +1,256 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Methodology — Open Assets" description="How we calculate plant-level emissions using the Asset-based Planning Approach (APA).">
+  <section class="pt-16 pb-8 border-b border-gray-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-2 mb-4">
+        <a href="/" class="text-sm text-gray-500 hover:text-gray-300 transition-colors">Home</a>
+        <span class="text-gray-600">/</span>
+        <span class="text-sm text-gray-300">Methodology</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-bold text-white mb-4">Methodology</h1>
+      <p class="text-lg text-gray-400 max-w-2xl">
+        How Open Assets calculates plant-level emissions using the Asset-based Planning Approach.
+      </p>
+    </div>
+  </section>
+
+  <article class="py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose-custom">
+
+      <!-- APA Overview -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-white mb-4">What is APA?</h2>
+        <p class="text-gray-300 leading-relaxed mb-4">
+          <strong class="text-white">APA (Asset-based Planning Approach)</strong> is David Kampmann's
+          methodology from his 2024 paper for calculating company-level emissions projections
+          based on physical asset data.
+        </p>
+        <p class="text-gray-400 leading-relaxed mb-4">
+          Instead of relying on corporate targets or intensity benchmarks, APA models emissions from
+          the <em>bottom up</em> using actual plant-level data: which plants exist, what technology they
+          use, where they are located, and how much they produce.
+        </p>
+
+        <div class="rounded-lg border border-gray-800 bg-gray-900/50 p-5 my-6">
+          <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-3">Core Calculation</h3>
+          <div class="font-mono text-sm text-brand-300 space-y-1">
+            <p>Plant Emissions = Allocated Production &times; Emission Factor</p>
+            <p class="text-gray-500 ml-4">
+              = (Plant Capacity / Total Company Capacity) &times; Company Production &times; EF(country, technology, year)
+            </p>
+            <p class="mt-3">Company Emissions = Sum of all plant emissions under that ownership</p>
+          </div>
+        </div>
+
+        <p class="text-gray-400 leading-relaxed">
+          The utilisation rate distributes reported production across plants proportionally to
+          their capacity share.
+        </p>
+      </section>
+
+      <!-- Steel Implementation -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-white mb-4">Steel APA Implementation</h2>
+
+        <h3 class="text-lg font-semibold text-white mb-3">Data Source: GEM GIST December 2025</h3>
+        <p class="text-gray-400 leading-relaxed mb-4">
+          Three standalone Excel files from the Global Energy Monitor's Global Iron and Steel Tracker,
+          covering 800+ plant-status entries:
+        </p>
+        <ul class="space-y-2 mb-6">
+          <li class="flex items-start gap-3">
+            <span class="text-brand-400 mt-1">&bull;</span>
+            <span class="text-gray-300"><strong class="text-white">Plant-level data</strong> &mdash; plant_id, country, parent, owner, status, start_year</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-brand-400 mt-1">&bull;</span>
+            <span class="text-gray-300"><strong class="text-white">Iron unit data</strong> &mdash; BF and DRI unit capacities (technology, capacity_ttpa)</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-brand-400 mt-1">&bull;</span>
+            <span class="text-gray-300"><strong class="text-white">Steel unit data</strong> &mdash; BOF and EAF unit capacities (technology, capacity_ttpa)</span>
+          </li>
+        </ul>
+
+        <h3 class="text-lg font-semibold text-white mb-3">26 Companies Tracked</h3>
+        <p class="text-gray-400 leading-relaxed mb-4">
+          The original 14 companies from Kampmann's paper plus 12 expanded companies,
+          resulting in 229 company-year APA pairs covering 2014&ndash;2024.
+        </p>
+      </section>
+
+      <!-- Emission Factors -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-white mb-4">Emission Factors</h2>
+        <p class="text-gray-400 leading-relaxed mb-4">
+          Based on Koolen & Vidovic (2022) <strong class="text-gray-300">JRC129297</strong> &mdash;
+          country-specific emission factors for the steel industry and its trading partners.
+        </p>
+
+        <h3 class="text-lg font-semibold text-white mb-3">BF-BOF (Scope 1 + Upstream)</h3>
+        <p class="text-gray-400 leading-relaxed mb-4">
+          Country-specific, <strong class="text-gray-300">time-varying</strong> with 0.5%/year
+          compound improvement from 2020 reference:
+        </p>
+        <div class="rounded-lg border border-gray-800 bg-gray-900/50 p-4 mb-4 font-mono text-sm text-brand-300">
+          EF(country, year) = EF_base(country) &times; (1 - 0.005)^(year - 2020)
+        </div>
+
+        <div class="rounded-lg border border-gray-800 overflow-hidden mb-6">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="bg-gray-900/80 border-b border-gray-800">
+                <th class="text-left py-2.5 px-4 text-gray-400 font-medium">Region</th>
+                <th class="text-right py-2.5 px-4 text-gray-400 font-medium">Base EF (2020)</th>
+                <th class="text-right py-2.5 px-4 text-gray-400 font-medium">2014 EF</th>
+                <th class="text-right py-2.5 px-4 text-gray-400 font-medium">2024 EF</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                { region: 'EU', base: '1.770', y2014: '1.824', y2024: '1.735' },
+                { region: 'China', base: '1.760', y2014: '1.814', y2024: '1.725' },
+                { region: 'India', base: '3.720', y2014: '3.834', y2024: '3.646' },
+                { region: 'Japan', base: '2.050', y2014: '2.113', y2024: '2.009' },
+                { region: 'United States', base: '1.940', y2014: '1.999', y2024: '1.902' },
+                { region: 'Brazil', base: '2.190', y2014: '2.257', y2024: '2.147' },
+                { region: 'South Korea', base: '2.000', y2014: '2.061', y2024: '1.960' },
+                { region: 'Russia', base: '2.790', y2014: '2.875', y2024: '2.735' },
+                { region: 'Global (fallback)', base: '2.314', y2014: '2.385', y2024: '2.268' },
+              ].map((row, i) => (
+                <tr class:list={['border-b border-gray-800/50', i % 2 === 0 ? 'bg-gray-900/20' : '']}>
+                  <td class="py-2.5 px-4 text-gray-300">{row.region}</td>
+                  <td class="py-2.5 px-4 text-right font-mono text-white">{row.base}</td>
+                  <td class="py-2.5 px-4 text-right font-mono text-gray-400">{row.y2014}</td>
+                  <td class="py-2.5 px-4 text-right font-mono text-gray-400">{row.y2024}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <p class="text-sm text-gray-500 mb-6">
+          Rationale: Worldsteel Sustainability Indicators show global BF-BOF intensity is largely
+          flat over 2014-2024 (&lt;5% total change). IEA assumes 0.3-0.7% annual improvement.
+          We use 0.5% as a middle estimate.
+        </p>
+
+        <h3 class="text-lg font-semibold text-white mb-3">EAF (Scope 1 only) &mdash; Static</h3>
+        <p class="text-gray-400 leading-relaxed mb-4">
+          EAF scope 1 emissions are very small (0.02-0.12 tCO<sub>2</sub>/t) and kept constant
+          across all years.
+        </p>
+
+        <h3 class="text-lg font-semibold text-white mb-3">DRI &mdash; Static (technology-specific)</h3>
+        <p class="text-gray-400 leading-relaxed mb-4">
+          Coal-based DRI: 3.10 tCO<sub>2</sub>/t (India, China, South Africa).
+          Gas-based DRI: 1.05 tCO<sub>2</sub>/t (all others).
+          Hydrogen DRI: 0.04 tCO<sub>2</sub>/t (future technology).
+        </p>
+      </section>
+
+      <!-- Production Data -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-white mb-4">Production Data Hierarchy</h2>
+        <p class="text-gray-400 leading-relaxed mb-4">
+          Five sources, prioritised (lower number = higher priority):
+        </p>
+
+        <div class="rounded-lg border border-gray-800 overflow-hidden mb-6">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="bg-gray-900/80 border-b border-gray-800">
+                <th class="text-center py-2.5 px-4 text-gray-400 font-medium">Priority</th>
+                <th class="text-left py-2.5 px-4 text-gray-400 font-medium">Source</th>
+                <th class="text-left py-2.5 px-4 text-gray-400 font-medium">Coverage</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                { priority: '0', source: 'Kampmann BAU (reported)', coverage: '14 companies, 2020-2023' },
+                { priority: '1', source: 'Annual report extraction', coverage: 'Varies by company' },
+                { priority: '2', source: 'Curated reports CSV', coverage: '26 companies, 2014-2024' },
+                { priority: '3', source: 'Kampmann ALD data', coverage: '14 companies, 2020-2023' },
+                { priority: '4', source: 'GEM plant production', coverage: 'Variable (50% coverage floor)' },
+              ].map((row, i) => (
+                <tr class:list={['border-b border-gray-800/50', i % 2 === 0 ? 'bg-gray-900/20' : '']}>
+                  <td class="py-2.5 px-4 text-center font-mono text-brand-400">{row.priority}</td>
+                  <td class="py-2.5 px-4 text-gray-300 font-medium">{row.source}</td>
+                  <td class="py-2.5 px-4 text-gray-400">{row.coverage}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Plant Filtering -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-white mb-4">Year-Specific Plant Filtering</h2>
+        <p class="text-gray-400 leading-relaxed mb-4">
+          Plants are filtered per year based on GEM status and start_year, meaning the plant set
+          changes over time. New plants come online and the technology mix shifts &mdash; this is
+          the first-order effect on weighted emission factors.
+        </p>
+        <div class="rounded-lg border border-gray-800 overflow-hidden">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="bg-gray-900/80 border-b border-gray-800">
+                <th class="text-left py-2.5 px-4 text-gray-400 font-medium">Status</th>
+                <th class="text-left py-2.5 px-4 text-gray-400 font-medium">Rule</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                { status: 'Operating / Pre-retirement', rule: 'Include if start_year \u2264 year' },
+                { status: 'Construction', rule: 'Include if start_year \u2264 year (came online)' },
+                { status: 'Retired / Mothballed', rule: 'Include for all historical years' },
+                { status: 'Announced / Cancelled', rule: 'Always exclude' },
+              ].map((row, i) => (
+                <tr class:list={['border-b border-gray-800/50', i % 2 === 0 ? 'bg-gray-900/20' : '']}>
+                  <td class="py-2.5 px-4 text-gray-300 font-medium">{row.status}</td>
+                  <td class="py-2.5 px-4 text-gray-400">{row.rule}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- What APA is NOT -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-white mb-4">What APA Is Not</h2>
+        <div class="space-y-3">
+          {[
+            'NOT TPI intensity benchmarks (those are sector-wide, not asset-level)',
+            'NOT corporate target tracking (that\u2019s NZT \u2014 useful for comparison only)',
+            'NOT satellite emissions estimates (that\u2019s ClimateTrace \u2014 useful for validation)',
+            'NOT scenario pathway alignment (that\u2019s the PCP/SDA/ACA analysis that uses APA as input)',
+          ].map((item) => (
+            <div class="flex items-start gap-3">
+              <svg class="w-4 h-4 text-red-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              <span class="text-gray-400">{item}</span>
+            </div>
+          ))}
+        </div>
+        <p class="text-gray-400 leading-relaxed mt-6">
+          APA is purely: <strong class="text-white">Assets &rarr; Emission Factors &rarr; Baseline Emissions</strong>,
+          driven by physical plant data and reported production.
+        </p>
+      </section>
+
+      <!-- Back link -->
+      <div class="pt-8 border-t border-gray-800">
+        <a href="/steel/" class="text-brand-400 hover:text-brand-300 transition-colors text-sm">
+          &larr; Back to Steel Data
+        </a>
+      </div>
+
+    </div>
+  </article>
+</BaseLayout>

@@ -1,0 +1,386 @@
+# Steel Python Pipeline Documentation
+
+## Multi-Source Emissions Platform & APA Calculator
+
+*Last updated: January 2026*
+
+---
+
+## 1. Overview
+
+The Python report pipeline automates steel company emissions estimation by:
+
+1. **Downloading** annual/sustainability reports from company IR pages
+2. **Extracting** production and emissions data from PDFs (regex + table parsing)
+3. **Calculating** APA emissions using GEM plant data and emission factors
+4. **Integrating** four independent data sources into a single dataset with certainty scores
+
+### Pipeline Architecture
+
+```
+PDF Reports ──► Extractors ──► steel_all_extracted.csv ──┐
+                                                          │
+GEM GSPT Plants ──► APA Calculator ──────────────────────┤
+                                                          ├──► integrate.py ──► steel_multi_source.csv
+Climate Trace Data ──────────────────────────────────────┤                      steel_defaults.csv
+                                                          │
+Kampmann ALD CSV ────────────────────────────────────────┘
+```
+
+### Data Sources
+
+| Source | Code | Records | Coverage | Certainty |
+|--------|------|---------|----------|-----------|
+| Annual Reports | `annual_report` | 50 | 2015-2024, 9 companies, extracted from PDFs | 0.70-1.00 |
+| Climate Trace | `climate_trace` | 6,958 | 2021-2025, 696 facilities, satellite/model | 0.55-0.70 |
+| Kampmann ALD | `kampmann_ald` | 120 | 2020-2025, 10 companies | 0.45-0.60 |
+| APA (GEM-based) | `apa_gem` | 137 | 2015-2024, 18 companies | 0.45-0.65 |
+
+---
+
+## 2. File Structure
+
+```
+02.Scripts/scripts_python/report_pipeline/
+  __init__.py              # Package definition
+  config.py                # Paths, emission factors, constants
+  models.py                # DataPoint, CompanyYearData, SourceInfo dataclasses
+  downloader.py            # PDF download from company IR pages
+  registry.py              # Company URL registry
+  base_extractor.py        # Abstract base class for PDF extractors
+  orchestrator.py          # Runs download + extraction pipeline
+  apa_calculator.py        # APA emissions calculator (standalone module)
+  integrate.py             # Multi-source integration pipeline
+  extractors/
+    __init__.py
+    generic.py             # Fallback extractor for any company
+    arcelormittal.py       # ArcelorMittal-specific (multi-year series)
+    tata_steel.py          # Tata Steel (Indian FY format)
+    jswsteel.py            # JSW Steel
+    nippon_steel.py        # Nippon Steel
+    posco.py               # POSCO Holdings
+    ssab.py                # SSAB
+    thyssenkrupp.py        # ThyssenKrupp
+    nucor.py               # Nucor (GHG verification statements)
+
+01.Data/02.ProcessedData/
+  steel_all_extracted.csv              # All PDF extraction results
+  steel_production_from_reports.csv    # Hand-curated production data (156 rows)
+  steel_multi_source.csv               # Full multi-source integration output
+  steel_multi_source_comparison.csv    # Cross-source comparison
+  steel_defaults.csv                   # Recommended values per company-year
+```
+
+---
+
+## 3. Running the Pipeline
+
+### Prerequisites
+
+```bash
+pip install pandas numpy openpyxl pdfplumber
+```
+
+### Step 1: Extract data from PDFs
+
+```bash
+cd CarbonBudgetTracker/02.Scripts/scripts_python
+python3 -m report_pipeline.orchestrator
+```
+
+This downloads company reports and runs extractors, producing `steel_all_extracted.csv`.
+
+### Step 2: Run APA calculator (standalone)
+
+```bash
+python3 -m report_pipeline.apa_calculator
+```
+
+Outputs a table of 137 company-year APA emissions calculations.
+
+### Step 3: Run multi-source integration
+
+```bash
+python3 -m report_pipeline.integrate
+```
+
+Produces `steel_multi_source.csv`, `steel_defaults.csv`, and `steel_multi_source_comparison.csv`.
+
+---
+
+## 4. APA Calculator
+
+### Methodology
+
+Replicates David Kampmann's Asset-level Production Approach:
+
+```
+For each company-year:
+  1. Get all GEM/GSPT plants matching the company
+  2. UR = production_mt / total_capacity_mt
+  3. For each plant:
+     allocated_production = plant_capacity * UR
+     plant_emissions = allocated_production * EF(country, technology)
+  4. Company emissions = sum of all plant emissions
+```
+
+### Emission Factors
+
+| Technology | Region | EF (tCO2/t steel) |
+|------------|--------|-------------------|
+| BF-BOF | India | 3.72 |
+| BF-BOF | China | 2.10 |
+| BF-BOF | EU | 1.77 |
+| BF-BOF | Japan | 2.05 |
+| BF-BOF | US | 1.30 |
+| BF-BOF | Global default | 1.99 |
+| EAF | US | 0.04 |
+| EAF | EU | 0.04 |
+| EAF | Global default | 0.051 |
+| DRI (coal) | India/China/South Africa | 3.10 |
+| DRI (gas) | All others | 1.05 |
+| H2-DRI | All | 0.04 |
+
+BF-BOF factors from `config.py` (`EF_BF_BOF` dict). EAF/DRI factors in `apa_calculator.py`.
+
+### Company Matching (GEM GSPT)
+
+The calculator matches companies to GEM plants using regex patterns on the `Parent` field:
+
+| Company | GSPT Pattern | Plants | Capacity (Mt) |
+|---------|-------------|--------|---------------|
+| ArcelorMittal | `ArcelorMittal` | 36 | ~120 |
+| Nippon Steel | `Nippon Steel` | 11 | ~61 |
+| POSCO Holdings | `Posco\|POSCO` | 5 | ~46 |
+| Tata Steel | `Tata Steel` | 11 | ~36 |
+| JSW Steel | `JSW Steel\|JSW Ispat` | 9 | ~31 |
+| JFE Holdings | `JFE` | 10 | ~44 |
+| Nucor | `Nucor` | 17 | ~26 |
+| ThyssenKrupp | `thyssenkrupp` | 3 | ~20 |
+| SSAB | `SSAB` | 6 | ~10 |
+| Gerdau | `Gerdau` | 16 | ~16 |
+| BlueScope Steel | `BlueScope` | 4 | ~6 |
+| Severstal | `Severstal` | 1 | ~12 |
+| China Steel | `China Steel\|Dragon Steel` | 3 | ~13 |
+| Cleveland-Cliffs | `Cleveland-Cliffs` | 10 | ~17 |
+| Hyundai Steel | `Hyundai Steel` | 3 | ~25 |
+| voestalpine | `voestalpine` | 2 | ~8 |
+| Kobe Steel | `Kobe Steel\|KOBELCO` | 2 | ~7 |
+| Baoshan Iron & Steel | `Baoshan\|Baowu` | 17 | ~51 |
+
+### Production Data Sources
+
+Production data is loaded with a priority chain (lower = preferred):
+
+| Priority | Source | Function | Coverage |
+|----------|--------|----------|----------|
+| 0 | BAU sheets (GEM workbook) | `load_bau_production()` | 10 companies, 2020-2023 |
+| 1 | Annual report extraction | `load_annual_report_production()` | ~15 company-years |
+| 2 | Curated reports CSV | `load_curated_production()` | 156 rows, 18 companies, 2015-2023 |
+| 3 | Kampmann ALD | `load_ald_production()` | 10 companies, 2020-2023 |
+
+For each (company, year), the highest-priority available value is used.
+
+**Note:** ArcelorMittal is excluded from the curated source because its values use WorldSteel figures (including joint ventures, ~69 Mt) rather than consolidated crude steel production (~58 Mt) which matches the emissions boundary. BAU and annual report extraction provide the correct consolidated values.
+
+### Quality Guard: Utilization Rate Filter
+
+Any company-year with UR > 1.0 is automatically skipped. This indicates incomplete GSPT plant coverage (production exceeds known capacity). Affected:
+
+- **US Steel**: All years (only 1 GSPT plant, 0.7 Mt capacity vs 11-17 Mt production)
+- **voestalpine**: 2015-2018 (UR 1.03-1.07, capacity 7.6 Mt vs production 7.8-8.1 Mt)
+- **Kobe Steel**: 2015-2019 (UR 1.01-1.06, capacity 7.2 Mt vs production 7.3-7.6 Mt)
+- **Nucor 2021**: UR=1.06 (capacity 25.6 Mt vs production 27.0 Mt)
+
+### Known Limitations
+
+1. **Nucor EF underestimation**: All 17 GSPT plants are EAF (EF=0.04), giving ~0.86 Mt CO2 for 21.5 Mt production. Actual scope 1+2 is ~9.5 Mt because GSPT doesn't include Nucor's DRI plants.
+2. **Static plant snapshot**: Uses current GSPT data for all years (2015-2024). BF lifespans of 15-20 years make this reasonable for recent history.
+3. **ArcelorMittal pre-2020**: No APA data because BAU only covers 2020-2023, and curated source is excluded for ArcelorMittal.
+
+---
+
+## 5. Production Data File
+
+### `steel_production_from_reports.csv`
+
+156 rows covering 18 companies, 2015-2023. Columns:
+
+| Column | Description |
+|--------|-------------|
+| `company` | Company name (as in annual report) |
+| `year` | Calendar year |
+| `production_mt` | Crude steel production in million tonnes |
+| `source` | Human-readable source description |
+| `source_url` | URL to source document |
+
+### Data Sources for Production
+
+| Period | Primary Source | Companies |
+|--------|---------------|-----------|
+| 2020-2023 | Company annual reports, 10-K filings | All 18 |
+| 2015-2019 | WSA Top Producers / GEM wiki, press releases | All 18 (except Cleveland-Cliffs pre-2020) |
+
+**ArcelorMittal 2018-2019**: Verified from Q4 earnings press releases (2018=92.5 Mt, 2019=89.8 Mt). These are total group production, which is significantly higher than the 2020+ values (~58-71 Mt) because ArcelorMittal divested ArcelorMittal USA to Cleveland-Cliffs in Dec 2020.
+
+**Cleveland-Cliffs**: No pre-2020 data. The company was an iron ore miner until acquiring AK Steel (March 2020) and ArcelorMittal USA (December 2020).
+
+**Indian companies (Tata Steel, JSW Steel)**: Use Indian fiscal year (April-March). FY2024 = April 2023 - March 2024. The curated CSV maps to calendar years.
+
+---
+
+## 6. Multi-Source Integration
+
+### How It Works
+
+`integrate.py` combines four sources into a unified long-format dataset:
+
+1. Loads data from all sources into a common schema
+2. Assigns **certainty scores** (0-1) based on data quality, provenance, and recency
+3. For each (company, year, metric), selects the **default** value (highest certainty)
+4. Flags **cross-source discrepancies** where sources disagree by >30%
+
+### Certainty Scoring
+
+| Factor | Points |
+|--------|--------|
+| Source: annual_report | +0.40 |
+| Source: climate_trace | +0.35 |
+| Source: apa_gem | +0.30 |
+| Source: kampmann_ald | +0.25 |
+| High confidence extraction | +0.20 |
+| Medium confidence | +0.10 |
+| Recent year (2020+) | +0.10 |
+| Has page reference | +0.05 |
+| Has table reference | +0.05 |
+
+### Default Selection
+
+For each (company, year, metric):
+1. Highest certainty score wins
+2. Ties broken by source priority: annual_report > climate_trace > kampmann_ald > apa_gem
+
+### Output Files
+
+**`steel_multi_source.csv`**: All values from all sources (~7000+ rows)
+
+| Column | Description |
+|--------|-------------|
+| company | Canonical company name |
+| year | Calendar year |
+| metric | `emissions_mt_co2` or `production_mt` |
+| value | Numeric value |
+| unit | `Mt CO2` or `Mt` |
+| source | Data source identifier |
+| certainty | 0-1 quality score |
+| is_default | Boolean: recommended value? |
+
+**`steel_defaults.csv`**: One row per (company, year, metric) with the recommended value.
+
+**`steel_multi_source_comparison.csv`**: Cross-source comparison showing spread between sources.
+
+---
+
+## 7. PDF Extractors
+
+### Architecture
+
+Each extractor inherits from `BaseExtractor` and implements `extract(pdf_path, source) -> CompanyYearData`.
+
+Extraction strategies (tried in order):
+1. **Company-specific regex** on text (highest confidence)
+2. **Table parsing** via pdfplumber
+3. **Generic fallback** patterns
+
+### ArcelorMittal Multi-Year Extraction
+
+ArcelorMittal reports contain multi-year performance tables:
+
+```
+"Adjusted crude steel production1 Mt ArcelorMittal 77.4 73.3 60.9 70.7 61.8 58.1"
+```
+
+The extractor emits one `DataPoint` per year in the series (oldest to newest = report_year - N + 1 through report_year). From the 2023 report, this produces production data for 2018-2023.
+
+Uses `year_override` parameter on `CompanyYearData.add()` to assign correct years.
+
+### Known Extractor Issues
+
+| Company | Issue | Workaround |
+|---------|-------|------------|
+| Nucor | CSR reports use infographic layout; values on separate lines from labels | Production from curated CSV; emissions from verification statements |
+| JFE Holdings | Some reports match "100 million tons" as cumulative milestone | Excluded in `load_annual_report_production()` bad list |
+| Gerdau | Emissions values in kt parsed as Mt in some years | Manual verification needed |
+
+---
+
+## 8. Current Coverage Summary
+
+### APA Calculator Output (January 2026)
+
+**137 company-year calculations, 18 companies, 2015-2024**
+
+| Company | Years | Plants | Weighted EF | Notes |
+|---------|-------|--------|-------------|-------|
+| ArcelorMittal | 2020-2023 | 36 | 1.867 | Pre-2020 excluded (curated source issue) |
+| Nippon Steel | 2015-2023 | 11 | 2.107 | |
+| POSCO Holdings | 2015-2023 | 5 | 2.021 | |
+| Tata Steel | 2015-2024 | 11 | 2.781 | High EF from Indian BF-BOF + DRI coal |
+| JSW Steel | 2015-2024 | 9 | 3.077 | Highest EF (Indian DRI coal dominant) |
+| JFE Holdings | 2015-2023 | 10 | 1.786 | |
+| Nucor | 2015-2023 | 17 | 0.040 | All EAF; DRI plants missing from GSPT |
+| ThyssenKrupp | 2015-2024 | 3 | 1.647 | |
+| SSAB | 2015-2023 | 6 | 1.260 | |
+| Gerdau | 2015-2023 | 16 | 0.680 | Mostly EAF/scrap-based |
+| BlueScope Steel | 2015-2023 | 4 | 0.940 | |
+| Severstal | 2015-2023 | 1 | 2.790 | |
+| China Steel | 2015-2023 | 3 | 1.938 | Includes Dragon Steel subsidiary |
+| Cleveland-Cliffs | 2021-2023 | 10 | 1.699 | Pre-2020: was iron ore company |
+| Hyundai Steel | 2015-2023 | 3 | 1.359 | |
+| voestalpine | 2019-2023 | 2 | 1.770 | Pre-2019 filtered (UR > 1.0) |
+| Kobe Steel | 2020-2023 | 2 | 2.050 | Pre-2020 filtered (UR > 1.0) |
+| Baoshan Iron & Steel | 2020-2022 | 17 | 1.743 | Only BAU production available |
+
+### Integration Output
+
+- **81 company-year pairs** where APA is the default source (mostly 2015-2019 historical period)
+- **~7000 rows** total across all sources
+- **45 defaults** from annual reports, **6926** from Climate Trace, **18** from Kampmann ALD
+
+### Comparison to David Kampmann's Original
+
+| | David's Spreadsheet | This Pipeline |
+|---|---|---|
+| Companies | 10 | 18 |
+| Years | 2020-2023 | 2015-2024 |
+| Company-year calculations | 40 | 137 |
+| Additional companies | -- | JSW, Gerdau, JFE, Nucor, Cleveland-Cliffs, Hyundai, voestalpine, Kobe |
+| Data sources | 1 (BAU) | 4 (BAU + annual reports + curated + ALD) |
+| Cross-validation | Manual | Automated multi-source comparison |
+
+---
+
+## 9. Maintenance
+
+### Adding a New Company
+
+1. Add production data to `steel_production_from_reports.csv`
+2. Add company pattern to `COMPANY_GEM_PATTERNS` in `apa_calculator.py`
+3. Add name mapping to `load_curated_production()` name_map
+4. Optionally create a dedicated extractor in `extractors/`
+5. Run `python3 -m report_pipeline.apa_calculator` to verify
+6. Run `python3 -m report_pipeline.integrate` to update outputs
+
+### Annual Update (when WSA releases new data)
+
+1. Update `steel_production_from_reports.csv` with new year's production
+2. Download new company reports via `orchestrator.py`
+3. Re-run extraction, APA calculation, and integration
+4. Check `steel_multi_source_comparison.csv` for new discrepancies
+
+### Adding a New Data Source
+
+1. Create a loader function returning DataFrame with columns: `company, year, metric, value, unit, source`
+2. Add certainty scoring in `integrate.py`
+3. Add to source_priority dict
+4. Include in the concat in the main integration function

@@ -1,0 +1,46 @@
+---
+const currentPath = Astro.url.pathname;
+
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/steel/', label: 'Steel Data' },
+  { href: '/methodology/', label: 'Methodology' },
+];
+---
+
+<nav class="border-b border-gray-800 bg-gray-950/80 backdrop-blur-md sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="/" class="flex items-center gap-2 group">
+        <div class="w-8 h-8 rounded-lg bg-brand-500 flex items-center justify-center text-white font-bold text-sm group-hover:bg-brand-400 transition-colors">
+          OA
+        </div>
+        <span class="font-bold text-lg text-white">Open Assets</span>
+      </a>
+
+      <div class="flex items-center gap-1">
+        {links.map((link) => (
+          <a
+            href={link.href}
+            class:list={[
+              'px-3 py-2 rounded-lg text-sm font-medium transition-colors',
+              currentPath === link.href
+                ? 'bg-gray-800 text-white'
+                : 'text-gray-400 hover:text-white hover:bg-gray-800/50',
+            ]}
+          >
+            {link.label}
+          </a>
+        ))}
+        <a
+          href="https://github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="ml-2 px-3 py-2 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-gray-800/50 transition-colors"
+        >
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

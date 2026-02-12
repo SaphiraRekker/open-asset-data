@@ -1,0 +1,48 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-gray-800 bg-gray-950 mt-auto">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-7 h-7 rounded-lg bg-brand-500 flex items-center justify-center text-white font-bold text-xs">
+            OA
+          </div>
+          <span class="font-bold text-white">Open Assets</span>
+        </div>
+        <p class="text-sm text-gray-400 leading-relaxed">
+          AI-powered open asset-level emissions data for climate accountability and transparency.
+        </p>
+      </div>
+
+      <!-- Links -->
+      <div>
+        <h3 class="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-3">Data</h3>
+        <ul class="space-y-2">
+          <li><a href="/steel/" class="text-sm text-gray-400 hover:text-white transition-colors">Steel Sector</a></li>
+          <li><a href="/methodology/" class="text-sm text-gray-400 hover:text-white transition-colors">Methodology</a></li>
+          <li><span class="text-sm text-gray-600">Power (Coming Soon)</span></li>
+          <li><span class="text-sm text-gray-600">Cement (Coming Soon)</span></li>
+        </ul>
+      </div>
+
+      <!-- Attribution -->
+      <div>
+        <h3 class="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-3">About</h3>
+        <p class="text-sm text-gray-400 leading-relaxed">
+          A research project by the University of Queensland. Data sources include
+          GEM GIST, ClimateTrace, TPI, and company annual reports.
+        </p>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+      <p class="text-xs text-gray-500">
+        &copy; {year} Open Assets. Built with open data for a transparent climate future.
+      </p>
+    </div>
+  </div>
+</footer>

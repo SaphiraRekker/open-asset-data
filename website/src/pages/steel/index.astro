@@ -1,0 +1,298 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { loadSteelAPA, loadCompanyInfo, getUniqueCompanies } from '../../data/steel';
+
+const apaData = loadSteelAPA();
+const companyInfo = loadCompanyInfo();
+const companies = getUniqueCompanies(apaData);
+
+// Build summary stats
+const totalEmissions2024 = apaData
+  .filter((d) => d.year === 2024 && d.emissions_mt !== null)
+  .reduce((sum, d) => sum + (d.emissions_mt || 0), 0);
+
+const totalEmissions2014 = apaData
+  .filter((d) => d.year === 2014 && d.emissions_mt !== null)
+  .reduce((sum, d) => sum + (d.emissions_mt || 0), 0);
+
+// Get latest year for each company
+const latestData = companies.map((company) => {
+  const companyRows = apaData
+    .filter((d) => d.company === company && d.emissions_mt !== null)
+    .sort((a, b) => b.year - a.year);
+  const latest = companyRows[0];
+  const earliest = companyRows[companyRows.length - 1];
+  const info = companyInfo.find((c) => c.company === company);
+
+  return {
+    company,
+    country: info?.country || '',
+    ca100: info?.ca100_focus || '',
+    latestYear: latest?.year || 0,
+    latestEmissions: latest?.emissions_mt || 0,
+    latestProduction: latest?.production_mt || 0,
+    latestEF: latest?.weighted_ef || 0,
+    nPlants: latest?.n_plants || 0,
+    earliestYear: earliest?.year || 0,
+    earliestEmissions: earliest?.emissions_mt || 0,
+    changePercent:
+      earliest?.emissions_mt && latest?.emissions_mt
+        ? ((latest.emissions_mt - earliest.emissions_mt) / earliest.emissions_mt) * 100
+        : null,
+  };
+}).sort((a, b) => b.latestEmissions - a.latestEmissions);
+
+// Prepare chart data (aggregate annual totals)
+const years = [...new Set(apaData.map((d) => d.year))].sort();
+const annualTotals = years.map((year) => ({
+  year,
+  emissions: apaData
+    .filter((d) => d.year === year && d.emissions_mt !== null)
+    .reduce((sum, d) => sum + (d.emissions_mt || 0), 0),
+  production: apaData
+    .filter((d) => d.year === year && d.production_mt !== null)
+    .reduce((sum, d) => sum + (d.production_mt || 0), 0),
+  companies: apaData.filter((d) => d.year === year && d.emissions_mt !== null).length,
+}));
+
+const chartDataJSON = JSON.stringify(annualTotals);
+const companyChartJSON = JSON.stringify(
+  companies.slice(0, 10).map((company) => ({
+    company,
+    data: apaData
+      .filter((d) => d.company === company)
+      .sort((a, b) => a.year - b.year)
+      .map((d) => ({ year: d.year, emissions: d.emissions_mt })),
+  })),
+);
+---
+
+<BaseLayout title="Steel Sector Data — Open Assets" description="Asset-level emissions data for 26 of the world's largest steel companies.">
+  <!-- Header -->
+  <section class="pt-16 pb-12 border-b border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center gap-2 mb-4">
+        <a href="/" class="text-sm text-gray-500 hover:text-gray-300 transition-colors">Home</a>
+        <span class="text-gray-600">/</span>
+        <span class="text-sm text-gray-300">Steel</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-bold text-white mb-4">Steel Sector Data</h1>
+      <p class="text-lg text-gray-400 max-w-2xl">
+        Asset-level emissions for {companies.length} steel companies covering {years[0]}&ndash;{years[years.length - 1]},
+        calculated using the Asset-based Planning Approach (APA).
+      </p>
+    </div>
+  </section>
+
+  <!-- Summary stats -->
+  <section class="py-8 border-b border-gray-800/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="rounded-lg border border-gray-800 bg-gray-900/50 p-4">
+          <div class="text-2xl font-bold text-white">{companies.length}</div>
+          <div class="text-sm text-gray-400">Companies</div>
+        </div>
+        <div class="rounded-lg border border-gray-800 bg-gray-900/50 p-4">
+          <div class="text-2xl font-bold text-white">{apaData.length}</div>
+          <div class="text-sm text-gray-400">Company-year data points</div>
+        </div>
+        <div class="rounded-lg border border-gray-800 bg-gray-900/50 p-4">
+          <div class="text-2xl font-bold text-white">{totalEmissions2024.toFixed(0)} Mt</div>
+          <div class="text-sm text-gray-400">Total emissions (latest)</div>
+        </div>
+        <div class="rounded-lg border border-gray-800 bg-gray-900/50 p-4">
+          <div class="text-2xl font-bold text-white">{years[0]}&ndash;{years[years.length - 1]}</div>
+          <div class="text-sm text-gray-400">Coverage period</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aggregate chart -->
+  <section class="py-12 border-b border-gray-800/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-xl font-bold text-white mb-6">Aggregate Steel Emissions Over Time</h2>
+      <div class="rounded-xl border border-gray-800 bg-gray-900/50 p-6">
+        <canvas id="aggregateChart" class="w-full" style="height: 350px;"></canvas>
+      </div>
+      <p class="text-xs text-gray-500 mt-3">
+        Note: Aggregate totals vary by year depending on data availability per company.
+        Not all companies have data for all years.
+      </p>
+    </div>
+  </section>
+
+  <!-- Company table -->
+  <section class="py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-xl font-bold text-white">Company Data</h2>
+        <a
+          href="/methodology/"
+          class="text-sm text-brand-400 hover:text-brand-300 transition-colors"
+        >
+          View methodology &rarr;
+        </a>
+      </div>
+
+      <div class="rounded-xl border border-gray-800 overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="bg-gray-900/80 border-b border-gray-800">
+                <th class="text-left py-3 px-4 text-gray-400 font-medium">Company</th>
+                <th class="text-left py-3 px-4 text-gray-400 font-medium">Country</th>
+                <th class="text-right py-3 px-4 text-gray-400 font-medium">Plants</th>
+                <th class="text-right py-3 px-4 text-gray-400 font-medium">Production (Mt)</th>
+                <th class="text-right py-3 px-4 text-gray-400 font-medium">Emissions (MtCO<sub>2</sub>)</th>
+                <th class="text-right py-3 px-4 text-gray-400 font-medium">Weighted EF</th>
+                <th class="text-right py-3 px-4 text-gray-400 font-medium">Change</th>
+                <th class="text-center py-3 px-4 text-gray-400 font-medium">CA100+</th>
+              </tr>
+            </thead>
+            <tbody>
+              {latestData.map((row, i) => (
+                <tr class:list={['border-b border-gray-800/50 hover:bg-gray-800/30 transition-colors', i % 2 === 0 ? 'bg-gray-900/20' : '']}>
+                  <td class="py-3 px-4">
+                    <span class="text-white font-medium">{row.company}</span>
+                  </td>
+                  <td class="py-3 px-4 text-gray-400">{row.country}</td>
+                  <td class="py-3 px-4 text-right text-gray-300 font-mono">{row.nPlants}</td>
+                  <td class="py-3 px-4 text-right text-gray-300 font-mono">{row.latestProduction.toFixed(1)}</td>
+                  <td class="py-3 px-4 text-right text-white font-mono font-medium">{row.latestEmissions.toFixed(1)}</td>
+                  <td class="py-3 px-4 text-right font-mono">
+                    <span class:list={[
+                      row.latestEF > 2 ? 'text-red-400' : row.latestEF > 1 ? 'text-amber-400' : 'text-brand-400'
+                    ]}>
+                      {row.latestEF.toFixed(2)}
+                    </span>
+                  </td>
+                  <td class="py-3 px-4 text-right font-mono">
+                    {row.changePercent !== null ? (
+                      <span class:list={[
+                        row.changePercent > 0 ? 'text-red-400' : 'text-brand-400'
+                      ]}>
+                        {row.changePercent > 0 ? '+' : ''}{row.changePercent.toFixed(1)}%
+                      </span>
+                    ) : (
+                      <span class="text-gray-600">&mdash;</span>
+                    )}
+                  </td>
+                  <td class="py-3 px-4 text-center">
+                    {row.ca100 === 'Yes' ? (
+                      <span class="inline-block w-2 h-2 rounded-full bg-brand-400" title="CA100+ Focus Company"></span>
+                    ) : (
+                      <span class="text-gray-700">&mdash;</span>
+                    )}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="mt-4 text-xs text-gray-500">
+        <p>
+          <strong>Weighted EF</strong> = weighted emission factor (tCO<sub>2</sub>/t crude steel),
+          reflecting the company's technology mix and plant locations.
+          <strong>Change</strong> = emissions change from earliest to latest available year.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data sources -->
+  <section class="py-12 border-t border-gray-800/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-xl font-bold text-white mb-6">Data Sources</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="rounded-lg border border-gray-800 bg-gray-900/50 p-4">
+          <h3 class="font-medium text-white mb-1">GEM GIST (December 2025)</h3>
+          <p class="text-sm text-gray-400">
+            Global Energy Monitor's Global Iron and Steel Tracker. Plant-level data including
+            capacity, technology, ownership, and status for 800+ steel plants worldwide.
+          </p>
+        </div>
+        <div class="rounded-lg border border-gray-800 bg-gray-900/50 p-4">
+          <h3 class="font-medium text-white mb-1">JRC129297 Emission Factors</h3>
+          <p class="text-sm text-gray-400">
+            Koolen & Vidovic (2022) country-specific emission factors for BF-BOF, EAF,
+            and DRI steelmaking processes. Time-varying with 0.5%/year improvement.
+          </p>
+        </div>
+        <div class="rounded-lg border border-gray-800 bg-gray-900/50 p-4">
+          <h3 class="font-medium text-white mb-1">Company Annual Reports</h3>
+          <p class="text-sm text-gray-400">
+            Production data curated from Q4 earnings releases and sustainability reports.
+            Consolidated crude steel production figures for all 26 companies.
+          </p>
+        </div>
+        <div class="rounded-lg border border-gray-800 bg-gray-900/50 p-4">
+          <h3 class="font-medium text-white mb-1">Kampmann (2024)</h3>
+          <p class="text-sm text-gray-400">
+            Asset-based Planning Approach methodology by David Kampmann. Reference implementation
+            for bottom-up emissions calculation from physical asset data.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chart.js via CDN for simplicity -->
+  <script is:inline src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+  <script is:inline define:vars={{ chartDataJSON }}>
+    document.addEventListener('DOMContentLoaded', () => {
+      const data = JSON.parse(chartDataJSON);
+      const ctx = document.getElementById('aggregateChart');
+      if (!ctx) return;
+
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: data.map((d) => d.year),
+          datasets: [
+            {
+              label: 'Total Emissions (MtCO\u2082)',
+              data: data.map((d) => d.emissions),
+              backgroundColor: 'rgba(34, 197, 94, 0.6)',
+              borderColor: 'rgba(34, 197, 94, 1)',
+              borderWidth: 1,
+              borderRadius: 4,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              labels: { color: '#9ca3af', font: { family: 'Inter' } },
+            },
+            tooltip: {
+              callbacks: {
+                afterLabel: (ctx) => {
+                  const point = data[ctx.dataIndex];
+                  return `Companies reporting: ${point.companies}\nTotal production: ${point.production.toFixed(0)} Mt`;
+                },
+              },
+            },
+          },
+          scales: {
+            x: {
+              ticks: { color: '#6b7280' },
+              grid: { color: 'rgba(75, 85, 99, 0.2)' },
+            },
+            y: {
+              ticks: {
+                color: '#6b7280',
+                callback: (val) => val + ' Mt',
+              },
+              grid: { color: 'rgba(75, 85, 99, 0.2)' },
+            },
+          },
+        },
+      });
+    });
+  </script>
+</BaseLayout>

@@ -1,0 +1,46 @@
+---
+---
+
+<section class="py-20 border-t border-gray-800/50">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-white mb-4">More Sectors Coming</h2>
+      <p class="text-gray-400 max-w-lg mx-auto">
+        We're expanding asset-level coverage across all high-emitting sectors.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+      {[
+        {
+          sector: 'Power',
+          icon: '⚡',
+          description: 'Coal and gas-fired power stations',
+          status: 'In development',
+        },
+        {
+          sector: 'Cement',
+          icon: '🏗',
+          description: 'Clinker kilns and grinding plants',
+          status: 'In development',
+        },
+        {
+          sector: 'Fossil Fuels',
+          icon: '🛢',
+          description: 'Oil, gas, and coal producers',
+          status: 'In development',
+        },
+      ].map((item) => (
+        <div class="rounded-xl border border-gray-800 bg-gray-900/30 p-6 text-center opacity-60">
+          <div class="text-3xl mb-3">{item.icon}</div>
+          <h3 class="text-lg font-semibold text-white mb-1">{item.sector}</h3>
+          <p class="text-sm text-gray-500 mb-3">{item.description}</p>
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-gray-800 text-xs text-gray-400">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+            {item.status}
+          </span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
