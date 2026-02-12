@@ -64,7 +64,7 @@ function loadCSV(relativePath: string): string[][] {
 }
 
 export function loadSteelAPA(): SteelCompanyData[] {
-  const rows = loadCSV('03.Outputs/01.CompanyData/steel/steel_apa_emissions.csv');
+  const rows = loadCSV('outputs/steel/steel_apa_emissions.csv');
   if (rows.length === 0) return [];
 
   const headers = rows[0];
@@ -89,29 +89,23 @@ export function loadSteelAPA(): SteelCompanyData[] {
 }
 
 export function loadCompanyInfo(): CompanyInfo[] {
-  const rows = loadCSV('03.Outputs/02.Analysis/cross_sector/all_sectors_companies.csv');
+  const rows = loadCSV('outputs/steel/steel_company_info.csv');
   if (rows.length === 0) return [];
 
   const headers = rows[0];
-  return rows
-    .slice(1)
-    .filter((row) => {
-      const sectorIdx = headers.indexOf('sector');
-      return row[sectorIdx]?.toLowerCase() === 'steel';
-    })
-    .map((row) => {
-      const obj: Record<string, string> = {};
-      headers.forEach((h, i) => {
-        obj[h] = row[i] || '';
-      });
-      return {
-        company: obj['company'] || '',
-        sector: obj['sector'] || '',
-        country: obj['country'] || '',
-        ca100_focus: obj['ca100_focus'] || '',
-        paris_aligned: obj['paris_aligned'] || '',
-      };
+  return rows.slice(1).map((row) => {
+    const obj: Record<string, string> = {};
+    headers.forEach((h, i) => {
+      obj[h] = row[i] || '';
     });
+    return {
+      company: obj['company'] || '',
+      sector: 'Steel',
+      country: obj['country'] || '',
+      ca100_focus: obj['ca100_focus'] || '',
+      paris_aligned: '',
+    };
+  });
 }
 
 export function getUniqueCompanies(data: SteelCompanyData[]): string[] {
