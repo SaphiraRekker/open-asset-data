@@ -1,0 +1,48 @@
+============================================
+Verified Report Downloader
+Started: Thu Feb 12 23:13:28 AEST 2026
+============================================
+
+=== NUCOR ===
+  OK (12.4 MB): nucor-sustainability-report-2024.pdf
+  OK (2.0 MB): nucor-net-zero-2050-info.pdf
+
+=== CLEVELAND-CLIFFS ===
+  OK (6.0 MB): clf-sustainability-report-2024.pdf
+  OK (12.1 MB): clf-sustainability-report-2023.pdf
+  OK (.6 MB): clf-tcfd-report-2022.pdf
+  OK (2.7 MB): clf-annual-report-2024.pdf
+  OK (35.8 MB): clf-annual-report-2023.pdf
+  OK (6.2 MB): clf-sustainability-report-2021.pdf
+  OK (12.9 MB): clf-sustainability-report-2020.pdf
+  OK (1.2 MB): clf-ghg-reduction-commitment.pdf
+
+=== US STEEL ===
+  OK (22.9 MB): us-steel-sustainability-report-2024.pdf
+  OK (3.0 MB): us-steel-climate-strategy-report.pdf
+
+=== BLUESCOPE STEEL ===
+  OK (7.7 MB): bluescope-sustainability-report-fy2025.pdf
+  OK (9.0 MB): bluescope-sustainability-data-supplement-fy2025.pdf
+  OK (12.4 MB): bluescope-climate-action-report-fy2024.pdf
+
+=== KOBE STEEL ===
+  OK (7.5 MB): kobelco-esg-databook-2024.pdf
+  OK (6.8 MB): kobelco-esg-databook-2023.pdf
+  OK (4.3 MB): kobelco-esg-databook-2022.pdf
+
+=== VOESTALPINE ===
+  OK (5.4 MB): voestalpine-annual-report-2024-25.pdf
+
+=== SSAB ===
+  OK (3.9 MB): ssab-annual-report-2024.pdf
+  SKIP (exists): ssab-annual-report-2023.pdf
+
+=== NIPPON STEEL ===
+  FAIL (HTTP 404, 45101B): nippon-steel-sustainability-report-2024.pdf <- https://www.nipponsteel.com/en/sustainability/report/pdf/report2024en.pdf
+  OK (5.7 MB): nippon-steel-sustainability-report-2023.pdf
+  OK (31.7 MB): nippon-steel-integrated-report-2024.pdf
+
+============================================
+Completed: Thu Feb 12 23:15:59 AEST 2026
+============================================

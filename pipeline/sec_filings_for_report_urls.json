@@ -1,0 +1,410 @@
+{
+  "nucor": [
+    {
+      "year": 2025,
+      "url": "https://www.sec.gov/Archives/edgar/data/73309/000095017025028427/nue-20241231.htm",
+      "doc_type": "form_10k",
+      "company_name": "Nucor",
+      "notes": "SEC 10-K filed 2025-02-27. Accession: 0000950170-25-028427"
+    },
+    {
+      "year": 2024,
+      "url": "https://www.sec.gov/Archives/edgar/data/73309/000095017024021195/nue-20231231.htm",
+      "doc_type": "form_10k",
+      "company_name": "Nucor",
+      "notes": "SEC 10-K filed 2024-02-27. Accession: 0000950170-24-021195"
+    },
+    {
+      "year": 2023,
+      "url": "https://www.sec.gov/Archives/edgar/data/73309/000156459023002793/nue-10k_20221231.htm",
+      "doc_type": "form_10k",
+      "company_name": "Nucor",
+      "notes": "SEC 10-K filed 2023-03-01. Accession: 0001564590-23-002793"
+    },
+    {
+      "year": 2022,
+      "url": "https://www.sec.gov/Archives/edgar/data/73309/000156459022007679/nue-10k_20211231.htm",
+      "doc_type": "form_10k",
+      "company_name": "Nucor",
+      "notes": "SEC 10-K filed 2022-02-28. Accession: 0001564590-22-007679"
+    },
+    {
+      "year": 2021,
+      "url": "https://www.sec.gov/Archives/edgar/data/73309/000156459021009503/nue-10k_20201231.htm",
+      "doc_type": "form_10k",
+      "company_name": "Nucor",
+      "notes": "SEC 10-K filed 2021-02-26. Accession: 0001564590-21-009503"
+    },
+    {
+      "year": 2020,
+      "url": "https://www.sec.gov/Archives/edgar/data/73309/000156459020007794/nue-10k_20191231.htm",
+      "doc_type": "form_10k",
+      "company_name": "Nucor",
+      "notes": "SEC 10-K filed 2020-02-28. Accession: 0001564590-20-007794"
+    },
+    {
+      "year": 2019,
+      "url": "https://www.sec.gov/Archives/edgar/data/73309/000119312519057744/d691427d10k.htm",
+      "doc_type": "form_10k",
+      "company_name": "Nucor",
+      "notes": "SEC 10-K filed 2019-02-28. Accession: 0001193125-19-057744"
+    }
+  ],
+  "cleveland_cliffs": [
+    {
+      "year": 2025,
+      "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406525000058/clf-20241231.htm",
+      "doc_type": "form_10k",
+      "company_name": "Cleveland-Cliffs",
+      "notes": "SEC 10-K filed 2025-02-25. Accession: 0000764065-25-000058"
+    },
+    {
+      "year": 2024,
+      "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406524000038/clf-20231231.htm",
+      "doc_type": "form_10k",
+      "company_name": "Cleveland-Cliffs",
+      "notes": "SEC 10-K filed 2024-02-08. Accession: 0000764065-24-000038"
+    },
+    {
+      "year": 2023,
+      "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406523000032/clf-20221231.htm",
+      "doc_type": "form_10k",
+      "company_name": "Cleveland-Cliffs",
+      "notes": "SEC 10-K filed 2023-02-14. Accession: 0000764065-23-000032"
+    },
+    {
+      "year": 2022,
+      "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406522000037/clf-20211231.htm",
+      "doc_type": "form_10k",
+      "company_name": "Cleveland-Cliffs",
+      "notes": "SEC 10-K filed 2022-02-11. Accession: 0000764065-22-000037"
+    },
+    {
+      "year": 2021,
+      "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406521000084/clf-20201231.htm",
+      "doc_type": "form_10k",
+      "company_name": "Cleveland-Cliffs",
+      "notes": "SEC 10-K filed 2021-02-26. Accession: 0000764065-21-000084"
+    },
+    {
+      "year": 2020,
+      "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406520000041/clf-2019123110xk.htm",
+      "doc_type": "form_10k",
+      "company_name": "Cleveland-Cliffs",
+      "notes": "SEC 10-K filed 2020-02-20. Accession: 0000764065-20-000041"
+    },
+    {
+      "year": 2019,
+      "url": "https://www.sec.gov/Archives/edgar/data/764065/000076406519000025/clf-2018123110xk.htm",
+      "doc_type": "form_10k",
+      "company_name": "Cleveland-Cliffs",
+      "notes": "SEC 10-K filed 2019-02-08. Accession: 0000764065-19-000025"
+    }
+  ],
+  "us_steel": [
+    {
+      "year": 2025,
+      "url": "https://www.sec.gov/Archives/edgar/data/1163302/000116330225000018/x-20241231.htm",
+      "doc_type": "form_10k",
+      "company_name": "US Steel",
+      "notes": "SEC 10-K filed 2025-01-31. Accession: 0001163302-25-000018"
+    },
+    {
+      "year": 2024,
+      "url": "https://www.sec.gov/Archives/edgar/data/1163302/000116330224000009/x-20231231.htm",
+      "doc_type": "form_10k",
+      "company_name": "US Steel",
+      "notes": "SEC 10-K filed 2024-02-02. Accession: 0001163302-24-000009"
+    },
+    {
+      "year": 2023,
+      "url": "https://www.sec.gov/Archives/edgar/data/1163302/000116330223000016/x-20221231.htm",
+      "doc_type": "form_10k",
+      "company_name": "US Steel",
+      "notes": "SEC 10-K filed 2023-02-03. Accession: 0001163302-23-000016"
+    },
+    {
+      "year": 2022,
+      "url": "https://www.sec.gov/Archives/edgar/data/1163302/000116330222000021/x-20211231.htm",
+      "doc_type": "form_10k",
+      "company_name": "US Steel",
+      "notes": "SEC 10-K filed 2022-02-11. Accession: 0001163302-22-000021"
+    },
+    {
+      "year": 2021,
+      "url": "https://www.sec.gov/Archives/edgar/data/1163302/000116330221000013/x-20201231.htm",
+      "doc_type": "form_10k",
+      "company_name": "US Steel",
+      "notes": "SEC 10-K filed 2021-02-12. Accession: 0001163302-21-000013"
+    },
+    {
+      "year": 2020,
+      "url": "https://www.sec.gov/Archives/edgar/data/1163302/000116330220000012/form10k191231.htm",
+      "doc_type": "form_10k",
+      "company_name": "US Steel",
+      "notes": "SEC 10-K filed 2020-02-14. Accession: 0001163302-20-000012"
+    },
+    {
+      "year": 2019,
+      "url": "https://www.sec.gov/Archives/edgar/data/1163302/000116330219000014/x2018123110k.htm",
+      "doc_type": "form_10k",
+      "company_name": "US Steel",
+      "notes": "SEC 10-K filed 2019-02-15. Accession: 0001163302-19-000014"
+    }
+  ],
+  "steel_dynamics": [
+    {
+      "year": 2025,
+      "url": "https://www.sec.gov/Archives/edgar/data/1022671/000155837025001886/stld-20241231x10k.htm",
+      "doc_type": "form_10k",
+      "company_name": "Steel Dynamics",
+      "notes": "SEC 10-K filed 2025-02-28. Accession: 0001558370-25-001886"
+    },
+    {
+      "year": 2024,
+      "url": "https://www.sec.gov/Archives/edgar/data/1022671/000155837024002152/stld-20231231x10k.htm",
+      "doc_type": "form_10k",
+      "company_name": "Steel Dynamics",
+      "notes": "SEC 10-K filed 2024-02-29. Accession: 0001558370-24-002152"
+    },
+    {
+      "year": 2023,
+      "url": "https://www.sec.gov/Archives/edgar/data/1022671/000155837023002303/stld-20221231x10k.htm",
+      "doc_type": "form_10k",
+      "company_name": "Steel Dynamics",
+      "notes": "SEC 10-K filed 2023-02-28. Accession: 0001558370-23-002303"
+    },
+    {
+      "year": 2022,
+      "url": "https://www.sec.gov/Archives/edgar/data/1022671/000155837022002377/stld-20211231x10k.htm",
+      "doc_type": "form_10k",
+      "company_name": "Steel Dynamics",
+      "notes": "SEC 10-K filed 2022-02-28. Accession: 0001558370-22-002377"
+    },
+    {
+      "year": 2021,
+      "url": "https://www.sec.gov/Archives/edgar/data/1022671/000155837021002129/stld-20201231x10k.htm",
+      "doc_type": "form_10k",
+      "company_name": "Steel Dynamics",
+      "notes": "SEC 10-K filed 2021-03-01. Accession: 0001558370-21-002129"
+    },
+    {
+      "year": 2020,
+      "url": "https://www.sec.gov/Archives/edgar/data/1022671/000155837020001641/stld-20191231x10kf63a8c.htm",
+      "doc_type": "form_10k",
+      "company_name": "Steel Dynamics",
+      "notes": "SEC 10-K filed 2020-02-27. Accession: 0001558370-20-001641"
+    },
+    {
+      "year": 2019,
+      "url": "https://www.sec.gov/Archives/edgar/data/1022671/000114420419010579/stld-20181231x10k.htm",
+      "doc_type": "form_10k",
+      "company_name": "Steel Dynamics",
+      "notes": "SEC 10-K filed 2019-02-27. Accession: 0001144204-19-010579"
+    }
+  ],
+  "ternium": [
+    {
+      "year": 2025,
+      "url": "https://www.sec.gov/Archives/edgar/data/1342874/000134287425000024/tx-20241231.htm",
+      "doc_type": "form_20f",
+      "company_name": "Ternium",
+      "notes": "SEC 20-F filed 2025-03-28. Accession: 0001342874-25-000024"
+    },
+    {
+      "year": 2024,
+      "url": "https://www.sec.gov/Archives/edgar/data/1342874/000134287424000018/tx-20231231.htm",
+      "doc_type": "form_20f",
+      "company_name": "Ternium",
+      "notes": "SEC 20-F filed 2024-03-28. Accession: 0001342874-24-000018"
+    },
+    {
+      "year": 2023,
+      "url": "https://www.sec.gov/Archives/edgar/data/1342874/000134287423000021/tx-20221231.htm",
+      "doc_type": "form_20f",
+      "company_name": "Ternium",
+      "notes": "SEC 20-F filed 2023-03-30. Accession: 0001342874-23-000021"
+    },
+    {
+      "year": 2022,
+      "url": "https://www.sec.gov/Archives/edgar/data/1342874/000134287422000023/tx-20211231.htm",
+      "doc_type": "form_20f",
+      "company_name": "Ternium",
+      "notes": "SEC 20-F filed 2022-03-30. Accession: 0001342874-22-000023"
+    },
+    {
+      "year": 2021,
+      "url": "https://www.sec.gov/Archives/edgar/data/1342874/000134287421000031/tx-20201231.htm",
+      "doc_type": "form_20f",
+      "company_name": "Ternium",
+      "notes": "SEC 20-F filed 2021-03-31. Accession: 0001342874-21-000031"
+    },
+    {
+      "year": 2020,
+      "url": "https://www.sec.gov/Archives/edgar/data/1342874/000134287420000029/a2019ternium20-f.htm",
+      "doc_type": "form_20f",
+      "company_name": "Ternium",
+      "notes": "SEC 20-F filed 2020-04-09. Accession: 0001342874-20-000029"
+    },
+    {
+      "year": 2019,
+      "url": "https://www.sec.gov/Archives/edgar/data/1342874/000134287419000026/a2018ternium20-f.htm",
+      "doc_type": "form_20f",
+      "company_name": "Ternium",
+      "notes": "SEC 20-F filed 2019-04-16. Accession: 0001342874-19-000026"
+    }
+  ],
+  "gerdau": [
+    {
+      "year": 2025,
+      "url": "https://www.sec.gov/Archives/edgar/data/1073404/000141057825000353/ggb-20241231x20f.htm",
+      "doc_type": "form_20f",
+      "company_name": "Gerdau",
+      "notes": "SEC 20-F filed 2025-03-14. Accession: 0001410578-25-000353"
+    },
+    {
+      "year": 2024,
+      "url": "https://www.sec.gov/Archives/edgar/data/1073404/000110465924040516/ggb-20231231x20f.htm",
+      "doc_type": "form_20f",
+      "company_name": "Gerdau",
+      "notes": "SEC 20-F filed 2024-03-28. Accession: 0001104659-24-040516"
+    },
+    {
+      "year": 2023,
+      "url": "https://www.sec.gov/Archives/edgar/data/1073404/000110465923040166/ggb-20221231x20f.htm",
+      "doc_type": "form_20f",
+      "company_name": "Gerdau",
+      "notes": "SEC 20-F filed 2023-03-31. Accession: 0001104659-23-040166"
+    },
+    {
+      "year": 2022,
+      "url": "https://www.sec.gov/Archives/edgar/data/1073404/000110465922041058/ggb-20211231x20f.htm",
+      "doc_type": "form_20f",
+      "company_name": "Gerdau",
+      "notes": "SEC 20-F filed 2022-03-31. Accession: 0001104659-22-041058"
+    },
+    {
+      "year": 2021,
+      "url": "https://www.sec.gov/Archives/edgar/data/1073404/000110465921053189/tm212083d1_20f.htm",
+      "doc_type": "form_20f",
+      "company_name": "Gerdau",
+      "notes": "SEC 20-F filed 2021-04-21. Accession: 0001104659-21-053189"
+    },
+    {
+      "year": 2020,
+      "url": "https://www.sec.gov/Archives/edgar/data/1073404/000110465920041231/tm1928411-1_20f.htm",
+      "doc_type": "form_20f",
+      "company_name": "Gerdau",
+      "notes": "SEC 20-F filed 2020-03-31. Accession: 0001104659-20-041231"
+    },
+    {
+      "year": 2019,
+      "url": "https://www.sec.gov/Archives/edgar/data/1073404/000110465919018684/a19-2248_120f.htm",
+      "doc_type": "form_20f",
+      "company_name": "Gerdau",
+      "notes": "SEC 20-F filed 2019-03-29. Accession: 0001104659-19-018684"
+    }
+  ],
+  "posco": [
+    {
+      "year": 2025,
+      "url": "https://www.sec.gov/Archives/edgar/data/889132/000119312525104983/d928283d20f.htm",
+      "doc_type": "form_20f",
+      "company_name": "POSCO Holdings",
+      "notes": "SEC 20-F filed 2025-04-30. Accession: 0001193125-25-104983"
+    },
+    {
+      "year": 2024,
+      "url": "https://www.sec.gov/Archives/edgar/data/889132/000119312524119728/d721789d20f.htm",
+      "doc_type": "form_20f",
+      "company_name": "POSCO Holdings",
+      "notes": "SEC 20-F filed 2024-04-29. Accession: 0001193125-24-119728"
+    },
+    {
+      "year": 2023,
+      "url": "https://www.sec.gov/Archives/edgar/data/889132/000119312523123987/d399110d20f.htm",
+      "doc_type": "form_20f",
+      "company_name": "POSCO Holdings",
+      "notes": "SEC 20-F filed 2023-04-28. Accession: 0001193125-23-123987"
+    },
+    {
+      "year": 2022,
+      "url": "https://www.sec.gov/Archives/edgar/data/889132/000119312522125360/d271339d20f.htm",
+      "doc_type": "form_20f",
+      "company_name": "POSCO Holdings",
+      "notes": "SEC 20-F filed 2022-04-28. Accession: 0001193125-22-125360"
+    },
+    {
+      "year": 2021,
+      "url": "https://www.sec.gov/Archives/edgar/data/889132/000119312521138326/d21283d20f.htm",
+      "doc_type": "form_20f",
+      "company_name": "POSCO Holdings",
+      "notes": "SEC 20-F filed 2021-04-29. Accession: 0001193125-21-138326"
+    },
+    {
+      "year": 2020,
+      "url": "https://www.sec.gov/Archives/edgar/data/889132/000119312520124495/d817229d20f.htm",
+      "doc_type": "form_20f",
+      "company_name": "POSCO Holdings",
+      "notes": "SEC 20-F filed 2020-04-29. Accession: 0001193125-20-124495"
+    },
+    {
+      "year": 2019,
+      "url": "https://www.sec.gov/Archives/edgar/data/889132/000119312519127060/d629506d20f.htm",
+      "doc_type": "form_20f",
+      "company_name": "POSCO Holdings",
+      "notes": "SEC 20-F filed 2019-04-30. Accession: 0001193125-19-127060"
+    }
+  ],
+  "arcelormittal": [
+    {
+      "year": 2025,
+      "url": "https://www.sec.gov/Archives/edgar/data/1243429/000124342925000017/mt-20241231.htm",
+      "doc_type": "form_20f",
+      "company_name": "ArcelorMittal",
+      "notes": "SEC 20-F filed 2025-03-10. Accession: 0001243429-25-000017"
+    },
+    {
+      "year": 2024,
+      "url": "https://www.sec.gov/Archives/edgar/data/1243429/000124342924000005/mt-20231231.htm",
+      "doc_type": "form_20f",
+      "company_name": "ArcelorMittal",
+      "notes": "SEC 20-F filed 2024-02-28. Accession: 0001243429-24-000005"
+    },
+    {
+      "year": 2023,
+      "url": "https://www.sec.gov/Archives/edgar/data/1243429/000124342923000005/mt-20221231.htm",
+      "doc_type": "form_20f",
+      "company_name": "ArcelorMittal",
+      "notes": "SEC 20-F filed 2023-03-08. Accession: 0001243429-23-000005"
+    },
+    {
+      "year": 2022,
+      "url": "https://www.sec.gov/Archives/edgar/data/1243429/000124342922000009/mt-20211231.htm",
+      "doc_type": "form_20f",
+      "company_name": "ArcelorMittal",
+      "notes": "SEC 20-F filed 2022-03-11. Accession: 0001243429-22-000009"
+    },
+    {
+      "year": 2021,
+      "url": "https://www.sec.gov/Archives/edgar/data/1243429/000124342921000004/mt-20201231.htm",
+      "doc_type": "form_20f",
+      "company_name": "ArcelorMittal",
+      "notes": "SEC 20-F filed 2021-03-08. Accession: 0001243429-21-000004"
+    },
+    {
+      "year": 2020,
+      "url": "https://www.sec.gov/Archives/edgar/data/1243429/000124342920000004/mt-31122019x20xfdocume.htm",
+      "doc_type": "form_20f",
+      "company_name": "ArcelorMittal",
+      "notes": "SEC 20-F filed 2020-03-03. Accession: 0001243429-20-000004"
+    },
+    {
+      "year": 2019,
+      "url": "https://www.sec.gov/Archives/edgar/data/1243429/000124342919000005/mt-31122018x20xfdocume.htm",
+      "doc_type": "form_20f",
+      "company_name": "ArcelorMittal",
+      "notes": "SEC 20-F filed 2019-02-25. Accession: 0001243429-19-000005"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+==============================================
+Steel Company Report Downloader
+Started: Thu Feb 12 22:45:58 AEST 2026
+==============================================
+
+=== TATA STEEL ===
+  OK (0 MB): tata-steel-sustainability-report-fy2024.pdf
+  OK (0 MB): tata-steel-sustainability-report-fy2023.pdf
+  OK (.1 MB): tata-steel-europe-sustainability-2024.pdf
+  OK (.1 MB): tata-steel-europe-sustainability-2023.pdf
+
+=== POSCO ===
+  FAIL (HTTP 404, 196B): posco-sustainability-2024.pdf <- https://sustainability.posco.com/assets_eng/file/POSCO_Sustainability_Report_2024_eng.pdf
+  FAIL (HTTP 000000, 0B): posco-annual-report-2023.pdf <- https://www.posco-holdings.com/assets/file/ir/Annual_Report_2023_eng.pdf
+  FAIL (HTTP 000000, 0B): posco-annual-report-2022.pdf <- https://www.posco-holdings.com/assets/file/ir/Annual_Report_2022_eng.pdf
+  FAIL (HTTP 404, 196B): posco-tcfd-2023.pdf <- https://sustainability.posco.com/assets_eng/file/POSCO_TCFD_Report_2023_eng.pdf
+
+=== NIPPON STEEL ===
+  FAIL (HTTP 404, 45101B): nippon-steel-esg-databook-2024.pdf <- https://www.nipponsteel.com/en/csr/report/pdf/report2024_databook_e.pdf
+  FAIL (HTTP 404, 45101B): nippon-steel-esg-databook-2023.pdf <- https://www.nipponsteel.com/en/csr/report/pdf/report2023_databook_e.pdf
+  FAIL (HTTP 404, 45101B): nippon-steel-factbook-2024.pdf <- https://www.nipponsteel.com/en/ir/library/pdf/factbook2024_e.pdf
+  FAIL (HTTP 404, 45101B): nippon-steel-factbook-2023.pdf <- https://www.nipponsteel.com/en/ir/library/pdf/factbook2023_e.pdf
+  FAIL (HTTP 404, 45101B): nippon-steel-carbon-neutral-report-2024.pdf <- https://www.nipponsteel.com/en/csr/env/pdf/carbon_neutral_report2024_e.pdf
+
+=== JSW STEEL ===
+  FAIL (HTTP 404, 12196B): jsw-steel-sustainability-report-2024.pdf <- https://www.jsw.in/sites/default/files/assets/downloads/steel/Sustainability/JSW-Steel-Sustainability-Report-2023-24.pdf
+  FAIL (HTTP 404, 12196B): jsw-steel-sustainability-report-2023.pdf <- https://www.jsw.in/sites/default/files/assets/downloads/steel/Sustainability/JSW-Steel-Sustainability-Report-2022-23.pdf
+
+=== THYSSENKRUPP ===
+  FAIL (HTTP 404, 206989B): thyssenkrupp-sustainability-report-2024.pdf <- https://www.thyssenkrupp.com/media/content_1/company/sustainability_3/2024_sustainability_report/thyssenkrupp-sustainability-report-2023-2024-en.pdf
+  FAIL (HTTP 404, 206989B): thyssenkrupp-sustainability-report-2023.pdf <- https://www.thyssenkrupp.com/media/content_1/company/sustainability_3/2023_sustainability_report/thyssenkrupp-sustainability-report-2022-2023-en.pdf
+  FAIL (HTTP 404, 217903B): thyssenkrupp-steel-climate-strategy.pdf <- https://www.thyssenkrupp-steel.com/media/content_1/company_3/sustainability_3/thyssenkrupp_steel_climate_strategy_en.pdf
+
+=== SSAB ===
+  FAIL (HTTP 404, 1237835B): ssab-sustainability-report-2024.pdf <- https://www.ssab.com/en/investors/reports-and-presentations/annual-report-2024/sustainability-report-2024
+  FAIL (HTTP 404, 3167B): ssab-annual-report-2024.pdf <- https://www.ssab.com/-/media/files/company/investors/annual-reports/2024/ssab-annual-report-2024.pdf
+  FAIL (HTTP 404, 3167B): ssab-fossil-free-steel-factsheet.pdf <- https://www.ssab.com/-/media/files/company/sustainability/ssab-fossil-free-steel.pdf
+
+=== BLUESCOPE STEEL ===
+  FAIL (HTTP 404, 205090B): bluescope-sustainability-report-2024.pdf <- https://www.bluescope.com/-/media/project/bluescopewebsite/files/sustainability/sustainability-report-2024.pdf
+  FAIL (HTTP 404, 205090B): bluescope-sustainability-report-2023.pdf <- https://www.bluescope.com/-/media/project/bluescopewebsite/files/sustainability/sustainability-report-2023.pdf
+  FAIL (HTTP 404, 205090B): bluescope-climate-action-report-2024.pdf <- https://www.bluescope.com/-/media/project/bluescopewebsite/files/sustainability/climate-action-report-2024.pdf
+
+=== NUCOR ===
+  FAIL (HTTP 404, 61882B): nucor-sustainability-report-2024.pdf <- https://nucor.com/-/media/Files/N/Nucor-Corp/sustainability/Nucor-Sustainability-Report-2024.pdf
+  FAIL (HTTP 404, 61868B): nucor-10k-2024.pdf <- https://nucor.com/-/media/Files/N/Nucor-Corp/annual-reports/2024-annual-report.pdf
+  FAIL (HTTP 404, 61868B): nucor-10k-2023.pdf <- https://nucor.com/-/media/Files/N/Nucor-Corp/annual-reports/2023-annual-report.pdf
+
+=== CLEVELAND-CLIFFS ===
+  FAIL (HTTP 404, 41081B): cleveland-cliffs-sustainability-report-2024.pdf <- https://www.clevelandcliffs.com/-/media/files/sustainability/2024-sustainability-report.pdf
+  FAIL (HTTP 404, 41081B): cleveland-cliffs-sustainability-report-2023.pdf <- https://www.clevelandcliffs.com/-/media/files/sustainability/2023-sustainability-report.pdf
+  FAIL (HTTP 404, 41065B): cleveland-cliffs-10k-2024.pdf <- https://www.clevelandcliffs.com/-/media/files/annual-reports/2024-annual-report.pdf
+
+=== GERDAU ===
+  FAIL (HTTP 404, 48054B): gerdau-integrated-report-2024.pdf <- https://www.gerdau.com/media/2024/gerdau-integrated-report-2024.pdf
+  FAIL (HTTP 404, 48051B): gerdau-sustainability-report-2024.pdf <- https://www.gerdau.com/media/2024/gerdau-esg-report-2024-en.pdf
+  FAIL (HTTP 404, 48051B): gerdau-sustainability-report-2023.pdf <- https://www.gerdau.com/media/2023/gerdau-esg-report-2023-en.pdf
+
+=== JFE HOLDINGS ===
+  FAIL (HTTP 404, 2664B): jfe-esg-databook-2024.pdf <- https://www.jfe-holdings.co.jp/en/csr/report/pdf/2024/esg_databook2024_e.pdf
+  FAIL (HTTP 404, 2664B): jfe-esg-databook-2023.pdf <- https://www.jfe-holdings.co.jp/en/csr/report/pdf/2023/esg_databook2023_e.pdf
+  FAIL (HTTP 404, 2664B): jfe-factbook-2024.pdf <- https://www.jfe-holdings.co.jp/en/investor/library/factbook/pdf/factbook2024_e.pdf
+  FAIL (HTTP 404, 2663B): jfe-carbon-neutral-report-2024.pdf <- https://www.jfe-holdings.co.jp/en/csr/environment/pdf/carbon_neutral_2024_e.pdf
+
+=== US STEEL ===
+  FAIL (HTTP 404, 179279B): us-steel-esg-report-2024.pdf <- https://www.ussteel.com/-/media/project/ussteel/files/sustainability/2024-esg-report.pdf
+  FAIL (HTTP 404, 179279B): us-steel-esg-report-2023.pdf <- https://www.ussteel.com/-/media/project/ussteel/files/sustainability/2023-esg-report.pdf
+  FAIL (HTTP 404, 179504B): us-steel-annual-report-2024.pdf <- https://www.ussteel.com/-/media/project/ussteel/files/investors/annual-reports/2024-annual-report.pdf
+
+=== HYUNDAI STEEL ===
+  FAIL (HTTP 404, 4064B): hyundai-steel-sustainability-report-2024.pdf <- https://www.hyundai-steel.com/en/common/file/sustDown.do?file=Hyundai_Steel_Sustainability_Report_2024_ENG.pdf
+  FAIL (HTTP 404, 4064B): hyundai-steel-carbon-neutrality-report-2024.pdf <- https://www.hyundai-steel.com/en/common/file/sustDown.do?file=Hyundai_Steel_Carbon_Neutrality_Report_2024_ENG.pdf
+
+=== KOBE STEEL ===
+  FAIL (HTTP 404, 53589B): kobelco-esg-databook-2024.pdf <- https://www.kobelco.co.jp/english/about_kobelco/csr/files/esg_databook_2024.pdf
+  FAIL (HTTP 404, 53589B): kobelco-esg-databook-2023.pdf <- https://www.kobelco.co.jp/english/about_kobelco/csr/files/esg_databook_2023.pdf
+  FAIL (HTTP 404, 53589B): kobelco-integrated-report-2024.pdf <- https://www.kobelco.co.jp/english/ir/integrated_report/files/2024_integrated_report_e.pdf
+
+=== VOESTALPINE ===
+  FAIL (HTTP 404, 65776B): voestalpine-sustainability-report-2024.pdf <- https://www.voestalpine.com/group/static/sites/group/.downloads/en/publications/2023-24-sustainability-report-en.pdf
+  FAIL (HTTP 404, 65776B): voestalpine-sustainability-report-2023.pdf <- https://www.voestalpine.com/group/static/sites/group/.downloads/en/publications/2022-23-sustainability-report-en.pdf
+  FAIL (HTTP 404, 65464B): voestalpine-corporate-responsibility-2024.pdf <- https://www.voestalpine.com/group/static/sites/group/.downloads/en/publications/2023-24-cr-report-en.pdf
+
+=== SAIL ===
+  FAIL (HTTP 404, 111674B): sail-sustainability-report-2024.pdf <- https://sail.co.in/sites/default/files/SAIL_Sustainability_Report_2023-24.pdf
+  FAIL (HTTP 404, 111674B): sail-sustainability-report-2023.pdf <- https://sail.co.in/sites/default/files/SAIL_Sustainability_Report_2022-23.pdf
+
+=== STEEL DYNAMICS ===
+  FAIL (HTTP 000000, 0B): steel-dynamics-sustainability-report-2024.pdf <- https://www.stld.com/-/media/files/sustainability/2024-sustainability-report.pdf
+  FAIL (HTTP 000000, 0B): steel-dynamics-sustainability-report-2023.pdf <- https://www.stld.com/-/media/files/sustainability/2023-sustainability-report.pdf
+  FAIL (HTTP 000000, 0B): steel-dynamics-annual-report-2024.pdf <- https://www.stld.com/-/media/files/annual-reports/2024-annual-report.pdf
+
+=== SALZGITTER ===
+  FAIL (HTTP 404, 969752B): salzgitter-sustainability-report-2024.pdf <- https://www.salzgitter-ag.com/fileadmin/salzgitter-ag/06_MediaRelations/04_NHB/NHB_2024_E.pdf
+  FAIL (HTTP 404, 969752B): salzgitter-sustainability-report-2023.pdf <- https://www.salzgitter-ag.com/fileadmin/salzgitter-ag/06_MediaRelations/04_NHB/NHB_2023_E.pdf
+  FAIL (HTTP 404, 969752B): salzgitter-factsheet-2024.pdf <- https://www.salzgitter-ag.com/fileadmin/salzgitter-ag/06_MediaRelations/01_Factsheet/Factsheet_2024_E.pdf
+
+=== TERNIUM ===
+  FAIL (HTTP 404, 0B): ternium-sustainability-report-2024.pdf <- https://www.ternium.com/-/media/Files/T/Ternium/sustainability/Ternium-Sustainability-Report-2024.pdf
+  FAIL (HTTP 404, 0B): ternium-sustainability-report-2023.pdf <- https://www.ternium.com/-/media/Files/T/Ternium/sustainability/Ternium-Sustainability-Report-2023.pdf
+  FAIL (HTTP 404, 0B): ternium-annual-report-2024.pdf <- https://www.ternium.com/-/media/Files/T/Ternium/annual-report/Ternium-Annual-Report-2024.pdf
+
+=== NLMK ===
+  FAIL (HTTP 000000, 0B): nlmk-sustainability-report-2021.pdf <- https://nlmk.com/upload/iblock/nlmk-sustainability-report-2021-eng.pdf
+  FAIL (HTTP 000000, 0B): nlmk-sustainability-report-2020.pdf <- https://nlmk.com/upload/iblock/nlmk-sustainability-report-2020-eng.pdf
+
+=== EVRAZ ===
+  FAIL (HTTP 200, 2090B): evraz-sustainability-report-2021.pdf <- https://www.evraz.com/upload/iblock/evraz-sustainability-report-2021.pdf
+  FAIL (HTTP 200, 2090B): evraz-sustainability-report-2020.pdf <- https://www.evraz.com/upload/iblock/evraz-sustainability-report-2020.pdf
+
+=== SEVERSTAL ===
+  FAIL (HTTP 404, 548B): severstal-sustainability-report-2021.pdf <- https://severstal.com/upload/iblock/severstal-sustainability-report-2021-eng.pdf
+
+=== CHINA STEEL CORPORATION ===
+  FAIL (HTTP 404, 1161B): china-steel-csr-report-2023.pdf <- https://www.csc.com.tw/csc/hr/csr/pdf/CSC_CSR_Report_2023_EN.pdf
+  FAIL (HTTP 404, 1161B): china-steel-csr-report-2022.pdf <- https://www.csc.com.tw/csc/hr/csr/pdf/CSC_CSR_Report_2022_EN.pdf
+  FAIL (HTTP 404, 1161B): china-steel-annual-report-2023.pdf <- https://www.csc.com.tw/csc/hr/aReport/pdf/CSC_Annual_Report_2023_EN.pdf
+
+=== BAOSHAN / BAOSTEEL ===
+  OK (0 MB): baosteel-environmental-report-2024.pdf
+  OK (0 MB): baosteel-environmental-report-2023.pdf
+
+==============================================
+Download Complete: Thu Feb 12 22:50:44 AEST 2026
+==============================================
+  Successful: 6
+  Failed:     63
+  Skipped:    0
+  Total:      69
+==============================================

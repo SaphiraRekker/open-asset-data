@@ -1,0 +1,1008 @@
+{
+  "_metadata": {
+    "description": "Additional report URLs beyond what is tracked in report_urls.json. These URLs were compiled from known corporate IR page structures and standard URL patterns. All URLs should be verified before use, as corporate websites may restructure links.",
+    "generated_date": "2026-02-12",
+    "doc_type_legend": {
+      "sustainability_report": "Standalone ESG/sustainability/CSR report",
+      "factbook": "Operational data summary / fact book / fact sheet",
+      "investor_presentation": "Investor day / capital markets day / earnings presentation",
+      "form_10k": "SEC Form 10-K annual filing",
+      "form_20f": "SEC Form 20-F annual filing",
+      "climate_report": "Standalone climate / environment / TCFD report",
+      "country_report": "Subsidiary or country-specific report",
+      "cdp_response": "CDP climate change questionnaire response",
+      "integrated_report": "Combined annual + sustainability integrated report",
+      "annual_report": "Annual financial report"
+    }
+  },
+
+  "tata_steel": [
+    {
+      "year": 2024,
+      "url": "https://www.tatasteel.com/media/21243/sustainability-report-fy2024.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Tata Steel",
+      "notes": "Separate sustainability report for FY2023-24. Verify URL - Tata Steel publishes standalone sustainability/ESG reports in addition to their integrated report."
+    },
+    {
+      "year": 2023,
+      "url": "https://www.tatasteel.com/media/18372/sustainability-report-fy2023.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Tata Steel",
+      "notes": "Standalone sustainability report FY2022-23. URL pattern estimated."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.tatasteel.com/media/21240/tata-steel-investor-presentation-fy2024.pdf",
+      "doc_type": "investor_presentation",
+      "company_name": "Tata Steel",
+      "notes": "Investor presentation. Tata Steel publishes quarterly investor presentations. URL estimated - check tatasteel.com/investors/presentations/"
+    },
+    {
+      "year": 2024,
+      "url": "https://www.tatasteeleurope.com/sites/default/files/tata-steel-europe-sustainability-report-2024.pdf",
+      "doc_type": "country_report",
+      "company_name": "Tata Steel",
+      "region": "Europe",
+      "notes": "Tata Steel Europe (Netherlands/UK) publishes separate sustainability reports. Verify URL at tatasteeleurope.com"
+    },
+    {
+      "year": 2023,
+      "url": "https://www.tatasteeleurope.com/sites/default/files/tata-steel-europe-sustainability-report-2023.pdf",
+      "doc_type": "country_report",
+      "company_name": "Tata Steel",
+      "region": "Europe",
+      "notes": "Tata Steel Europe sustainability report. Verify URL."
+    }
+  ],
+
+  "posco": [
+    {
+      "year": 2024,
+      "url": "https://sustainability.posco.com/assets_eng/file/POSCO_Sustainability_Report_2024_eng.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "POSCO Holdings",
+      "notes": "Following consistent URL pattern from 2021-2023 reports. High confidence in pattern."
+    },
+    {
+      "year": 2023,
+      "url": "https://www.posco-holdings.com/assets/file/ir/Annual_Report_2023_eng.pdf",
+      "doc_type": "annual_report",
+      "company_name": "POSCO Holdings",
+      "notes": "POSCO Holdings annual report (separate from sustainability report already tracked). Verify URL at posco-holdings.com IR section."
+    },
+    {
+      "year": 2022,
+      "url": "https://www.posco-holdings.com/assets/file/ir/Annual_Report_2022_eng.pdf",
+      "doc_type": "annual_report",
+      "company_name": "POSCO Holdings",
+      "notes": "POSCO Holdings annual report. Verify URL."
+    },
+    {
+      "year": 2023,
+      "url": "https://www.posco.co.kr/docs/eng/ir/POSCO_Factbook_2023.pdf",
+      "doc_type": "factbook",
+      "company_name": "POSCO Holdings",
+      "notes": "POSCO publishes a factbook with operational data. Verify URL - check posco.co.kr or posco-holdings.com IR section."
+    },
+    {
+      "year": 2023,
+      "url": "https://sustainability.posco.com/assets_eng/file/POSCO_TCFD_Report_2023_eng.pdf",
+      "doc_type": "climate_report",
+      "company_name": "POSCO Holdings",
+      "notes": "POSCO publishes a separate TCFD/climate report. Verify URL."
+    },
+    {
+      "year": 2023,
+      "url": "https://www.posco.co.kr/docs/eng/sr/2023/POSCO_CDP_2023.pdf",
+      "doc_type": "cdp_response",
+      "company_name": "POSCO Holdings",
+      "notes": "POSCO has made CDP responses publicly available. Verify exact URL."
+    }
+  ],
+
+  "nippon_steel": [
+    {
+      "year": 2024,
+      "url": "https://www.nipponsteel.com/en/sustainability/report/pdf/report2024en.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Nippon Steel",
+      "notes": "Following URL pattern from 2022-2023 reports. High confidence."
+    },
+    {
+      "year": 2023,
+      "url": "https://www.nipponsteel.com/en/ir/library/pdf/nsc_en_ir_2023_all.pdf",
+      "doc_type": "integrated_report",
+      "company_name": "Nippon Steel",
+      "notes": "Integrated report following 2024 URL pattern."
+    },
+    {
+      "year": 2022,
+      "url": "https://www.nipponsteel.com/en/ir/library/pdf/nsc_en_ir_2022_all.pdf",
+      "doc_type": "integrated_report",
+      "company_name": "Nippon Steel",
+      "notes": "Integrated report. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.nipponsteel.com/en/ir/library/pdf/factbook2024e.pdf",
+      "doc_type": "factbook",
+      "company_name": "Nippon Steel",
+      "notes": "Nippon Steel publishes a factbook with plant-level data. Check nipponsteel.com/en/ir/library/ for exact URL. Also try /en/ir/library/pdf/fb2024e.pdf"
+    },
+    {
+      "year": 2023,
+      "url": "https://www.nipponsteel.com/en/ir/library/pdf/factbook2023e.pdf",
+      "doc_type": "factbook",
+      "company_name": "Nippon Steel",
+      "notes": "Nippon Steel factbook. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.nipponsteel.com/en/csr/report/pdf/environment2024en.pdf",
+      "doc_type": "climate_report",
+      "company_name": "Nippon Steel",
+      "notes": "Nippon Steel publishes environment-specific reports. Verify URL - check sustainability section."
+    }
+  ],
+
+  "jsw_steel": [
+    {
+      "year": 2024,
+      "url": "https://www.jswsteel.in/sites/default/files/assets/downloads/steel/IR/Sustainability/JSW-Steel-Sustainability-Report-2023-24.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "JSW Steel",
+      "notes": "JSW Steel publishes separate sustainability reports. Verify URL at jswsteel.in sustainability section."
+    },
+    {
+      "year": 2023,
+      "url": "https://www.jswsteel.in/sites/default/files/assets/downloads/steel/IR/Sustainability/JSW-Steel-Sustainability-Report-2022-23.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "JSW Steel",
+      "notes": "Sustainability report. Verify URL."
+    },
+    {
+      "year": 2022,
+      "url": "https://www.jsw.in/sites/default/files/assets/downloads/steel/IR/Sustainability/JSW-Steel-Sustainability-Report-2021-22.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "JSW Steel",
+      "notes": "Note older reports may use jsw.in instead of jswsteel.in domain."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.jswsteel.in/sites/default/files/assets/downloads/steel/IR/Investor-Presentations/JSW-Steel-Investor-Presentation-Q4-FY24.pdf",
+      "doc_type": "investor_presentation",
+      "company_name": "JSW Steel",
+      "notes": "JSW publishes quarterly investor presentations. URL estimated."
+    }
+  ],
+
+  "thyssenkrupp": [
+    {
+      "year": 2024,
+      "url": "https://d2zo35mdb530wx.cloudfront.net/_binary/UCPthyssenkruppAG/sustainability-report-2023-2024.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "ThyssenKrupp",
+      "notes": "ThyssenKrupp publishes a separate sustainability report. Verify URL at thyssenkrupp.com/en/company/sustainability. Also check ucpcdn.thyssenkrupp.com domain."
+    },
+    {
+      "year": 2023,
+      "url": "https://d2zo35mdb530wx.cloudfront.net/_binary/UCPthyssenkruppAG/sustainability-report-2022-2023.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "ThyssenKrupp",
+      "notes": "Sustainability report. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://d2zo35mdb530wx.cloudfront.net/_binary/UCPthyssenkruppAG/thyssenkrupp-steel-climate-strategy.pdf",
+      "doc_type": "climate_report",
+      "company_name": "ThyssenKrupp",
+      "notes": "ThyssenKrupp Steel Europe climate strategy document. Verify URL - check thyssenkrupp-steel.com"
+    },
+    {
+      "year": 2020,
+      "url": "https://ucpcdn.thyssenkrupp.com/_binary/UCPthyssenkruppAG/thyssenkrupp-GB-en-2019-2020-Web.pdf",
+      "doc_type": "annual_report",
+      "company_name": "ThyssenKrupp",
+      "notes": "Annual report 2019/2020. Fills gap in existing coverage."
+    },
+    {
+      "year": 2019,
+      "url": "https://ucpcdn.thyssenkrupp.com/_binary/UCPthyssenkruppAG/thyssenkrupp-GB-en-2018-2019-Web.pdf",
+      "doc_type": "annual_report",
+      "company_name": "ThyssenKrupp",
+      "notes": "Annual report 2018/2019. Fills gap in existing coverage."
+    }
+  ],
+
+  "ssab": [
+    {
+      "year": 2023,
+      "url": "https://www.ssab.com/-/media/files/company/sustainability/sustainability-report-2023.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "SSAB",
+      "notes": "SSAB publishes a separate sustainability report. Verify URL. Note: sustainability data may be included in the annual report."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.ssab.com/-/media/files/company/sustainability/sustainability-report-2024.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "SSAB",
+      "notes": "Sustainability report. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.ssab.com/-/media/files/company/investors/cmd/ssab-capital-markets-day-2024.pdf",
+      "doc_type": "investor_presentation",
+      "company_name": "SSAB",
+      "notes": "SSAB holds capital markets days. Verify URL at ssab.com investor relations."
+    },
+    {
+      "year": 2023,
+      "url": "https://www.ssab.com/-/media/files/company/sustainability/ssab-climate-report-2023.pdf",
+      "doc_type": "climate_report",
+      "company_name": "SSAB",
+      "notes": "SSAB has a notable fossil-free steel strategy (HYBRIT). May publish climate-specific reports. Verify URL."
+    }
+  ],
+
+  "bluescope_steel": [
+    {
+      "year": 2024,
+      "url": "https://www.bluescope.com/content/dam/bluescope/corporate/bluescope-com/sustainability/reports/2024_BlueScope_Sustainability_Report.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "BlueScope Steel",
+      "notes": "BlueScope publishes separate sustainability reports. Verify URL at bluescope.com/sustainability"
+    },
+    {
+      "year": 2023,
+      "url": "https://www.bluescope.com/content/dam/bluescope/corporate/bluescope-com/sustainability/reports/2023_BlueScope_Sustainability_Report.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "BlueScope Steel",
+      "notes": "Sustainability report. Verify URL."
+    },
+    {
+      "year": 2022,
+      "url": "https://www.bluescope.com/content/dam/bluescope/corporate/bluescope-com/sustainability/reports/2022_BlueScope_Sustainability_Report.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "BlueScope Steel",
+      "notes": "Sustainability report. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.bluescope.com/content/dam/bluescope/corporate/bluescope-com/investor/documents/2024_BlueScope_Climate_Action_Report.pdf",
+      "doc_type": "climate_report",
+      "company_name": "BlueScope Steel",
+      "notes": "BlueScope publishes Climate Action Reports. Verify URL."
+    },
+    {
+      "year": 2023,
+      "url": "https://www.bluescope.com/content/dam/bluescope/corporate/bluescope-com/investor/documents/2023_BlueScope_Climate_Action_Report.pdf",
+      "doc_type": "climate_report",
+      "company_name": "BlueScope Steel",
+      "notes": "Climate Action Report. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.bluescope.com/content/dam/bluescope/corporate/bluescope-com/investor/documents/2024_BlueScope_Investor_Day_Presentation.pdf",
+      "doc_type": "investor_presentation",
+      "company_name": "BlueScope Steel",
+      "notes": "BlueScope holds investor briefings. Verify URL at bluescope.com/investor-centre"
+    }
+  ],
+
+  "nucor": [
+    {
+      "year": 2024,
+      "url": "https://www.sec.gov/Archives/edgar/data/73309/000007330924000019/nue-20231231.htm",
+      "doc_type": "form_10k",
+      "company_name": "Nucor",
+      "notes": "Nucor 10-K for FY2023 filed with SEC. CIK: 0000073309. For direct PDF, use SEC EDGAR. Verify filing number.",
+      "sec_cik": "0000073309",
+      "sec_ticker": "NUE"
+    },
+    {
+      "year": 2023,
+      "url": "https://www.sec.gov/Archives/edgar/data/73309/000007330923000019/nue-20221231.htm",
+      "doc_type": "form_10k",
+      "company_name": "Nucor",
+      "notes": "Nucor 10-K for FY2022. Verify on EDGAR.",
+      "sec_cik": "0000073309"
+    },
+    {
+      "year": 2024,
+      "url": "https://nucor.com/sustainability/-/media/Files/N/Nucor/sustainability/nucor-sustainability-report-2024.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Nucor",
+      "notes": "Nucor ESG/sustainability report. Verify URL at nucor.com/sustainability. Nucor also uses the domain responsibility-reports."
+    },
+    {
+      "year": 2024,
+      "url": "https://nucor.com/sustainability/-/media/Files/N/Nucor/sustainability/nucor-esg-report-2024.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Nucor",
+      "notes": "Alternative URL pattern for ESG report. Verify."
+    },
+    {
+      "year": 2023,
+      "url": "https://nucor.com/-/media/Files/N/Nucor/investor/presentations/nucor-investor-day-2023.pdf",
+      "doc_type": "investor_presentation",
+      "company_name": "Nucor",
+      "notes": "Nucor investor day presentation. Verify URL at nucor.com investor relations."
+    }
+  ],
+
+  "cleveland_cliffs": [
+    {
+      "year": 2024,
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000764065&type=10-K&dateb=&owner=include&count=10",
+      "doc_type": "form_10k",
+      "company_name": "Cleveland-Cliffs",
+      "notes": "SEC EDGAR search page for Cleveland-Cliffs 10-K filings. CIK: 0000764065. Ticker: CLF. Navigate to get actual filing PDFs.",
+      "sec_cik": "0000764065",
+      "sec_ticker": "CLF"
+    },
+    {
+      "year": 2023,
+      "url": "https://www.clevelandcliffs.com/-/media/Files/C/Cleveland-Cliffs/sustainability/2023-sustainability-report.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Cleveland-Cliffs",
+      "notes": "Cleveland-Cliffs sustainability report. Verify URL at clevelandcliffs.com/sustainability"
+    },
+    {
+      "year": 2022,
+      "url": "https://www.clevelandcliffs.com/-/media/Files/C/Cleveland-Cliffs/sustainability/2022-sustainability-report.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Cleveland-Cliffs",
+      "notes": "Sustainability report. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.clevelandcliffs.com/-/media/Files/C/Cleveland-Cliffs/sustainability/2024-sustainability-report.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Cleveland-Cliffs",
+      "notes": "Sustainability report. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.clevelandcliffs.com/-/media/Files/C/Cleveland-Cliffs/investor/presentations/clf-investor-presentation-2024.pdf",
+      "doc_type": "investor_presentation",
+      "company_name": "Cleveland-Cliffs",
+      "notes": "Investor presentation. Verify URL at clevelandcliffs.com/investors/presentations"
+    },
+    {
+      "year": 2023,
+      "url": "https://www.clevelandcliffs.com/-/media/Files/C/Cleveland-Cliffs/sustainability/2023-climate-report.pdf",
+      "doc_type": "climate_report",
+      "company_name": "Cleveland-Cliffs",
+      "notes": "Climate/environment report. Verify URL."
+    }
+  ],
+
+  "gerdau": [
+    {
+      "year": 2024,
+      "url": "https://www2.gerdau.com/sites/gln_gerdau/files/downloadable_files/Gerdau%20Annual%20Report%202024.pdf",
+      "doc_type": "annual_report",
+      "company_name": "Gerdau",
+      "notes": "Following URL pattern from previous years. Verify at gerdau.com investor relations."
+    },
+    {
+      "year": 2023,
+      "url": "https://www2.gerdau.com/sites/gln_gerdau/files/downloadable_files/Gerdau%20ESG%20Report%202023.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Gerdau",
+      "notes": "Gerdau publishes a separate ESG report. Verify URL."
+    },
+    {
+      "year": 2022,
+      "url": "https://www2.gerdau.com/sites/gln_gerdau/files/downloadable_files/Gerdau%20ESG%20Report%202022.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Gerdau",
+      "notes": "ESG report. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www2.gerdau.com/sites/gln_gerdau/files/downloadable_files/gerdau-investor-presentation-2024.pdf",
+      "doc_type": "investor_presentation",
+      "company_name": "Gerdau",
+      "notes": "Investor presentation. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001073404&type=20-F&dateb=&owner=include&count=10",
+      "doc_type": "form_20f",
+      "company_name": "Gerdau",
+      "notes": "Gerdau files 20-F with SEC (NYSE: GGB). CIK: 0001073404. Navigate EDGAR for actual filings.",
+      "sec_cik": "0001073404",
+      "sec_ticker": "GGB"
+    }
+  ],
+
+  "jfe_holdings": [
+    {
+      "year": 2024,
+      "url": "https://www.jfe-holdings.co.jp/en/common/pdf/investor/library/sustainability-report/2024/all.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "JFE Holdings",
+      "notes": "JFE publishes separate sustainability reports. Verify URL pattern at jfe-holdings.co.jp/en/sustainability/"
+    },
+    {
+      "year": 2023,
+      "url": "https://www.jfe-holdings.co.jp/en/common/pdf/investor/library/sustainability-report/2023/all.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "JFE Holdings",
+      "notes": "Sustainability report. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.jfe-holdings.co.jp/en/common/pdf/investor/library/factbook/2024/all.pdf",
+      "doc_type": "factbook",
+      "company_name": "JFE Holdings",
+      "notes": "JFE publishes a factbook. Verify URL at IR section."
+    },
+    {
+      "year": 2023,
+      "url": "https://www.jfe-holdings.co.jp/en/common/pdf/investor/library/factbook/2023/all.pdf",
+      "doc_type": "factbook",
+      "company_name": "JFE Holdings",
+      "notes": "Factbook. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.jfe-holdings.co.jp/en/common/pdf/investor/library/environmental-report/2024/all.pdf",
+      "doc_type": "climate_report",
+      "company_name": "JFE Holdings",
+      "notes": "JFE environmental report. Verify URL."
+    }
+  ],
+
+  "us_steel": [
+    {
+      "year": 2024,
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000100885&type=10-K&dateb=&owner=include&count=10",
+      "doc_type": "form_10k",
+      "company_name": "US Steel",
+      "notes": "US Steel 10-K filings. CIK: 0000100885. Ticker: X. Navigate EDGAR for actual filing PDFs.",
+      "sec_cik": "0000100885",
+      "sec_ticker": "X"
+    },
+    {
+      "year": 2023,
+      "url": "https://www.ussteel.com/sites/default/files/2024-ESG-Report.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "US Steel",
+      "notes": "US Steel ESG report. Verify URL at ussteel.com/sustainability"
+    },
+    {
+      "year": 2022,
+      "url": "https://www.ussteel.com/sites/default/files/2023-ESG-Report.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "US Steel",
+      "notes": "ESG report. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.ussteel.com/sites/default/files/us-steel-investor-presentation-2024.pdf",
+      "doc_type": "investor_presentation",
+      "company_name": "US Steel",
+      "notes": "Investor presentation. Verify at ussteel.com/investors"
+    }
+  ],
+
+  "hyundai_steel": [
+    {
+      "year": 2024,
+      "url": "https://www.hyundai-steel.com/common/fileDownload/50067",
+      "doc_type": "climate_report",
+      "company_name": "Hyundai Steel",
+      "notes": "Hyundai Steel may publish separate environmental/climate reports. Verify at hyundai-steel.com ESG section. The fileDownload ID is estimated."
+    },
+    {
+      "year": 2023,
+      "url": "https://www.hyundai-steel.com/common/fileDownload/29810",
+      "doc_type": "investor_presentation",
+      "company_name": "Hyundai Steel",
+      "notes": "Investor presentation. Hyundai Steel uses numeric file IDs. Verify at hyundai-steel.com investor relations."
+    }
+  ],
+
+  "kobe_steel": [
+    {
+      "year": 2024,
+      "url": "https://www.kobelco.co.jp/english/sustainability/reports/pdf/kobelco-csr-report-2024-en.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Kobe Steel",
+      "notes": "KOBELCO publishes sustainability/CSR reports. Verify URL at kobelco.co.jp/english/sustainability/"
+    },
+    {
+      "year": 2023,
+      "url": "https://www.kobelco.co.jp/english/sustainability/reports/pdf/kobelco-csr-report-2023-en.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Kobe Steel",
+      "notes": "CSR report. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.kobelco.co.jp/english/ir/factbook/pdf/factbook2024_e.pdf",
+      "doc_type": "factbook",
+      "company_name": "Kobe Steel",
+      "notes": "KOBELCO factbook. Verify URL at IR section."
+    },
+    {
+      "year": 2023,
+      "url": "https://www.kobelco.co.jp/english/ir/factbook/pdf/factbook2023_e.pdf",
+      "doc_type": "factbook",
+      "company_name": "Kobe Steel",
+      "notes": "Factbook. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.kobelco.co.jp/english/sustainability/environment/pdf/environment-report-2024-en.pdf",
+      "doc_type": "climate_report",
+      "company_name": "Kobe Steel",
+      "notes": "Environment report. Verify URL."
+    }
+  ],
+
+  "voestalpine": [
+    {
+      "year": 2024,
+      "url": "https://reports.voestalpine.com/2324/cr/_assets/downloads/entire-va-cr2324.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "voestalpine",
+      "notes": "voestalpine publishes a separate Corporate Responsibility Report. Following URL pattern from annual report URLs. High confidence."
+    },
+    {
+      "year": 2023,
+      "url": "https://reports.voestalpine.com/2223/cr/_assets/downloads/entire-va-cr2223.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "voestalpine",
+      "notes": "Corporate Responsibility Report. Verify URL."
+    },
+    {
+      "year": 2022,
+      "url": "https://reports.voestalpine.com/2122/cr/_assets/downloads/entire-va-cr2122.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "voestalpine",
+      "notes": "Corporate Responsibility Report. Verify URL."
+    },
+    {
+      "year": 2021,
+      "url": "https://reports.voestalpine.com/2021/cr/_assets/downloads/entire-va-cr2021.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "voestalpine",
+      "notes": "Corporate Responsibility Report. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.voestalpine.com/group/static/sites/group/.downloads/en/publications-2023-24/voestalpine-factsheet-2023-24.pdf",
+      "doc_type": "factbook",
+      "company_name": "voestalpine",
+      "notes": "voestalpine factsheet. Verify URL at voestalpine.com publications."
+    },
+    {
+      "year": 2024,
+      "url": "https://reports.voestalpine.com/2324/cr/_assets/downloads/va-climate-report-2324.pdf",
+      "doc_type": "climate_report",
+      "company_name": "voestalpine",
+      "notes": "voestalpine climate report (if published separately). Verify URL."
+    }
+  ],
+
+  "sail": [
+    {
+      "year": 2024,
+      "url": "https://www.sail.co.in/sites/default/files/SAIL-Sustainability-Report-2023-24.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "SAIL",
+      "notes": "SAIL publishes sustainability reports. Verify URL at sail.co.in sustainability section."
+    },
+    {
+      "year": 2023,
+      "url": "https://sail.co.in/sites/default/files/SAIL-Sustainability-Report-2022-23.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "SAIL",
+      "notes": "Sustainability report. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.sail.co.in/sites/default/files/sail-statistics-2023-24.pdf",
+      "doc_type": "factbook",
+      "company_name": "SAIL",
+      "notes": "SAIL Statistics for Iron & Steel. SAIL publishes statistical booklets. Verify URL."
+    }
+  ],
+
+  "steel_dynamics": [
+    {
+      "year": 2024,
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001022671&type=10-K&dateb=&owner=include&count=10",
+      "doc_type": "form_10k",
+      "company_name": "Steel Dynamics",
+      "notes": "Steel Dynamics 10-K filings. CIK: 0001022671. Ticker: STLD. Navigate EDGAR for actual filing PDFs.",
+      "sec_cik": "0001022671",
+      "sec_ticker": "STLD"
+    },
+    {
+      "year": 2023,
+      "url": "https://www.stld.com/-/media/Files/S/Steel-Dynamics/sustainability/SDI-Sustainability-Report-2023.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Steel Dynamics",
+      "notes": "SDI sustainability report. Verify URL at stld.com/sustainability"
+    },
+    {
+      "year": 2022,
+      "url": "https://www.stld.com/-/media/Files/S/Steel-Dynamics/sustainability/SDI-Sustainability-Report-2022.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Steel Dynamics",
+      "notes": "Sustainability report. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.stld.com/-/media/Files/S/Steel-Dynamics/sustainability/SDI-Sustainability-Report-2024.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Steel Dynamics",
+      "notes": "Sustainability report. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.stld.com/-/media/Files/S/Steel-Dynamics/investor/presentations/STLD-Investor-Presentation-2024.pdf",
+      "doc_type": "investor_presentation",
+      "company_name": "Steel Dynamics",
+      "notes": "Investor presentation. Verify URL at stld.com/investor-relations"
+    }
+  ],
+
+  "salzgitter": [
+    {
+      "year": 2023,
+      "url": "https://www.salzgitter-ag.com/fileadmin/footage/MEDIA/SZAG/nachhaltigkeitsbericht/szag-nbe2023-en.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Salzgitter",
+      "notes": "Salzgitter publishes separate sustainability/non-financial reports. Verify URL at salzgitter-ag.com sustainability section."
+    },
+    {
+      "year": 2022,
+      "url": "https://www.salzgitter-ag.com/fileadmin/footage/MEDIA/SZAG/nachhaltigkeitsbericht/szag-nbe2022-en.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Salzgitter",
+      "notes": "Non-financial/sustainability report. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.salzgitter-ag.com/fileadmin/footage/MEDIA/SZAG/nachhaltigkeitsbericht/szag-nbe2024-en.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Salzgitter",
+      "notes": "Non-financial/sustainability report. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.salzgitter-ag.com/fileadmin/footage/MEDIA/SZAG/factsheet/szag-factsheet-2024-en.pdf",
+      "doc_type": "factbook",
+      "company_name": "Salzgitter",
+      "notes": "Salzgitter factsheet. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.salzgitter-ag.com/fileadmin/footage/MEDIA/SZAG/klimabericht/szag-climate-report-2024-en.pdf",
+      "doc_type": "climate_report",
+      "company_name": "Salzgitter",
+      "notes": "Salzgitter has a notable green steel strategy (SALCOS). May publish climate reports. Verify URL."
+    }
+  ],
+
+  "ternium": [
+    {
+      "year": 2024,
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001342874&type=20-F&dateb=&owner=include&count=10",
+      "doc_type": "form_20f",
+      "company_name": "Ternium",
+      "notes": "Ternium 20-F filings. CIK: 0001342874. Ticker: TX. Navigate EDGAR for actual filing PDFs.",
+      "sec_cik": "0001342874",
+      "sec_ticker": "TX"
+    },
+    {
+      "year": 2023,
+      "url": "https://www.ternium.com/media/hxdjbfpj/ternium-sustainability-report-2023.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Ternium",
+      "notes": "Ternium sustainability report. Verify URL at ternium.com/sustainability"
+    },
+    {
+      "year": 2022,
+      "url": "https://www.ternium.com/media/sustainability-report-2022.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Ternium",
+      "notes": "Sustainability report. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.ternium.com/media/ternium-sustainability-report-2024.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Ternium",
+      "notes": "Sustainability report. Verify URL."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.ternium.com/media/ternium-investor-presentation-2024.pdf",
+      "doc_type": "investor_presentation",
+      "company_name": "Ternium",
+      "notes": "Investor presentation. Verify URL at ternium.com investor relations."
+    }
+  ],
+
+  "nlmk": [
+    {
+      "year": 2021,
+      "url": "https://nlmk.com/upload/iblock/sustainability/NLMK_Sustainability_Report_2021_eng.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "NLMK",
+      "notes": "NLMK sustainability report. NLMK stopped publishing English reports after 2021 due to sanctions. Verify URL."
+    },
+    {
+      "year": 2020,
+      "url": "https://nlmk.com/upload/iblock/sustainability/NLMK_Sustainability_Report_2020_eng.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "NLMK",
+      "notes": "Sustainability report. Verify URL."
+    },
+    {
+      "year": 2019,
+      "url": "https://nlmk.com/upload/iblock/sustainability/NLMK_Sustainability_Report_2019_eng.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "NLMK",
+      "notes": "Sustainability report. Verify URL."
+    },
+    {
+      "year": 2021,
+      "url": "https://nlmk.com/upload/iblock/ir/NLMK_Factbook_2021.pdf",
+      "doc_type": "factbook",
+      "company_name": "NLMK",
+      "notes": "NLMK published factbooks with operational data. Verify URL."
+    },
+    {
+      "year": 2020,
+      "url": "https://nlmk.com/upload/iblock/ir/NLMK_Factbook_2020.pdf",
+      "doc_type": "factbook",
+      "company_name": "NLMK",
+      "notes": "Factbook. Verify URL."
+    }
+  ],
+
+  "evraz": [
+    {
+      "year": 2021,
+      "url": "https://www.evraz.com/upload/iblock/sustainability/EVRAZ_Sustainability_Report_2021.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Evraz",
+      "notes": "Evraz sustainability report. Last English report before delisting from LSE in 2022. Verify URL."
+    },
+    {
+      "year": 2020,
+      "url": "https://www.evraz.com/upload/iblock/sustainability/EVRAZ_Sustainability_Report_2020.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Evraz",
+      "notes": "Sustainability report. Verify URL."
+    },
+    {
+      "year": 2019,
+      "url": "https://www.evraz.com/upload/iblock/sustainability/EVRAZ_Sustainability_Report_2019.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Evraz",
+      "notes": "Sustainability report. Verify URL."
+    },
+    {
+      "year": 2021,
+      "url": "https://www.evraz.com/upload/iblock/climate/EVRAZ_Climate_Report_2021.pdf",
+      "doc_type": "climate_report",
+      "company_name": "Evraz",
+      "notes": "Evraz published TCFD-aligned climate reports. Verify URL."
+    }
+  ],
+
+  "baoshan_steel": [
+    {
+      "year": 2023,
+      "url": "https://www.baosteel.com/group/contents/2023/baoshan-environmental-report-2023.pdf",
+      "doc_type": "climate_report",
+      "company_name": "Baoshan Iron & Steel",
+      "notes": "Baosteel environmental report. Note: Baoshan/Baosteel annual and sustainability reports already tracked via cninfo.com.cn. Verify URL - reports may only be in Chinese.",
+      "language": "Chinese"
+    }
+  ],
+
+  "china_steel": [
+    {
+      "year": 2022,
+      "url": "https://www.csc.com.tw/csc_e/ss/fin/pdf/year_report111.pdf",
+      "doc_type": "annual_report",
+      "company_name": "China Steel",
+      "notes": "CSC uses ROC year numbering (2022 = ROC 111). This fills gap after existing coverage ends at 2021 (ROC 110). May need web.archive.org wrapper."
+    },
+    {
+      "year": 2023,
+      "url": "https://www.csc.com.tw/csc_e/ss/fin/pdf/year_report112.pdf",
+      "doc_type": "annual_report",
+      "company_name": "China Steel",
+      "notes": "2023 = ROC 112. Verify URL - may need archive.org wrapper."
+    },
+    {
+      "year": 2023,
+      "url": "https://www.csc.com.tw/csc_e/ss/csr/pdf/csr_report_2023_en.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "China Steel",
+      "notes": "CSC publishes CSR/sustainability reports in English. Verify URL at csc.com.tw sustainability section."
+    },
+    {
+      "year": 2022,
+      "url": "https://www.csc.com.tw/csc_e/ss/csr/pdf/csr_report_2022_en.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "China Steel",
+      "notes": "CSR report. Verify URL."
+    },
+    {
+      "year": 2021,
+      "url": "https://www.csc.com.tw/csc_e/ss/csr/pdf/csr_report_2021_en.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "China Steel",
+      "notes": "CSR report. Verify URL."
+    },
+    {
+      "year": 2020,
+      "url": "https://www.csc.com.tw/csc_e/ss/csr/pdf/csr_report_2020_en.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "China Steel",
+      "notes": "CSR report. Verify URL."
+    }
+  ],
+
+  "severstal": [
+    {
+      "year": 2021,
+      "url": "https://severstal.com/upload/iblock/sustainability/severstal-sustainability-report-2021-eng.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Severstal",
+      "notes": "Severstal sustainability report. Last English report before delisting from LSE. Verify URL."
+    },
+    {
+      "year": 2020,
+      "url": "https://severstal.com/upload/iblock/sustainability/severstal-sustainability-report-2020-eng.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Severstal",
+      "notes": "Sustainability report. Verify URL."
+    },
+    {
+      "year": 2019,
+      "url": "https://severstal.com/upload/iblock/sustainability/severstal-sustainability-report-2019-eng.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "Severstal",
+      "notes": "Sustainability report. Verify URL."
+    },
+    {
+      "year": 2021,
+      "url": "https://severstal.com/upload/iblock/factbook/severstal-factbook-2021.pdf",
+      "doc_type": "factbook",
+      "company_name": "Severstal",
+      "notes": "Severstal factbook. Verify URL."
+    }
+  ],
+
+  "jfe_steel": [
+    {
+      "year": 2024,
+      "url": "https://www.jfe-steel.co.jp/en/company/pdf/sustainability-report-2024-en.pdf",
+      "doc_type": "sustainability_report",
+      "company_name": "JFE Steel",
+      "notes": "JFE Steel (subsidiary of JFE Holdings) may publish its own sustainability reports. Verify at jfe-steel.co.jp. Most reporting is done at JFE Holdings level."
+    },
+    {
+      "year": 2024,
+      "url": "https://www.jfe-steel.co.jp/en/company/pdf/environment-report-2024-en.pdf",
+      "doc_type": "climate_report",
+      "company_name": "JFE Steel",
+      "notes": "JFE Steel environmental report. Verify URL."
+    }
+  ],
+
+  "_sec_filing_index": {
+    "description": "Direct EDGAR full-text search links for 10-K and 20-F filings. Use these to find actual filing documents.",
+    "companies": [
+      {
+        "company": "Nucor",
+        "ticker": "NUE",
+        "cik": "0000073309",
+        "filing_type": "10-K",
+        "edgar_search_url": "https://efts.sec.gov/LATEST/search-index?q=%22nucor%22&dateRange=custom&startdt=2019-01-01&enddt=2025-12-31&forms=10-K",
+        "edgar_filings_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000073309&type=10-K&dateb=&owner=include&count=10"
+      },
+      {
+        "company": "Cleveland-Cliffs",
+        "ticker": "CLF",
+        "cik": "0000764065",
+        "filing_type": "10-K",
+        "edgar_search_url": "https://efts.sec.gov/LATEST/search-index?q=%22cleveland-cliffs%22&dateRange=custom&startdt=2019-01-01&enddt=2025-12-31&forms=10-K",
+        "edgar_filings_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000764065&type=10-K&dateb=&owner=include&count=10"
+      },
+      {
+        "company": "US Steel",
+        "ticker": "X",
+        "cik": "0000100885",
+        "filing_type": "10-K",
+        "edgar_search_url": "https://efts.sec.gov/LATEST/search-index?q=%22united+states+steel%22&dateRange=custom&startdt=2019-01-01&enddt=2025-12-31&forms=10-K",
+        "edgar_filings_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000100885&type=10-K&dateb=&owner=include&count=10"
+      },
+      {
+        "company": "Steel Dynamics",
+        "ticker": "STLD",
+        "cik": "0001022671",
+        "filing_type": "10-K",
+        "edgar_search_url": "https://efts.sec.gov/LATEST/search-index?q=%22steel+dynamics%22&dateRange=custom&startdt=2019-01-01&enddt=2025-12-31&forms=10-K",
+        "edgar_filings_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001022671&type=10-K&dateb=&owner=include&count=10"
+      },
+      {
+        "company": "Ternium",
+        "ticker": "TX",
+        "cik": "0001342874",
+        "filing_type": "20-F",
+        "edgar_search_url": "https://efts.sec.gov/LATEST/search-index?q=%22ternium%22&dateRange=custom&startdt=2019-01-01&enddt=2025-12-31&forms=20-F",
+        "edgar_filings_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001342874&type=20-F&dateb=&owner=include&count=10"
+      },
+      {
+        "company": "ArcelorMittal",
+        "ticker": "MT",
+        "cik": "0001236309",
+        "filing_type": "20-F",
+        "edgar_search_url": "https://efts.sec.gov/LATEST/search-index?q=%22arcelormittal%22&dateRange=custom&startdt=2019-01-01&enddt=2025-12-31&forms=20-F",
+        "edgar_filings_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001236309&type=20-F&dateb=&owner=include&count=10"
+      },
+      {
+        "company": "Gerdau",
+        "ticker": "GGB",
+        "cik": "0001073404",
+        "filing_type": "20-F",
+        "edgar_search_url": "https://efts.sec.gov/LATEST/search-index?q=%22gerdau%22&dateRange=custom&startdt=2019-01-01&enddt=2025-12-31&forms=20-F",
+        "edgar_filings_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001073404&type=20-F&dateb=&owner=include&count=10"
+      },
+      {
+        "company": "POSCO Holdings",
+        "ticker": "PKX",
+        "cik": "0001137789",
+        "filing_type": "20-F",
+        "edgar_search_url": "https://efts.sec.gov/LATEST/search-index?q=%22posco%22&dateRange=custom&startdt=2019-01-01&enddt=2025-12-31&forms=20-F",
+        "edgar_filings_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001137789&type=20-F&dateb=&owner=include&count=10"
+      }
+    ]
+  },
+
+  "_corporate_ir_pages": {
+    "description": "Direct links to corporate IR/publications pages for manual browsing to find additional reports.",
+    "pages": [
+      {"company": "Tata Steel", "ir_page": "https://www.tatasteel.com/investors/", "sustainability_page": "https://www.tatasteel.com/corporate/sustainability/"},
+      {"company": "POSCO Holdings", "ir_page": "https://www.posco-holdings.com/en/ir/", "sustainability_page": "https://sustainability.posco.com/eng/"},
+      {"company": "Nippon Steel", "ir_page": "https://www.nipponsteel.com/en/ir/library/", "sustainability_page": "https://www.nipponsteel.com/en/sustainability/report/"},
+      {"company": "JSW Steel", "ir_page": "https://www.jswsteel.in/investor-relations", "sustainability_page": "https://www.jswsteel.in/sustainability"},
+      {"company": "ThyssenKrupp", "ir_page": "https://www.thyssenkrupp.com/en/investors", "sustainability_page": "https://www.thyssenkrupp.com/en/company/sustainability"},
+      {"company": "SSAB", "ir_page": "https://www.ssab.com/en/company/investors", "sustainability_page": "https://www.ssab.com/en/company/sustainability"},
+      {"company": "BlueScope Steel", "ir_page": "https://www.bluescope.com/investor-centre", "sustainability_page": "https://www.bluescope.com/sustainability"},
+      {"company": "Nucor", "ir_page": "https://nucor.com/investors", "sustainability_page": "https://nucor.com/sustainability"},
+      {"company": "Cleveland-Cliffs", "ir_page": "https://www.clevelandcliffs.com/investors", "sustainability_page": "https://www.clevelandcliffs.com/sustainability"},
+      {"company": "Gerdau", "ir_page": "https://ri.gerdau.com/en/", "sustainability_page": "https://www2.gerdau.com/en/sustainability"},
+      {"company": "JFE Holdings", "ir_page": "https://www.jfe-holdings.co.jp/en/investor/", "sustainability_page": "https://www.jfe-holdings.co.jp/en/csr/"},
+      {"company": "US Steel", "ir_page": "https://www.ussteel.com/investors", "sustainability_page": "https://www.ussteel.com/sustainability"},
+      {"company": "Hyundai Steel", "ir_page": "https://www.hyundai-steel.com/en/invest/ir.hds", "sustainability_page": "https://www.hyundai-steel.com/en/sustainability/report.hds"},
+      {"company": "Kobe Steel", "ir_page": "https://www.kobelco.co.jp/english/ir/", "sustainability_page": "https://www.kobelco.co.jp/english/sustainability/"},
+      {"company": "voestalpine", "ir_page": "https://www.voestalpine.com/group/en/investors/", "sustainability_page": "https://www.voestalpine.com/group/en/responsibility/"},
+      {"company": "SAIL", "ir_page": "https://sail.co.in/en/investor-services", "sustainability_page": "https://sail.co.in/en/sustainability"},
+      {"company": "Steel Dynamics", "ir_page": "https://www.stld.com/investor-relations", "sustainability_page": "https://www.stld.com/sustainability"},
+      {"company": "Salzgitter", "ir_page": "https://www.salzgitter-ag.com/en/investor-relations/", "sustainability_page": "https://www.salzgitter-ag.com/en/sustainability/"},
+      {"company": "Ternium", "ir_page": "https://www.ternium.com/en/investors", "sustainability_page": "https://www.ternium.com/en/sustainability"},
+      {"company": "NLMK", "ir_page": "https://nlmk.com/en/ir/", "sustainability_page": "https://nlmk.com/en/sustainability/"},
+      {"company": "Evraz", "ir_page": "https://www.evraz.com/en/investors/", "sustainability_page": "https://www.evraz.com/en/sustainability/"},
+      {"company": "Baoshan Iron & Steel", "ir_page": "https://www.baosteel.com/group/en/investor/", "sustainability_page": "https://www.baosteel.com/group/en/sustainability/"},
+      {"company": "China Steel", "ir_page": "https://www.csc.com.tw/csc_e/ss/fin/fin.asp", "sustainability_page": "https://www.csc.com.tw/csc_e/ss/csr/csr.asp"},
+      {"company": "Severstal", "ir_page": "https://severstal.com/eng/ir/", "sustainability_page": "https://severstal.com/eng/sustainability/"},
+      {"company": "JFE Steel", "ir_page": "https://www.jfe-steel.co.jp/en/", "sustainability_page": "https://www.jfe-steel.co.jp/en/company/sustainability/"}
+    ]
+  }
+}
