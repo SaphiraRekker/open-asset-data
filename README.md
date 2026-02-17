@@ -1,6 +1,6 @@
 # open-asset-data
 
-Company-level emissions data pipeline for [open-asset.ai](https://open-asset.ai).
+Company-level emissions data pipeline for [open-assets.ai](https://open-assets.ai).
 
 Collects, processes, and integrates emissions data from multiple sources for steel, cement, power, and fossil fuel companies.
 
