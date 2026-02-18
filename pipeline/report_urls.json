@@ -190,6 +190,34 @@
       "doc_type": "form_20f",
       "company_name": "ArcelorMittal",
       "notes": "SEC 20-F filed 2019-02-25. Accession: 0001243429-19-000005"
+    },
+    {
+      "year": 2018,
+      "url": "https://www.sec.gov/Archives/edgar/data/1243429/000124342918000007/mt-31122017x20xfdocument.htm",
+      "doc_type": "form_20f",
+      "company_name": "ArcelorMittal",
+      "notes": "SEC 20-F filed 2018-02-15. Accession: 0001243429-18-000007. HTML format."
+    },
+    {
+      "year": 2017,
+      "url": "https://www.sec.gov/Archives/edgar/data/1243429/000124342917000002/final20F.htm",
+      "doc_type": "form_20f",
+      "company_name": "ArcelorMittal",
+      "notes": "SEC 20-F filed 2017-02-23. Accession: 0001243429-17-000002. HTML format."
+    },
+    {
+      "year": 2016,
+      "url": "https://www.sec.gov/Archives/edgar/data/1243429/000124342916000008/20f.htm",
+      "doc_type": "form_20f",
+      "company_name": "ArcelorMittal",
+      "notes": "SEC 20-F filed 2016-02-22. Accession: 0001243429-16-000008. HTML format."
+    },
+    {
+      "year": 2015,
+      "url": "https://www.sec.gov/Archives/edgar/data/1243429/000124342915000002/20F.htm",
+      "doc_type": "form_20f",
+      "company_name": "ArcelorMittal",
+      "notes": "SEC 20-F filed 2015-02-24. Accession: 0001243429-15-000002. HTML format."
     }
   ],
   "tata_steel": [

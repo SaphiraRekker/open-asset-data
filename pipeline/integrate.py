@@ -859,11 +859,12 @@ def run_integration():
 
     # Step 6: Save outputs
     logger.info("\n--- Saving outputs ---")
-    PROCESSED_DATA_DIR.mkdir(parents=True, exist_ok=True)
+    PROCESSED_STEEL_DIR = PROCESSED_DATA_DIR / "steel"
+    PROCESSED_STEEL_DIR.mkdir(parents=True, exist_ok=True)
     OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
 
     # Long format (all records, all sources)
-    out_long = PROCESSED_DATA_DIR / "steel_multi_source.csv"
+    out_long = PROCESSED_STEEL_DIR / "steel_multi_source.csv"
     output_cols = [
         "company", "year", "metric", "value", "unit", "source",
         "source_detail", "extraction_method",
@@ -875,7 +876,7 @@ def run_integration():
 
     # Wide format comparison
     wide = build_comparison_wide(combined)
-    out_wide = PROCESSED_DATA_DIR / "steel_multi_source_comparison.csv"
+    out_wide = PROCESSED_STEEL_DIR / "steel_multi_source_comparison.csv"
     wide.to_csv(out_wide, index=False)
     logger.info(f"Wide comparison saved: {out_wide} ({len(wide)} rows)")
 
@@ -883,7 +884,7 @@ def run_integration():
     defaults_only = combined[
         (combined["is_default"]) & (combined["quality_flag"] == "")
     ].copy()
-    out_defaults = PROCESSED_DATA_DIR / "steel_defaults.csv"
+    out_defaults = PROCESSED_STEEL_DIR / "steel_defaults.csv"
     defaults_only[output_cols].to_csv(out_defaults, index=False)
     logger.info(f"Defaults saved: {out_defaults} ({len(defaults_only)} rows)")
 
