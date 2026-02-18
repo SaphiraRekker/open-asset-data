@@ -1475,6 +1475,94 @@ def load_country_production() -> dict[tuple[str, int], dict[str, float]]:
     return result
 
 
+def estimate_production_from_capacity(
+    all_plants: pd.DataFrame,
+    production: pd.DataFrame,
+    fill_years: range | list[int] = range(2014, 2020),
+) -> pd.DataFrame:
+    """Estimate production for company-years missing data using GEM capacity.
+
+    For each company that has at least some years with both known production
+    and known GEM capacity, compute a historical utilization rate (UR) as the
+    average UR from the earliest 3 such years.  Then for each requested
+    fill_year where production is missing, estimate:
+
+        production_mt = company_capacity_mt(year) × avg_UR
+
+    Args:
+        all_plants: Full GEM plant DataFrame (all years, from load_all_gem_plants).
+        production: Existing production DataFrame with (company, year, production_mt,
+            production_source) — output of load_production_data().
+        fill_years: Years to attempt to fill (default 2014–2019).
+
+    Returns:
+        DataFrame with same schema as *production* containing only the newly
+        estimated rows (production_source="capacity_estimate").
+    """
+    if all_plants.empty or production.empty:
+        return pd.DataFrame(columns=production.columns)
+
+    existing_keys = set(zip(production["company"], production["year"].astype(int)))
+    companies = production["company"].unique()
+
+    rows: list[dict] = []
+    for company in companies:
+        comp_prod = production[production["company"] == company].copy()
+        comp_prod["year"] = comp_prod["year"].astype(int)
+
+        # For each known-production year, compute GEM capacity → UR
+        ur_samples: list[tuple[int, float]] = []
+        for _, pr in comp_prod.iterrows():
+            yr = int(pr["year"])
+            year_plants = get_plants_for_year(all_plants, yr)
+            comp_plants = get_company_plants(year_plants, company, year=yr)
+            cap_mt = comp_plants["capacity_ttpa"].sum() / 1000.0
+            if cap_mt > 0:
+                ur = pr["production_mt"] / cap_mt
+                if 0.1 <= ur <= 1.5:  # sanity bounds
+                    ur_samples.append((yr, ur))
+
+        if not ur_samples:
+            continue
+
+        # Average UR from earliest 3 overlap years
+        ur_samples.sort(key=lambda x: x[0])
+        earliest = ur_samples[:3]
+        avg_ur = sum(u for _, u in earliest) / len(earliest)
+        yr_range = f"{earliest[0][0]}-{earliest[-1][0]}" if len(earliest) > 1 else str(earliest[0][0])
+
+        for yr in fill_years:
+            if (company, yr) in existing_keys:
+                continue
+
+            year_plants = get_plants_for_year(all_plants, yr)
+            comp_plants = get_company_plants(year_plants, company, year=yr)
+            cap_mt = comp_plants["capacity_ttpa"].sum() / 1000.0
+            if cap_mt <= 0:
+                continue
+
+            est_prod = cap_mt * avg_ur
+            rows.append({
+                "company": company,
+                "year": yr,
+                "production_mt": round(est_prod, 3),
+                "production_source": "capacity_estimate",
+            })
+            logger.info(
+                f"  Estimated {company} {yr}: {est_prod:.2f} Mt "
+                f"(cap={cap_mt:.1f} Mt × UR={avg_ur:.2f} from {yr_range})"
+            )
+
+    result = pd.DataFrame(rows, columns=production.columns if rows else
+                          ["company", "year", "production_mt", "production_source"])
+    if not result.empty:
+        logger.info(
+            f"Capacity-estimated production: {len(result)} company-year rows "
+            f"for {result['company'].nunique()} companies"
+        )
+    return result
+
+
 # ============================================================================
 # Full APA pipeline
 # ============================================================================
@@ -1500,6 +1588,14 @@ def run_apa_all(gem_path: Path | None = None) -> pd.DataFrame:
     production = load_production_data()
     if production.empty:
         return pd.DataFrame()
+
+    # Fill gaps for pre-2020 years using capacity × historical UR
+    estimated = estimate_production_from_capacity(
+        all_plants, production, fill_years=range(2014, 2020),
+    )
+    if not estimated.empty:
+        production = pd.concat([production, estimated], ignore_index=True)
+        logger.info(f"Production after capacity estimates: {len(production)} total rows")
 
     # Load country-level production for accurate allocation
     country_prod_map = load_country_production()
@@ -1577,6 +1673,21 @@ def load_apa_source() -> pd.DataFrame:
         detail = (f"{r['n_plants']} plants, "
                   f"UR={r['utilization_rate']:.2f}, "
                   f"wEF={r['weighted_ef']:.3f}")
+
+        # Production row
+        rows.append({
+            "company": r["company"],
+            "year": int(r["year"]),
+            "metric": "production_mt",
+            "value": r["production_mt"],
+            "unit": "Mt",
+            "source": "apa",
+            "source_detail": detail,
+            "extraction_method": "asset_level_model",
+            "confidence_raw": "modeled" if r["production_source"] == "capacity_estimate" else "reported",
+            "source_page": "",
+            "notes": f"Production from {r['production_source']}",
+        })
 
         # Emissions row
         rows.append({
