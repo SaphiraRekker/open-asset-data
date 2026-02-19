@@ -18,7 +18,7 @@ This tracks all data workstreams for steel company analysis in the Carbon Budget
 | **CDP** | Reported emissions (standardized) | 📋 Planned | - | Need API access |
 | **Climate Trace** | Satellite emissions | 🔄 Separate chat | See CT chat | Facility matching needed |
 | **TPI** | Intensity + alignment + MQ scores | 🔄 In contact | This chat | Have intensity; awaiting activity data (call scheduled with Nina/Carmen) |
-| **David's APA** | Calculated emissions | ✅ Complete | `02g_steel_apa_simple.R` | Validated methodology |
+| **David's APA** | Calculated emissions | ✅ Complete | `open-asset-data/pipeline/apa_calculator.py` | Validated methodology (26 companies) |
 | **Net Zero Tracker** | Company targets | 🔄 Have data | Separate chat | Need to integrate |
 | **Company Transition Plans** | Technology roadmaps, capex, closures | 📋 To scrape | This chat | Scrape alongside emissions |
 
@@ -67,28 +67,29 @@ Without production data, we can't convert TPI intensity to absolute Mt CO2.
 
 ### Data Files
 
-| File | Purpose | Location |
-|------|---------|----------|
-| `steel_master_data.csv` | All company data (production + emissions) | 03.Data/ |
-| `steel_production_data.csv` | Production only (simplified) | 03.Data/ |
-| `gem_steel_plants.xlsx` | Plant database | From Kampmann |
+| File | Location | Purpose |
+|------|----------|---------|
+| `steel_ald_combined.csv` | `open-asset-data/data/processed/steel/` | Combined ALD → R pipeline input |
+| `steel_apa_emissions.csv` | `open-asset-data/outputs/steel/` | APA results (229 rows, 26 companies) |
+| `steel_production_from_reports.csv` | `open-asset-data/data/processed/steel/` | Curated production data |
+| GEM GIST Excel files | `open-asset-data/data/raw/GEM/` | Plant database (Dec 2025) |
 
 ### Scripts
 
-| Script | Purpose | Status |
-|--------|---------|--------|
-| `02g_steel_apa_simple.R` | Calculate emissions from production | ✅ Ready |
-| `02g_steel_data_validation.R` | Compare calculated vs reported | 🔄 Creating |
-| `steel_scraping.py` | Web scrape production + emissions | ✅ Template ready |
+| Script | Location | Purpose |
+|--------|----------|---------|
+| `pipeline/integrate.py` | `open-asset-data/` | Python: multi-source integration |
+| `pipeline/apa_calculator.py` | `open-asset-data/` | Python: APA emissions calculation |
+| `05_company_sda_pcp.R` | `02.Scripts/03_analysis/` | R: PCP calculation (SDA + ACA) |
+| `steel_comprehensive.R` | `02.Scripts/04_output/` | R: final output with comparison columns |
 
 ### Documentation
 
 | File | Purpose |
 |------|---------|
+| `apa_methodology.md` | Core APA methodology |
 | `steel_data_dictionary.md` | All variable definitions |
-| `steel_data_collection_steps.md` | How to collect data manually |
-| `steel_apa_methodology_findings.md` | DRI coal vs gas discovery |
-| `steel_apa_replication_guide.md` | How to replicate David's method |
+| `steel_python_pipeline.txt` | Technical Python pipeline reference |
 
 ---
 
@@ -310,4 +311,4 @@ When scraping company reports, collect:
 
 ---
 
-*Last updated: January 2025*
+*Last updated: February 2026*

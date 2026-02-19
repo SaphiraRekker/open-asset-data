@@ -122,6 +122,8 @@ This repo is symlinked into CBT at `open-asset-data/`. CBT reads the CSV outputs
 | [`docs/data_quality_methodology.md`](docs/data_quality_methodology.md) | Multi-source data quality scoring framework |
 | [`docs/steel_data_dictionary.md`](docs/steel_data_dictionary.md) | Steel company dataset variable reference |
 | [`docs/steel_data_tracker.md`](docs/steel_data_tracker.md) | Data collection status by source |
+| [`docs/steel_project_summary.md`](docs/steel_project_summary.md) | Steel APA project overview |
+| [`docs/steel_workflow_simple.md`](docs/steel_workflow_simple.md) | Steel data collection workflow |
 | [`docs/r_pipeline.md`](docs/r_pipeline.md) | R pipeline architecture and data flow |
 
 ## Requirements
