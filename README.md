@@ -111,7 +111,7 @@ This repo is symlinked into CBT at `open-asset-data/`. CBT reads the CSV outputs
 - **75 fossil fuel companies** with GEM reserves data
 - **36 fossil fuel companies** with Oxford NZT projections
 - **26 steel companies** with multi-source emissions data
-- **324 Australian power companies** (NGER reporting entities)
+- **~268 Australian power companies** (NGER reporting entities, 11 years)
 - **7 sectors** of Climate Trace data (steel, cement, power, aluminum, petrochemical, chemicals, pulp & paper)
 
 ## Documentation
