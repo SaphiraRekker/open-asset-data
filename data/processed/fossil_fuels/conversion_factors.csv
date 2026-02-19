@@ -1,0 +1,6 @@
+commodity,fuel,from_unit,to_unit,conversion_factor,source,inverse_factor
+Sub-Bituminous Coal,Coal,million_tonnes,EJ,0.0189,IPCC 2006 Vol2 Ch1 Table 1.2,52.91005291005291
+Bituminous Coal,Coal,million_tonnes,EJ,0.0258,IPCC 2006 Vol2 Ch1 Table 1.2,38.75968992248062
+Thermal Coal,Coal,million_tonnes,EJ,0.0258,IPCC 2006 Vol2 Ch1 Table 1.2,38.75968992248062
+Oil & NGL,Oil,million_bbl,EJ,0.005277285465556411,EI Statistics (Oil Consumption),189.49136000444975
+Natural Gas,Gas,bcf,EJ,0.001020104820975558,EI Statistics (Gas Production),980.2914165660633
