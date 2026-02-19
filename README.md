@@ -125,6 +125,8 @@ This repo is symlinked into CBT at `open-asset-data/`. CBT reads the CSV outputs
 | [`docs/steel_project_summary.md`](docs/steel_project_summary.md) | Steel APA project overview |
 | [`docs/steel_workflow_simple.md`](docs/steel_workflow_simple.md) | Steel data collection workflow |
 | [`docs/r_pipeline.md`](docs/r_pipeline.md) | R pipeline architecture and data flow |
+| [`docs/APA_Manuscript_Revised_with TC_final.docx`](docs/APA_Manuscript_Revised_with%20TC_final.docx) | APA methodology manuscript (plant-level emissions) |
+| [`docs/JRC129297_01.pdf`](docs/JRC129297_01.pdf) | EU steel industry GHG intensities (Koolen & Vidovic 2022) |
 
 ## Requirements
 
