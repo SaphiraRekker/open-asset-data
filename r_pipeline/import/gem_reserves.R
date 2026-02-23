@@ -96,6 +96,7 @@ if (has_goget) {
       quantity <- if_else(!is.na(row$`Quantity (converted)`), row$`Quantity (converted)`, 0)
       goget_rows[[length(goget_rows) + 1]] <- tibble(
         company = owners$company[j],
+        country = row$`Country/Area`,
         type = row$`Production/reserves`,
         fuel_desc = row$`Fuel description`,
         quantity_attributed = quantity * pct,
@@ -134,9 +135,26 @@ if (has_goget) {
     full_join(goget_reserves, by = c("company", "fuel")) %>%
     mutate(years_of_production = reserves_boe / production_boe_annual)
 
-  cat("  Oil/Gas companies:", n_distinct(goget_summary$company), "\n\n")
+  # Country-level aggregates (for equity analysis)
+  goget_production_by_country <- goget_company %>%
+    filter(type == "production") %>%
+    group_by(company, fuel, country) %>%
+    summarise(production_boe_annual = sum(quantity_boe, na.rm = TRUE), .groups = "drop")
+
+  goget_reserves_by_country <- goget_company %>%
+    filter(type == "reserves") %>%
+    group_by(company, fuel, country) %>%
+    summarise(reserves_boe = sum(quantity_boe, na.rm = TRUE), .groups = "drop")
+
+  goget_summary_by_country <- goget_production_by_country %>%
+    full_join(goget_reserves_by_country, by = c("company", "fuel", "country")) %>%
+    mutate(years_of_production = reserves_boe / production_boe_annual)
+
+  cat("  Oil/Gas companies:", n_distinct(goget_summary$company), "\n")
+  cat("  Oil/Gas company-country pairs:", nrow(goget_summary_by_country), "\n\n")
 } else {
   goget_summary <- tibble()
+  goget_summary_by_country <- tibble()
 }
 
 # =============================================================================
@@ -199,6 +217,7 @@ if (has_gcmt) {
       if (is.na(pct)) pct <- if (n_unknown > 0 && total_known < 1) (1 - total_known) / n_unknown else 1.0
       gcmt_rows[[length(gcmt_rows) + 1]] <- tibble(
         company = owners$company[j],
+        country = row$`Country / Area`,
         reserves_mt = if_else(!is.na(row$reserves_mt), row$reserves_mt * pct, NA_real_),
         capacity_mtpa = if_else(!is.na(row$capacity_mtpa), row$capacity_mtpa * pct, NA_real_)
       )
@@ -217,9 +236,24 @@ if (has_gcmt) {
     select(company, fuel, production_boe_annual, reserves_boe, years_of_production,
            reserves_mt, capacity_mtpa)
 
-  cat("  Coal companies:", n_distinct(gcmt_summary$company), "\n\n")
+  # Country-level aggregates (for equity analysis)
+  gcmt_summary_by_country <- bind_rows(gcmt_rows) %>%
+    group_by(company, country) %>%
+    summarise(reserves_mt = sum(reserves_mt, na.rm = TRUE),
+              capacity_mtpa = sum(capacity_mtpa, na.rm = TRUE), .groups = "drop") %>%
+    filter(reserves_mt > 0 | capacity_mtpa > 0) %>%
+    mutate(fuel = "Coal",
+           reserves_boe = reserves_mt * 4.5,
+           production_boe_annual = capacity_mtpa * 4.5,
+           years_of_production = reserves_mt / capacity_mtpa) %>%
+    select(company, fuel, country, production_boe_annual, reserves_boe,
+           years_of_production, reserves_mt, capacity_mtpa)
+
+  cat("  Coal companies:", n_distinct(gcmt_summary$company), "\n")
+  cat("  Coal company-country pairs:", nrow(gcmt_summary_by_country), "\n\n")
 } else {
   gcmt_summary <- tibble()
+  gcmt_summary_by_country <- tibble()
 }
 
 # =============================================================================
@@ -239,7 +273,16 @@ if (nrow(gcmt_summary) > 0) {
 }
 
 gem_summary <- bind_rows(goget_summary, gcmt_summary)
-cat("  Total company-fuel combinations:", nrow(gem_summary), "\n\n")
+cat("  Total company-fuel combinations:", nrow(gem_summary), "\n")
+
+# Country-level version (for equity analysis)
+if (nrow(goget_summary_by_country) > 0) {
+  goget_summary_by_country <- goget_summary_by_country %>%
+    mutate(reserves_mt = NA_real_, capacity_mtpa = NA_real_)
+}
+
+gem_summary_by_country <- bind_rows(goget_summary_by_country, gcmt_summary_by_country)
+cat("  Total company-fuel-country combinations:", nrow(gem_summary_by_country), "\n\n")
 
 # =============================================================================
 # PART 4: MATCH TO INFLUENCEMAP COMPANIES
@@ -369,6 +412,25 @@ influencemap_reserves <- valid_matches %>%
 
 cat("  Companies with reserves:", n_distinct(influencemap_reserves$parent_entity), "\n\n")
 
+# Country-level version: merge with valid_matches but keep country
+influencemap_reserves_by_country <- valid_matches %>%
+  left_join(gem_summary_by_country, by = c("gem_name" = "company")) %>%
+  filter(!is.na(country)) %>%
+  group_by(parent_entity = influencemap_name, Fuel = fuel, country) %>%
+  summarise(
+    gem_companies_matched = paste(unique(gem_name), collapse = "; "),
+    production_boe_annual = sum(production_boe_annual, na.rm = TRUE),
+    reserves_boe = sum(reserves_boe, na.rm = TRUE),
+    reserves_mt = sum(reserves_mt, na.rm = TRUE),
+    capacity_mtpa = sum(capacity_mtpa, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  filter(reserves_boe > 0 | production_boe_annual > 0)
+
+cat("  Companies with country-level data:", n_distinct(influencemap_reserves_by_country$parent_entity), "\n")
+cat("  Company-fuel-country records:", nrow(influencemap_reserves_by_country), "\n")
+cat("  Unique host countries:", n_distinct(influencemap_reserves_by_country$country), "\n\n")
+
 # Unmatched companies
 all_ff_im <- im_data %>%
   filter(commodity %in% c("Oil & NGL", "Natural Gas", "Bituminous Coal",
@@ -382,6 +444,8 @@ unmatched <- setdiff(all_ff_im, valid_matches$influencemap_name)
 # =============================================================================
 
 export_csv(influencemap_reserves, "influencemap_reserves_final.csv", dir = outputs_fossil_dir)
+export_csv(influencemap_reserves_by_country,
+           "influencemap_reserves_by_country.csv", dir = outputs_fossil_dir)
 export_csv(gem_summary,           "gem_company_summary.csv",         dir = outputs_fossil_dir)
 export_csv(valid_matches,         "gem_influencemap_matches.csv",    dir = outputs_fossil_dir)
 export_csv(tibble(parent_entity = unmatched, matched = FALSE),
@@ -391,4 +455,5 @@ cat("\n>> GEM import complete!\n")
 cat("   Oil:", sum(influencemap_reserves$Fuel == "Oil"), "companies\n")
 cat("   Gas:", sum(influencemap_reserves$Fuel == "Gas"), "companies\n")
 cat("   Coal:", sum(influencemap_reserves$Fuel == "Coal"), "companies\n")
-cat("   Unmatched:", length(unmatched), "\n\n")
+cat("   Unmatched:", length(unmatched), "\n")
+cat("   Country-level records:", nrow(influencemap_reserves_by_country), "\n\n")
