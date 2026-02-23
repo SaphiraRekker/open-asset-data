@@ -1,0 +1,32 @@
+technology,country,emission_factor_tco2_per_t,source
+bf_bof,Australia,2.1,Koolen & Vidovic 2022
+bf_bof,Austria,1.76,Koolen & Vidovic 2022
+bf_bof,Belgium,2.05,Koolen & Vidovic 2022
+bf_bof,Brazil,2.21,Koolen & Vidovic 2022
+bf_bof,Canada,1.87,Koolen & Vidovic 2022
+bf_bof,China,2.3,Koolen & Vidovic 2022
+bf_bof,France,1.94,Koolen & Vidovic 2022
+bf_bof,Germany,1.88,Koolen & Vidovic 2022
+bf_bof,India,2.89,Koolen & Vidovic 2022
+bf_bof,Italy,2.01,Koolen & Vidovic 2022
+bf_bof,Japan,2.01,Koolen & Vidovic 2022
+bf_bof,South Korea,2.04,Koolen & Vidovic 2022
+bf_bof,Mexico,2.15,Koolen & Vidovic 2022
+bf_bof,Netherlands,1.87,Koolen & Vidovic 2022
+bf_bof,Poland,2.35,Koolen & Vidovic 2022
+bf_bof,Russia,2.2,Koolen & Vidovic 2022
+bf_bof,Spain,2.08,Koolen & Vidovic 2022
+bf_bof,Sweden,1.8,Koolen & Vidovic 2022
+bf_bof,Taiwan,2.15,Koolen & Vidovic 2022
+bf_bof,Turkey,2.25,Koolen & Vidovic 2022
+bf_bof,Ukraine,3.72,Koolen & Vidovic 2022
+bf_bof,United Kingdom,1.95,Koolen & Vidovic 2022
+bf_bof,United States,1.85,Koolen & Vidovic 2022
+bf_bof,EU Average,1.93,Koolen & Vidovic 2022
+bf_bof,Global Average,2.31,Koolen & Vidovic 2022
+scrap_eaf,Global,0.4,Literature review (see Kampmann et al.)
+dri_eaf_gas,Global,1.05,Literature review (see Kampmann et al.)
+dri_eaf_coal,Global,3.1,Literature review (see Kampmann et al.)
+dri_eaf_h2,Global,0.05,Literature review (see Kampmann et al.)
+dri_bof_gas,Global,1.4,Literature review (see Kampmann et al.)
+dri_bof_h2,Global,0.08,Literature review (see Kampmann et al.)

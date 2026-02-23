@@ -1,0 +1,715 @@
+company,year,country,production_kt,source
+ArcelorMittal,2014,Argentina,1598.8282047338764,kampmann_scaled
+ArcelorMittal,2014,Belgium,4568.091741580102,kampmann_scaled
+ArcelorMittal,2014,Bosnia and Herzegovina,1772.4234484879835,kampmann_scaled
+ArcelorMittal,2014,Brazil,11602.948858473022,kampmann_scaled
+ArcelorMittal,2014,Canada,5892.840689529827,kampmann_scaled
+ArcelorMittal,2014,France,9821.401149216379,kampmann_scaled
+ArcelorMittal,2014,Germany,8699.325331692926,kampmann_scaled
+ArcelorMittal,2014,India,5410.452346666293,kampmann_scaled
+ArcelorMittal,2014,Italy,4202.639716470703,kampmann_scaled
+ArcelorMittal,2014,Kazakhstan,5481.715296321669,kampmann_scaled
+ArcelorMittal,2014,Luxembourg,2740.8576481608343,kampmann_scaled
+ArcelorMittal,2014,Mexico,5847.154305367204,kampmann_scaled
+ArcelorMittal,2014,Morocco,730.8910341549343,kampmann_scaled
+ArcelorMittal,2014,Poland,5253.309407636277,kampmann_scaled
+ArcelorMittal,2014,Romania,730.8910341549343,kampmann_scaled
+ArcelorMittal,2014,South Africa,3351.753589553595,kampmann_scaled
+ArcelorMittal,2014,Spain,8085.526808058495,kampmann_scaled
+ArcelorMittal,2014,Ukraine,7308.949389740937,kampmann_scaled
+ArcelorMittal,2015,Argentina,1588.5242635648074,kampmann_scaled
+ArcelorMittal,2015,Belgium,4538.651837767556,kampmann_scaled
+ArcelorMittal,2015,Bosnia and Herzegovina,1761.000740978931,kampmann_scaled
+ArcelorMittal,2015,Brazil,11528.171529632165,kampmann_scaled
+ArcelorMittal,2015,Canada,5854.863198512449,kampmann_scaled
+ArcelorMittal,2015,France,9758.105330854083,kampmann_scaled
+ArcelorMittal,2015,Germany,8643.260936429599,kampmann_scaled
+ArcelorMittal,2015,India,5375.58369566737,kampmann_scaled
+ArcelorMittal,2015,Italy,4175.555035161547,kampmann_scaled
+ArcelorMittal,2015,Kazakhstan,5446.38737819285,kampmann_scaled
+ArcelorMittal,2015,Luxembourg,2723.193689096425,kampmann_scaled
+ArcelorMittal,2015,Mexico,5809.471248619402,kampmann_scaled
+ArcelorMittal,2015,Morocco,726.180673032561,kampmann_scaled
+ArcelorMittal,2015,Poland,5219.453493086527,kampmann_scaled
+ArcelorMittal,2015,Romania,726.180673032561,kampmann_scaled
+ArcelorMittal,2015,South Africa,3330.152599717589,kampmann_scaled
+ArcelorMittal,2015,Spain,8033.41814978959,kampmann_scaled
+ArcelorMittal,2015,Ukraine,7261.845526863981,kampmann_scaled
+ArcelorMittal,2016,Argentina,1559.3297635857784,kampmann_scaled
+ArcelorMittal,2016,Belgium,4455.2387769653415,kampmann_scaled
+ArcelorMittal,2016,Bosnia and Herzegovina,1728.6364030366153,kampmann_scaled
+ArcelorMittal,2016,Brazil,11316.302431249736,kampmann_scaled
+ArcelorMittal,2016,Canada,5747.260307296545,kampmann_scaled
+ArcelorMittal,2016,France,9578.767178827575,kampmann_scaled
+ArcelorMittal,2016,Germany,8484.411816516838,kampmann_scaled
+ArcelorMittal,2016,India,5276.789184503753,kampmann_scaled
+ArcelorMittal,2016,Italy,4098.815104785605,kampmann_scaled
+ArcelorMittal,2016,Kazakhstan,5346.291610161197,kampmann_scaled
+ArcelorMittal,2016,Luxembourg,2673.1458050805986,kampmann_scaled
+ArcelorMittal,2016,Mexico,5702.702587833965,kampmann_scaled
+ArcelorMittal,2016,Morocco,712.8346498525032,kampmann_scaled
+ArcelorMittal,2016,Poland,5123.528401862233,kampmann_scaled
+ArcelorMittal,2016,Romania,712.8346498525032,kampmann_scaled
+ArcelorMittal,2016,South Africa,3268.9497951822386,kampmann_scaled
+ArcelorMittal,2016,Spain,7885.776951361024,kampmann_scaled
+ArcelorMittal,2016,Ukraine,7128.38458204594,kampmann_scaled
+ArcelorMittal,2017,Argentina,1598.8282047338764,kampmann_scaled
+ArcelorMittal,2017,Belgium,4568.091741580102,kampmann_scaled
+ArcelorMittal,2017,Bosnia and Herzegovina,1772.4234484879835,kampmann_scaled
+ArcelorMittal,2017,Brazil,11602.948858473022,kampmann_scaled
+ArcelorMittal,2017,Canada,5892.840689529827,kampmann_scaled
+ArcelorMittal,2017,France,9821.401149216379,kampmann_scaled
+ArcelorMittal,2017,Germany,8699.325331692926,kampmann_scaled
+ArcelorMittal,2017,India,5410.452346666293,kampmann_scaled
+ArcelorMittal,2017,Italy,4202.639716470703,kampmann_scaled
+ArcelorMittal,2017,Kazakhstan,5481.715296321669,kampmann_scaled
+ArcelorMittal,2017,Luxembourg,2740.8576481608343,kampmann_scaled
+ArcelorMittal,2017,Mexico,5847.154305367204,kampmann_scaled
+ArcelorMittal,2017,Morocco,730.8910341549343,kampmann_scaled
+ArcelorMittal,2017,Poland,5253.309407636277,kampmann_scaled
+ArcelorMittal,2017,Romania,730.8910341549343,kampmann_scaled
+ArcelorMittal,2017,South Africa,3351.753589553595,kampmann_scaled
+ArcelorMittal,2017,Spain,8085.526808058495,kampmann_scaled
+ArcelorMittal,2017,Ukraine,7308.949389740937,kampmann_scaled
+ArcelorMittal,2018,Argentina,1588.5242635648074,kampmann_scaled
+ArcelorMittal,2018,Belgium,4538.651837767556,kampmann_scaled
+ArcelorMittal,2018,Bosnia and Herzegovina,1761.000740978931,kampmann_scaled
+ArcelorMittal,2018,Brazil,11528.171529632165,kampmann_scaled
+ArcelorMittal,2018,Canada,5854.863198512449,kampmann_scaled
+ArcelorMittal,2018,France,9758.105330854083,kampmann_scaled
+ArcelorMittal,2018,Germany,8643.260936429599,kampmann_scaled
+ArcelorMittal,2018,India,5375.58369566737,kampmann_scaled
+ArcelorMittal,2018,Italy,4175.555035161547,kampmann_scaled
+ArcelorMittal,2018,Kazakhstan,5446.38737819285,kampmann_scaled
+ArcelorMittal,2018,Luxembourg,2723.193689096425,kampmann_scaled
+ArcelorMittal,2018,Mexico,5809.471248619402,kampmann_scaled
+ArcelorMittal,2018,Morocco,726.180673032561,kampmann_scaled
+ArcelorMittal,2018,Poland,5219.453493086527,kampmann_scaled
+ArcelorMittal,2018,Romania,726.180673032561,kampmann_scaled
+ArcelorMittal,2018,South Africa,3330.152599717589,kampmann_scaled
+ArcelorMittal,2018,Spain,8033.41814978959,kampmann_scaled
+ArcelorMittal,2018,Ukraine,7261.845526863981,kampmann_scaled
+ArcelorMittal,2019,Argentina,1542.1565283039968,kampmann_scaled
+ArcelorMittal,2019,Belgium,4406.172270611098,kampmann_scaled
+ArcelorMittal,2019,Bosnia and Herzegovina,1709.5985571881945,kampmann_scaled
+ArcelorMittal,2019,Brazil,11191.673549848309,kampmann_scaled
+ArcelorMittal,2019,Canada,5683.964488934248,kampmann_scaled
+ArcelorMittal,2019,France,9473.274148223747,kampmann_scaled
+ArcelorMittal,2019,Germany,8390.971157744627,kampmann_scaled
+ArcelorMittal,2019,India,5218.674766172214,kampmann_scaled
+ArcelorMittal,2019,Italy,4053.673969270345,kampmann_scaled
+ArcelorMittal,2019,Kazakhstan,5287.4117466131665,kampmann_scaled
+ArcelorMittal,2019,Luxembourg,2643.7058733065833,kampmann_scaled
+ArcelorMittal,2019,Mexico,5639.897493254295,kampmann_scaled
+ArcelorMittal,2019,Morocco,704.9840479818808,kampmann_scaled
+ArcelorMittal,2019,Poland,5067.101877612649,kampmann_scaled
+ArcelorMittal,2019,Romania,704.9840479818808,kampmann_scaled
+ArcelorMittal,2019,South Africa,3232.948145455562,kampmann_scaled
+ArcelorMittal,2019,Spain,7798.929187579515,kampmann_scaled
+ArcelorMittal,2019,Ukraine,7049.878143917681,kampmann_scaled
+ArcelorMittal,2020,Argentina,1228.35,kampmann_ald
+ArcelorMittal,2020,Belgium,3509.58,kampmann_ald
+ArcelorMittal,2020,Bosnia and Herzegovina,1361.72,kampmann_ald
+ArcelorMittal,2020,Brazil,8914.33,kampmann_ald
+ArcelorMittal,2020,Canada,4527.36,kampmann_ald
+ArcelorMittal,2020,France,7545.6,kampmann_ald
+ArcelorMittal,2020,Germany,6683.53,kampmann_ald
+ArcelorMittal,2020,India,4156.75,kampmann_ald
+ArcelorMittal,2020,Italy,3228.81,kampmann_ald
+ArcelorMittal,2020,Kazakhstan,4211.5,kampmann_ald
+ArcelorMittal,2020,Luxembourg,2105.75,kampmann_ald
+ArcelorMittal,2020,Mexico,4492.26,kampmann_ald
+ArcelorMittal,2020,Morocco,561.53,kampmann_ald
+ArcelorMittal,2020,Poland,4036.02,kampmann_ald
+ArcelorMittal,2020,Romania,561.53,kampmann_ald
+ArcelorMittal,2020,South Africa,2575.09,kampmann_ald
+ArcelorMittal,2020,Spain,6211.96,kampmann_ald
+ArcelorMittal,2020,Ukraine,5615.33,kampmann_ald
+ArcelorMittal,2021,Argentina,1186.0,kampmann_ald
+ArcelorMittal,2021,Belgium,3388.58,kampmann_ald
+ArcelorMittal,2021,Bosnia and Herzegovina,1314.77,kampmann_ald
+ArcelorMittal,2021,Brazil,8607.0,kampmann_ald
+ArcelorMittal,2021,Canada,4371.27,kampmann_ald
+ArcelorMittal,2021,France,7285.45,kampmann_ald
+ArcelorMittal,2021,Germany,6453.11,kampmann_ald
+ArcelorMittal,2021,India,4013.44,kampmann_ald
+ArcelorMittal,2021,Italy,3117.5,kampmann_ald
+ArcelorMittal,2021,Kazakhstan,4066.3,kampmann_ald
+ArcelorMittal,2021,Luxembourg,2033.15,kampmann_ald
+ArcelorMittal,2021,Mexico,4337.39,kampmann_ald
+ArcelorMittal,2021,Morocco,542.17,kampmann_ald
+ArcelorMittal,2021,Poland,3896.87,kampmann_ald
+ArcelorMittal,2021,Romania,542.17,kampmann_ald
+ArcelorMittal,2021,South Africa,2486.31,kampmann_ald
+ArcelorMittal,2021,Spain,5997.79,kampmann_ald
+ArcelorMittal,2021,Ukraine,5421.73,kampmann_ald
+ArcelorMittal,2022,Argentina,1054.64,kampmann_ald
+ArcelorMittal,2022,Belgium,3013.25,kampmann_ald
+ArcelorMittal,2022,Bosnia and Herzegovina,1169.14,kampmann_ald
+ArcelorMittal,2022,Brazil,7653.66,kampmann_ald
+ArcelorMittal,2022,Canada,3887.1,kampmann_ald
+ArcelorMittal,2022,France,6478.49,kampmann_ald
+ArcelorMittal,2022,Germany,5738.34,kampmann_ald
+ArcelorMittal,2022,India,3568.9,kampmann_ald
+ArcelorMittal,2022,Italy,2772.19,kampmann_ald
+ArcelorMittal,2022,Kazakhstan,3615.9,kampmann_ald
+ArcelorMittal,2022,Luxembourg,1807.95,kampmann_ald
+ArcelorMittal,2022,Mexico,3856.96,kampmann_ald
+ArcelorMittal,2022,Morocco,482.12,kampmann_ald
+ArcelorMittal,2022,Poland,3465.24,kampmann_ald
+ArcelorMittal,2022,Romania,482.12,kampmann_ald
+ArcelorMittal,2022,South Africa,2210.92,kampmann_ald
+ArcelorMittal,2022,Spain,5333.46,kampmann_ald
+ArcelorMittal,2022,Ukraine,1446.36,kampmann_ald
+ArcelorMittal,2022,United States,964.24,kampmann_ald
+ArcelorMittal,2023,Argentina,999.65,kampmann_ald
+ArcelorMittal,2023,Belgium,2856.15,kampmann_ald
+ArcelorMittal,2023,Bosnia and Herzegovina,1108.19,kampmann_ald
+ArcelorMittal,2023,Brazil,8968.32,kampmann_ald
+ArcelorMittal,2023,Canada,3684.44,kampmann_ald
+ArcelorMittal,2023,France,6140.73,kampmann_ald
+ArcelorMittal,2023,Germany,5439.16,kampmann_ald
+ArcelorMittal,2023,India,3382.83,kampmann_ald
+ArcelorMittal,2023,Italy,2627.66,kampmann_ald
+ArcelorMittal,2023,Kazakhstan,3427.38,kampmann_ald
+ArcelorMittal,2023,Luxembourg,1713.69,kampmann_ald
+ArcelorMittal,2023,Mexico,3655.87,kampmann_ald
+ArcelorMittal,2023,Morocco,456.98,kampmann_ald
+ArcelorMittal,2023,Poland,3284.57,kampmann_ald
+ArcelorMittal,2023,Romania,456.98,kampmann_ald
+ArcelorMittal,2023,South Africa,2095.65,kampmann_ald
+ArcelorMittal,2023,Spain,5055.39,kampmann_ald
+ArcelorMittal,2023,Ukraine,1370.95,kampmann_ald
+ArcelorMittal,2023,United States,1342.39,kampmann_ald
+ArcelorMittal,2024,Argentina,1117.16,kampmann_ald
+ArcelorMittal,2024,Belgium,3191.89,kampmann_ald
+ArcelorMittal,2024,Bosnia and Herzegovina,1238.45,kampmann_ald
+ArcelorMittal,2024,Brazil,10022.54,kampmann_ald
+ArcelorMittal,2024,Canada,4117.54,kampmann_ald
+ArcelorMittal,2024,France,6862.57,kampmann_ald
+ArcelorMittal,2024,Germany,6078.54,kampmann_ald
+ArcelorMittal,2024,India,3780.48,kampmann_ald
+ArcelorMittal,2024,Kazakhstan,3830.27,kampmann_ald
+ArcelorMittal,2024,Luxembourg,1915.14,kampmann_ald
+ArcelorMittal,2024,Mexico,4085.62,kampmann_ald
+ArcelorMittal,2024,Morocco,510.7,kampmann_ald
+ArcelorMittal,2024,Poland,3670.68,kampmann_ald
+ArcelorMittal,2024,Romania,510.7,kampmann_ald
+ArcelorMittal,2024,South Africa,1502.41,kampmann_ald
+ArcelorMittal,2024,Spain,5649.65,kampmann_ald
+ArcelorMittal,2024,Ukraine,1532.11,kampmann_ald
+ArcelorMittal,2024,United States,1500.19,kampmann_ald
+Baoshan Iron & Steel,2019,China,63215.34575863576,kampmann_scaled
+Baoshan Iron & Steel,2020,China,47874.0,kampmann_ald
+Baoshan Iron & Steel,2021,China,47874.0,kampmann_ald
+Baoshan Iron & Steel,2022,China,50964.44,kampmann_ald
+Baoshan Iron & Steel,2023,China,48904.15,kampmann_ald
+Baoshan Iron & Steel,2024,China,48904.15,kampmann_ald
+BlueScope Steel,2014,Australia,2545.9989457037427,kampmann_scaled
+BlueScope Steel,2014,New Zealand,517.1534001054297,kampmann_scaled
+BlueScope Steel,2014,United States,1736.8476541908276,kampmann_scaled
+BlueScope Steel,2015,Australia,2652.0822351080656,kampmann_scaled
+BlueScope Steel,2015,New Zealand,538.7014584431558,kampmann_scaled
+BlueScope Steel,2015,United States,1809.2163064487788,kampmann_scaled
+BlueScope Steel,2016,Australia,2758.165524512388,kampmann_scaled
+BlueScope Steel,2016,New Zealand,560.2495167808821,kampmann_scaled
+BlueScope Steel,2016,United States,1881.58495870673,kampmann_scaled
+BlueScope Steel,2017,Australia,2811.207169214549,kampmann_scaled
+BlueScope Steel,2017,New Zealand,571.0235459497452,kampmann_scaled
+BlueScope Steel,2017,United States,1917.7692848357055,kampmann_scaled
+BlueScope Steel,2018,Australia,2917.290458618872,kampmann_scaled
+BlueScope Steel,2018,New Zealand,592.5716042874715,kampmann_scaled
+BlueScope Steel,2018,United States,1990.1379370936568,kampmann_scaled
+BlueScope Steel,2019,Australia,2864.248813916711,kampmann_scaled
+BlueScope Steel,2019,New Zealand,581.7975751186084,kampmann_scaled
+BlueScope Steel,2019,United States,1953.9536109646813,kampmann_scaled
+BlueScope Steel,2020,Australia,3018.6,kampmann_ald
+BlueScope Steel,2020,New Zealand,613.15,kampmann_ald
+BlueScope Steel,2020,United States,2059.25,kampmann_ald
+BlueScope Steel,2021,Australia,3184.62,kampmann_ald
+BlueScope Steel,2021,New Zealand,646.88,kampmann_ald
+BlueScope Steel,2021,United States,2172.51,kampmann_ald
+BlueScope Steel,2022,Australia,2995.01,kampmann_ald
+BlueScope Steel,2022,New Zealand,608.36,kampmann_ald
+BlueScope Steel,2022,United States,2374.63,kampmann_ald
+BlueScope Steel,2023,Australia,2869.91,kampmann_ald
+BlueScope Steel,2023,New Zealand,582.95,kampmann_ald
+BlueScope Steel,2023,United States,2720.14,kampmann_ald
+BlueScope Steel,2024,Australia,3017.03,kampmann_ald
+BlueScope Steel,2024,New Zealand,612.83,kampmann_ald
+BlueScope Steel,2024,United States,2837.12,kampmann_ald
+China Steel,2014,Taiwan,15710.717647058826,kampmann_scaled
+China Steel,2014,Vietnam,1820.6161587526576,kampmann_scaled
+China Steel,2015,Taiwan,15710.717647058826,kampmann_scaled
+China Steel,2015,Vietnam,1820.6161587526576,kampmann_scaled
+China Steel,2016,Taiwan,15404.664705882355,kampmann_scaled
+China Steel,2016,Vietnam,1785.149610205528,kampmann_scaled
+China Steel,2017,Taiwan,16322.823529411764,kampmann_scaled
+China Steel,2017,Vietnam,1891.5492558469168,kampmann_scaled
+China Steel,2018,Taiwan,16628.87647058824,kampmann_scaled
+China Steel,2018,Vietnam,1927.0158043940469,kampmann_scaled
+China Steel,2019,Taiwan,16118.78823529412,kampmann_scaled
+China Steel,2019,Vietnam,1867.9048901488306,kampmann_scaled
+China Steel,2020,Taiwan,14394.69,kampmann_ald
+China Steel,2020,Vietnam,1668.11,kampmann_ald
+China Steel,2021,Taiwan,16230.88,kampmann_ald
+China Steel,2021,Vietnam,1880.9,kampmann_ald
+China Steel,2022,Taiwan,14205.84,kampmann_ald
+China Steel,2022,Vietnam,1646.23,kampmann_ald
+China Steel,2023,Taiwan,12801.53,kampmann_ald
+China Steel,2023,Vietnam,1483.49,kampmann_ald
+China Steel,2024,Taiwan,14408.24,kampmann_ald
+China Steel,2024,Vietnam,1669.68,kampmann_ald
+Cleveland-Cliffs,2019,Canada,728.3826436821477,gem_capacity_share
+Cleveland-Cliffs,2019,United States,7671.617356317853,gem_capacity_share
+Cleveland-Cliffs,2020,Canada,1118.5876313690126,gem_capacity_share
+Cleveland-Cliffs,2020,United States,11781.412368630987,gem_capacity_share
+Cleveland-Cliffs,2021,Canada,1387.3955117755195,gem_capacity_share
+Cleveland-Cliffs,2021,United States,14612.60448822448,gem_capacity_share
+Cleveland-Cliffs,2022,Canada,1396.0667337241166,gem_capacity_share
+Cleveland-Cliffs,2022,United States,14703.933266275884,gem_capacity_share
+Cleveland-Cliffs,2023,Canada,1422.0803995699075,gem_capacity_share
+Cleveland-Cliffs,2023,United States,14977.919600430092,gem_capacity_share
+Cleveland-Cliffs,2024,Canada,1368.318823488606,gem_capacity_share
+Cleveland-Cliffs,2024,United States,14411.681176511394,gem_capacity_share
+Evraz,2019,Canada,998.2531172820915,gem_capacity_share
+Evraz,2019,Russia,11896.681525209324,gem_capacity_share
+Evraz,2019,United States,915.0653575085839,gem_capacity_share
+Evraz,2020,Canada,985.2418529004277,gem_capacity_share
+Evraz,2020,Russia,11741.619781940846,gem_capacity_share
+Evraz,2020,United States,903.1383651587255,gem_capacity_share
+Evraz,2021,Canada,980.9047647732065,gem_capacity_share
+Evraz,2021,Russia,11689.932534184687,gem_capacity_share
+Evraz,2021,United States,899.1627010421059,gem_capacity_share
+Evraz,2022,Canada,903.5600265044275,gem_capacity_share
+Evraz,2022,Russia,10768.176615866514,gem_capacity_share
+Evraz,2022,United States,828.2633576290585,gem_capacity_share
+Gerdau,2014,Brazil,8015.00893388922,gem_capacity_share
+Gerdau,2014,Canada,1113.7581893984516,gem_capacity_share
+Gerdau,2014,Mexico,506.2537224538416,gem_capacity_share
+Gerdau,2014,United States,5664.979154258487,gem_capacity_share
+Gerdau,2015,Brazil,7075.31500217243,gem_capacity_share
+Gerdau,2015,Canada,983.1791943392712,gem_capacity_share
+Gerdau,2015,Mexico,1340.6989013717337,gem_capacity_share
+Gerdau,2015,United States,5000.806902116567,gem_capacity_share
+Gerdau,2016,Brazil,6633.107814536653,gem_capacity_share
+Gerdau,2016,Canada,921.7304946930668,gem_capacity_share
+Gerdau,2016,Mexico,1256.9052200360004,gem_capacity_share
+Gerdau,2016,United States,4688.256470734281,gem_capacity_share
+Gerdau,2017,Argentina,542.9270329932582,gem_capacity_share
+Gerdau,2017,Brazil,6612.015989499433,gem_capacity_share
+Gerdau,2017,Canada,918.799594296283,gem_capacity_share
+Gerdau,2017,Mexico,1252.9085376767496,gem_capacity_share
+Gerdau,2017,United States,4673.348845534277,gem_capacity_share
+Gerdau,2018,Argentina,504.1465306365969,gem_capacity_share
+Gerdau,2018,Brazil,6139.729133106616,gem_capacity_share
+Gerdau,2018,Canada,853.1710518465485,gem_capacity_share
+Gerdau,2018,Mexico,1163.415070699839,gem_capacity_share
+Gerdau,2018,United States,4339.5382137104,gem_capacity_share
+Gerdau,2019,Argentina,217.1708131973033,gem_capacity_share
+Gerdau,2019,Brazil,2644.8063957997733,gem_capacity_share
+Gerdau,2019,Canada,367.5198377185132,gem_capacity_share
+Gerdau,2019,Mexico,501.16341507069984,gem_capacity_share
+Gerdau,2019,United States,1869.3395382137105,gem_capacity_share
+Gerdau,2020,Argentina,484.75627945826625,gem_capacity_share
+Gerdau,2020,Brazil,5903.585704910208,gem_capacity_share
+Gerdau,2020,Canada,820.3567806216812,gem_capacity_share
+Gerdau,2020,Mexico,1118.6683372113835,gem_capacity_share
+Gerdau,2020,United States,4172.632897798461,gem_capacity_share
+Gerdau,2021,Argentina,558.4392339359227,gem_capacity_share
+Gerdau,2021,Brazil,6800.9307320565595,gem_capacity_share
+Gerdau,2021,Canada,945.0510112761767,gem_capacity_share
+Gerdau,2021,Mexico,1288.7059244675138,gem_capacity_share
+Gerdau,2021,United States,4806.873098263827,gem_capacity_share
+Gerdau,2022,Argentina,492.5123799295985,gem_capacity_share
+Gerdau,2022,Brazil,5998.043076188771,gem_capacity_share
+Gerdau,2022,Canada,833.4824891116281,gem_capacity_share
+Gerdau,2022,Mexico,1136.5670306067657,gem_capacity_share
+Gerdau,2022,United States,4239.3950241632365,gem_capacity_share
+Gerdau,2023,Argentina,620.4880377065808,gem_capacity_share
+Gerdau,2023,Brazil,7556.589702285066,gem_capacity_share
+Gerdau,2023,Canada,1050.056679195752,gem_capacity_share
+Gerdau,2023,Mexico,1431.895471630571,gem_capacity_share
+Gerdau,2023,United States,5340.97010918203,gem_capacity_share
+Gerdau,2024,Argentina,495.6148201181314,gem_capacity_share
+Gerdau,2024,Brazil,6035.826024700196,gem_capacity_share
+Gerdau,2024,Canada,838.7327725076069,gem_capacity_share
+Gerdau,2024,Mexico,1143.7265079649185,gem_capacity_share
+Gerdau,2024,United States,4266.099874709146,gem_capacity_share
+Hyundai Steel,2014,South Korea,20500.0,gem_capacity_share
+Hyundai Steel,2015,South Korea,20600.0,gem_capacity_share
+Hyundai Steel,2016,South Korea,20800.0,gem_capacity_share
+Hyundai Steel,2017,South Korea,20600.0,gem_capacity_share
+Hyundai Steel,2018,South Korea,21600.0,gem_capacity_share
+Hyundai Steel,2019,South Korea,21400.0,gem_capacity_share
+Hyundai Steel,2020,South Korea,20900.0,gem_capacity_share
+Hyundai Steel,2021,South Korea,21300.0,gem_capacity_share
+Hyundai Steel,2022,South Korea,20200.0,gem_capacity_share
+Hyundai Steel,2023,South Korea,21000.0,gem_capacity_share
+Hyundai Steel,2024,South Korea,20530.0,gem_capacity_share
+JFE Holdings,2014,Japan,24100.41643991198,gem_capacity_share
+JFE Holdings,2014,Vietnam,5199.58356008802,gem_capacity_share
+JFE Holdings,2015,Japan,24511.68634502993,gem_capacity_share
+JFE Holdings,2015,Vietnam,5288.3136549700685,gem_capacity_share
+JFE Holdings,2016,Japan,24922.956250147883,gem_capacity_share
+JFE Holdings,2016,Vietnam,5377.043749852116,gem_capacity_share
+JFE Holdings,2017,Japan,24840.702269124293,gem_capacity_share
+JFE Holdings,2017,Vietnam,5359.297730875706,gem_capacity_share
+JFE Holdings,2018,Japan,24676.194307077112,gem_capacity_share
+JFE Holdings,2018,Vietnam,5323.805692922888,gem_capacity_share
+JFE Holdings,2019,Japan,24676.194307077112,gem_capacity_share
+JFE Holdings,2019,Vietnam,5323.805692922888,gem_capacity_share
+JFE Holdings,2020,Japan,24676.194307077112,gem_capacity_share
+JFE Holdings,2020,Vietnam,5323.805692922888,gem_capacity_share
+JFE Holdings,2021,Japan,18721.006080969168,gem_capacity_share
+JFE Holdings,2021,Vietnam,4038.9939190308305,gem_capacity_share
+JFE Holdings,2022,Japan,22208.5748763694,gem_capacity_share
+JFE Holdings,2022,Vietnam,4791.425123630599,gem_capacity_share
+JFE Holdings,2023,Japan,21386.035066133496,gem_capacity_share
+JFE Holdings,2023,Vietnam,4613.964933866502,gem_capacity_share
+JFE Holdings,2024,Japan,19354.361734850816,gem_capacity_share
+JFE Holdings,2024,Vietnam,4175.638265149185,gem_capacity_share
+JSW Steel,2014,India,12400.0,gem_capacity_share
+JSW Steel,2015,India,12400.0,gem_capacity_share
+JSW Steel,2016,India,14900.0,gem_capacity_share
+JSW Steel,2017,India,16100.000000000002,gem_capacity_share
+JSW Steel,2018,India,15988.64097363083,gem_capacity_share
+JSW Steel,2018,United States,811.3590263691683,gem_capacity_share
+JSW Steel,2019,India,15512.788563701342,gem_capacity_share
+JSW Steel,2019,United States,787.2114362986573,gem_capacity_share
+JSW Steel,2020,India,15284.379406935186,gem_capacity_share
+JSW Steel,2020,United States,775.620593064812,gem_capacity_share
+JSW Steel,2021,India,14351.70868347339,gem_capacity_share
+JSW Steel,2021,United States,728.2913165266106,gem_capacity_share
+JSW Steel,2022,India,17301.99362503622,gem_capacity_share
+JSW Steel,2022,United States,878.0063749637785,gem_capacity_share
+JSW Steel,2023,India,22993.18844779291,gem_capacity_share
+JSW Steel,2023,United States,1166.8115522070896,gem_capacity_share
+JSW Steel,2024,India,25276.153846153844,gem_capacity_share
+JSW Steel,2024,United States,1153.8461538461538,gem_capacity_share
+Kobe Steel,2014,Japan,7300.0,gem_capacity_share
+Kobe Steel,2015,Japan,7300.0,gem_capacity_share
+Kobe Steel,2016,Japan,7300.0,gem_capacity_share
+Kobe Steel,2017,Japan,7500.0,gem_capacity_share
+Kobe Steel,2018,Japan,7600.0,gem_capacity_share
+Kobe Steel,2019,Japan,7300.0,gem_capacity_share
+Kobe Steel,2020,Japan,6600.0,gem_capacity_share
+Kobe Steel,2021,Japan,7100.0,gem_capacity_share
+Kobe Steel,2022,Japan,6900.0,gem_capacity_share
+Kobe Steel,2023,Japan,6800.0,gem_capacity_share
+Kobe Steel,2024,Japan,6650.0,gem_capacity_share
+Liberty Steel,2021,Australia,1297.3411934552455,gem_capacity_share
+Liberty Steel,2021,Czech Republic,1710.779595765159,gem_capacity_share
+Liberty Steel,2021,Hungary,760.3464870067372,gem_capacity_share
+Liberty Steel,2021,Poland,399.1819056785371,gem_capacity_share
+Liberty Steel,2021,Romania,1425.6496631376324,gem_capacity_share
+Liberty Steel,2021,United Kingdom,1530.1973051010589,gem_capacity_share
+Liberty Steel,2021,United States,776.5038498556304,gem_capacity_share
+Liberty Steel,2022,Australia,1036.230750721848,gem_capacity_share
+Liberty Steel,2022,Czech Republic,1366.4581328200193,gem_capacity_share
+Liberty Steel,2022,Hungary,607.3147256977863,gem_capacity_share
+Liberty Steel,2022,Poland,318.8402309913378,gem_capacity_share
+Liberty Steel,2022,Romania,1138.7151106833494,gem_capacity_share
+Liberty Steel,2022,United Kingdom,1222.2208854667952,gem_capacity_share
+Liberty Steel,2022,United States,620.2201636188643,gem_capacity_share
+NLMK,2019,Russia,14817.66644693474,gem_capacity_share
+NLMK,2019,United States,792.3335530652604,gem_capacity_share
+NLMK,2020,Russia,14950.560316413974,gem_capacity_share
+NLMK,2020,United States,799.439683586025,gem_capacity_share
+NLMK,2021,Russia,16412.392880685562,gem_capacity_share
+NLMK,2021,United States,877.6071193144364,gem_capacity_share
+NLMK,2022,Russia,15187.870797626894,gem_capacity_share
+NLMK,2022,United States,812.1292023731048,gem_capacity_share
+NLMK,2023,Russia,13479.23533289387,gem_capacity_share
+NLMK,2023,United States,720.7646671061306,gem_capacity_share
+NLMK,2024,Russia,12909.69017798286,gem_capacity_share
+NLMK,2024,United States,690.3098220171391,gem_capacity_share
+Nippon Steel,2014,Brazil,1031.2849707912906,kampmann_scaled
+Nippon Steel,2014,Finland,652.1134360063728,kampmann_scaled
+Nippon Steel,2014,India,2903.3266064790228,kampmann_scaled
+Nippon Steel,2014,Japan,40671.59596388741,kampmann_scaled
+Nippon Steel,2014,Sweden,1141.6790228359002,kampmann_scaled
+Nippon Steel,2015,Brazil,1029.0623738714817,kampmann_scaled
+Nippon Steel,2015,Finland,650.708019118428,kampmann_scaled
+Nippon Steel,2015,India,2897.0694370685073,kampmann_scaled
+Nippon Steel,2015,Japan,40583.94166224111,kampmann_scaled
+Nippon Steel,2015,Sweden,1139.2185077004779,kampmann_scaled
+Nippon Steel,2016,Brazil,1026.839776951673,kampmann_scaled
+Nippon Steel,2016,Finland,649.3026022304833,kampmann_scaled
+Nippon Steel,2016,India,2890.812267657993,kampmann_scaled
+Nippon Steel,2016,Japan,40496.287360594804,kampmann_scaled
+Nippon Steel,2016,Sweden,1136.757992565056,kampmann_scaled
+Nippon Steel,2017,Brazil,1053.5109399893786,kampmann_scaled
+Nippon Steel,2017,Finland,666.1676048858204,kampmann_scaled
+Nippon Steel,2017,India,2965.898300584174,kampmann_scaled
+Nippon Steel,2017,Japan,41548.13898035051,kampmann_scaled
+Nippon Steel,2017,Sweden,1166.2841741901223,kampmann_scaled
+Nippon Steel,2018,Brazil,903.9301672862454,kampmann_scaled
+Nippon Steel,2018,Finland,571.5830483271376,kampmann_scaled
+Nippon Steel,2018,India,2544.7907992565056,kampmann_scaled
+Nippon Steel,2018,Japan,35649.00447955391,kampmann_scaled
+Nippon Steel,2018,Sweden,1000.6915055762082,kampmann_scaled
+Nippon Steel,2019,Brazil,1149.0826075411578,kampmann_scaled
+Nippon Steel,2019,Finland,726.6005310674457,kampmann_scaled
+Nippon Steel,2019,India,3234.9565852363253,kampmann_scaled
+Nippon Steel,2019,Japan,45317.273951141804,kampmann_scaled
+Nippon Steel,2019,Sweden,1272.0863250132768,kampmann_scaled
+Nippon Steel,2020,Brazil,837.03,kampmann_ald
+Nippon Steel,2020,Finland,529.28,kampmann_ald
+Nippon Steel,2020,India,2356.45,kampmann_ald
+Nippon Steel,2020,Japan,33010.61,kampmann_ald
+Nippon Steel,2020,Sweden,926.63,kampmann_ald
+Nippon Steel,2021,Brazil,1021.23,kampmann_ald
+Nippon Steel,2021,Finland,645.75,kampmann_ald
+Nippon Steel,2021,India,2875.01,kampmann_ald
+Nippon Steel,2021,Japan,38777.47,kampmann_ald
+Nippon Steel,2021,Sweden,1130.54,kampmann_ald
+Nippon Steel,2022,Brazil,931.15,kampmann_ald
+Nippon Steel,2022,Finland,588.8,kampmann_ald
+Nippon Steel,2022,India,2621.43,kampmann_ald
+Nippon Steel,2022,Japan,32626.59,kampmann_ald
+Nippon Steel,2022,Sweden,1030.82,kampmann_ald
+Nippon Steel,2022,Thailand,1331.2,kampmann_ald
+Nippon Steel,2023,Brazil,1013.32,kampmann_ald
+Nippon Steel,2023,Finland,640.75,kampmann_ald
+Nippon Steel,2023,India,2852.75,kampmann_ald
+Nippon Steel,2023,Japan,36025.56,kampmann_ald
+Nippon Steel,2023,Sweden,1121.78,kampmann_ald
+Nippon Steel,2023,Thailand,1448.66,kampmann_ald
+Nippon Steel,2023,United States,557.18,kampmann_ald
+Nippon Steel,2024,Brazil,950.68,kampmann_ald
+Nippon Steel,2024,Finland,601.15,kampmann_ald
+Nippon Steel,2024,India,2676.41,kampmann_ald
+Nippon Steel,2024,Japan,33798.75,kampmann_ald
+Nippon Steel,2024,Sweden,1052.44,kampmann_ald
+Nippon Steel,2024,Thailand,1359.11,kampmann_ald
+Nippon Steel,2024,United States,522.74,kampmann_ald
+Nucor,2014,United States,19400.0,gem_capacity_share
+Nucor,2015,United States,20700.0,gem_capacity_share
+Nucor,2016,United States,22000.0,gem_capacity_share
+Nucor,2017,United States,23700.0,gem_capacity_share
+Nucor,2018,United States,25400.0,gem_capacity_share
+Nucor,2019,United States,25100.0,gem_capacity_share
+Nucor,2020,United States,19500.0,gem_capacity_share
+Nucor,2021,United States,27000.0,gem_capacity_share
+Nucor,2022,United States,22200.0,gem_capacity_share
+Nucor,2023,United States,21500.0,gem_capacity_share
+Nucor,2024,United States,20660.0,gem_capacity_share
+POSCO Holdings,2014,China,882.7763546798028,kampmann_scaled
+POSCO Holdings,2014,Indonesia,1618.197044334975,kampmann_scaled
+POSCO Holdings,2014,South Korea,37254.77044334974,kampmann_scaled
+POSCO Holdings,2014,Vietnam,536.871724137931,kampmann_scaled
+POSCO Holdings,2015,China,874.448275862069,kampmann_scaled
+POSCO Holdings,2015,Indonesia,1602.9310344827588,kampmann_scaled
+POSCO Holdings,2015,South Korea,36903.31034482759,kampmann_scaled
+POSCO Holdings,2015,Vietnam,531.8068965517242,kampmann_scaled
+POSCO Holdings,2016,China,866.120197044335,kampmann_scaled
+POSCO Holdings,2016,Indonesia,1587.665024630542,kampmann_scaled
+POSCO Holdings,2016,South Korea,36551.85024630542,kampmann_scaled
+POSCO Holdings,2016,Vietnam,526.7420689655173,kampmann_scaled
+POSCO Holdings,2017,China,878.6123152709358,kampmann_scaled
+POSCO Holdings,2017,Indonesia,1610.5640394088668,kampmann_scaled
+POSCO Holdings,2017,South Korea,37079.04039408867,kampmann_scaled
+POSCO Holdings,2017,Vietnam,534.3393103448276,kampmann_scaled
+POSCO Holdings,2018,China,893.1864532019703,kampmann_scaled
+POSCO Holdings,2018,Indonesia,1637.2795566502461,kampmann_scaled
+POSCO Holdings,2018,South Korea,37694.09556650245,kampmann_scaled
+POSCO Holdings,2018,Vietnam,543.2027586206897,kampmann_scaled
+POSCO Holdings,2019,China,897.3504926108374,kampmann_scaled
+POSCO Holdings,2019,Indonesia,1644.9125615763546,kampmann_scaled
+POSCO Holdings,2019,South Korea,37869.82561576354,kampmann_scaled
+POSCO Holdings,2019,Vietnam,545.7351724137932,kampmann_scaled
+POSCO Holdings,2020,China,845.3,kampmann_ald
+POSCO Holdings,2020,Indonesia,1549.5,kampmann_ald
+POSCO Holdings,2020,South Korea,35673.2,kampmann_ald
+POSCO Holdings,2020,Vietnam,514.08,kampmann_ald
+POSCO Holdings,2021,China,845.3,kampmann_ald
+POSCO Holdings,2021,Indonesia,1567.5,kampmann_ald
+POSCO Holdings,2021,South Korea,38016.4,kampmann_ald
+POSCO Holdings,2021,Vietnam,534.99,kampmann_ald
+POSCO Holdings,2022,China,936.51,kampmann_ald
+POSCO Holdings,2022,Indonesia,1515.0,kampmann_ald
+POSCO Holdings,2022,South Korea,33976.4,kampmann_ald
+POSCO Holdings,2022,Vietnam,368.22,kampmann_ald
+POSCO Holdings,2023,China,865.44,kampmann_ald
+POSCO Holdings,2023,Indonesia,1380.61,kampmann_ald
+POSCO Holdings,2023,South Korea,37184.54,kampmann_ald
+POSCO Holdings,2023,Vietnam,469.41,kampmann_ald
+POSCO Holdings,2024,China,873.14,kampmann_ald
+POSCO Holdings,2024,Indonesia,1503.15,kampmann_ald
+POSCO Holdings,2024,South Korea,36212.64,kampmann_ald
+POSCO Holdings,2024,Vietnam,471.67,kampmann_ald
+SAIL,2019,India,16180.0,gem_capacity_share
+SAIL,2020,India,14970.0,gem_capacity_share
+SAIL,2021,India,17330.0,gem_capacity_share
+SAIL,2022,India,17930.0,gem_capacity_share
+SAIL,2023,India,19200.0,gem_capacity_share
+SAIL,2024,India,19100.0,gem_capacity_share
+SSAB,2014,Finland,2424.7235567352354,kampmann_scaled
+SSAB,2014,Sweden,3543.8191108161914,kampmann_scaled
+SSAB,2014,United States,2331.4573324485737,kampmann_scaled
+SSAB,2015,Finland,2424.7235567352354,kampmann_scaled
+SSAB,2015,Sweden,3543.8191108161914,kampmann_scaled
+SSAB,2015,United States,2331.4573324485737,kampmann_scaled
+SSAB,2016,Finland,2424.7235567352354,kampmann_scaled
+SSAB,2016,Sweden,3543.8191108161914,kampmann_scaled
+SSAB,2016,United States,2331.4573324485737,kampmann_scaled
+SSAB,2017,Finland,2512.3641672196413,kampmann_scaled
+SSAB,2017,Sweden,3671.9089581950893,kampmann_scaled
+SSAB,2017,United States,2415.726874585269,kampmann_scaled
+SSAB,2018,Finland,2512.3641672196413,kampmann_scaled
+SSAB,2018,Sweden,3671.9089581950893,kampmann_scaled
+SSAB,2018,United States,2415.726874585269,kampmann_scaled
+SSAB,2019,Finland,2395.5100199071,kampmann_scaled
+SSAB,2019,Sweden,3501.122495023225,kampmann_scaled
+SSAB,2019,United States,2303.367485069675,kampmann_scaled
+SSAB,2020,Finland,2201.24,kampmann_ald
+SSAB,2020,Sweden,3217.19,kampmann_ald
+SSAB,2020,United States,2116.57,kampmann_ald
+SSAB,2021,Finland,2389.37,kampmann_ald
+SSAB,2021,Sweden,3492.16,kampmann_ald
+SSAB,2021,United States,2297.47,kampmann_ald
+SSAB,2022,Finland,2130.54,kampmann_ald
+SSAB,2022,Sweden,3113.87,kampmann_ald
+SSAB,2022,United States,2048.6,kampmann_ald
+SSAB,2023,Finland,2272.22,kampmann_ald
+SSAB,2023,Sweden,3320.94,kampmann_ald
+SSAB,2023,United States,2184.83,kampmann_ald
+SSAB,2024,Finland,2248.34,kampmann_ald
+SSAB,2024,Sweden,3286.04,kampmann_ald
+SSAB,2024,United States,2161.87,kampmann_ald
+Salzgitter,2020,Germany,4000.0,gem_capacity_share
+Salzgitter,2021,Germany,4300.0,gem_capacity_share
+Salzgitter,2023,Germany,5710.0,gem_capacity_share
+Salzgitter,2024,Germany,6390.0,gem_capacity_share
+Severstal,2014,Russia,11099.999999999998,kampmann_scaled
+Severstal,2015,Russia,11300.0,kampmann_scaled
+Severstal,2016,Russia,11500.0,kampmann_scaled
+Severstal,2017,Russia,11699.999999999998,kampmann_scaled
+Severstal,2018,Russia,11999.999999999998,kampmann_scaled
+Severstal,2019,Russia,11899.999999999998,kampmann_scaled
+Severstal,2020,Russia,11300.0,kampmann_ald
+Severstal,2021,Russia,11600.0,kampmann_ald
+Severstal,2022,Russia,10700.0,kampmann_ald
+Severstal,2023,Russia,10692.0,kampmann_ald
+Severstal,2024,Russia,11073.0,kampmann_ald
+Steel Dynamics,2020,United States,9260.0,gem_capacity_share
+Steel Dynamics,2021,United States,9840.0,gem_capacity_share
+Steel Dynamics,2022,United States,9730.0,gem_capacity_share
+Steel Dynamics,2023,United States,9800.0,gem_capacity_share
+Steel Dynamics,2024,United States,10200.0,gem_capacity_share
+Tata Steel,2014,India,12407.35290819902,kampmann_scaled
+Tata Steel,2014,Netherlands,4328.145199719692,kampmann_scaled
+Tata Steel,2014,Thailand,779.0669936930624,kampmann_scaled
+Tata Steel,2014,United Kingdom,2885.4348983882273,kampmann_scaled
+Tata Steel,2015,India,13198.017554309741,kampmann_scaled
+Tata Steel,2015,Netherlands,4603.958374211633,kampmann_scaled
+Tata Steel,2015,Thailand,828.713419761738,kampmann_scaled
+Tata Steel,2015,United Kingdom,3069.3106517168885,kampmann_scaled
+Tata Steel,2016,India,13988.682200420464,kampmann_scaled
+Tata Steel,2016,Netherlands,4879.771548703574,kampmann_scaled
+Tata Steel,2016,Thailand,878.3598458304135,kampmann_scaled
+Tata Steel,2016,United Kingdom,3253.18640504555,kampmann_scaled
+Tata Steel,2017,India,13198.017554309741,kampmann_scaled
+Tata Steel,2017,Netherlands,4603.958374211633,kampmann_scaled
+Tata Steel,2017,Thailand,828.713419761738,kampmann_scaled
+Tata Steel,2017,United Kingdom,3069.3106517168885,kampmann_scaled
+Tata Steel,2018,India,13988.682200420464,kampmann_scaled
+Tata Steel,2018,Netherlands,4879.771548703574,kampmann_scaled
+Tata Steel,2018,Thailand,878.3598458304135,kampmann_scaled
+Tata Steel,2018,United Kingdom,3253.18640504555,kampmann_scaled
+Tata Steel,2019,India,16786.41864050456,kampmann_scaled
+Tata Steel,2019,Netherlands,5855.725858444289,kampmann_scaled
+Tata Steel,2019,Thailand,1054.0318149964962,kampmann_scaled
+Tata Steel,2019,United Kingdom,3903.8236860546604,kampmann_scaled
+Tata Steel,2020,India,17358.13,kampmann_ald
+Tata Steel,2020,Netherlands,6055.16,kampmann_ald
+Tata Steel,2020,Thailand,1089.93,kampmann_ald
+Tata Steel,2020,United Kingdom,4036.78,kampmann_ald
+Tata Steel,2021,India,18872.56,kampmann_ald
+Tata Steel,2021,Netherlands,6583.45,kampmann_ald
+Tata Steel,2021,Thailand,1185.02,kampmann_ald
+Tata Steel,2021,United Kingdom,4388.97,kampmann_ald
+Tata Steel,2022,India,18641.44,kampmann_ald
+Tata Steel,2022,Netherlands,6502.83,kampmann_ald
+Tata Steel,2022,Thailand,1170.51,kampmann_ald
+Tata Steel,2022,United Kingdom,4335.22,kampmann_ald
+Tata Steel,2023,India,18541.95,kampmann_ald
+Tata Steel,2023,Netherlands,6172.23,kampmann_ald
+Tata Steel,2023,Thailand,1111.0,kampmann_ald
+Tata Steel,2023,United Kingdom,4114.82,kampmann_ald
+Tata Steel,2024,India,23230.1,kampmann_ald
+Tata Steel,2024,Netherlands,6328.42,kampmann_ald
+Tata Steel,2024,Thailand,1139.12,kampmann_ald
+Tata Steel,2024,United Kingdom,4218.95,kampmann_ald
+Ternium,2019,Argentina,2650.131532499425,gem_capacity_share
+Ternium,2019,Brazil,3936.213644386463,gem_capacity_share
+Ternium,2019,Mexico,3277.6548231141123,gem_capacity_share
+Ternium,2020,Argentina,3371.771161077431,gem_capacity_share
+Ternium,2020,Brazil,5008.057708541171,gem_capacity_share
+Ternium,2020,Mexico,4170.171130381398,gem_capacity_share
+Ternium,2021,Argentina,4005.82533957486,gem_capacity_share
+Ternium,2021,Brazil,5949.811986800706,gem_capacity_share
+Ternium,2021,Mexico,4954.362673624434,gem_capacity_share
+Ternium,2022,Argentina,3992.391988335508,gem_capacity_share
+Ternium,2022,Brazil,5929.85956565114,gem_capacity_share
+Ternium,2022,Mexico,4937.748446013353,gem_capacity_share
+Ternium,2023,Argentina,3981.645307344026,gem_capacity_share
+Ternium,2023,Brazil,5913.897628731486,gem_capacity_share
+Ternium,2023,Mexico,4924.457063924488,gem_capacity_share
+Ternium,2024,Argentina,3839.2517842068914,gem_capacity_share
+Ternium,2024,Brazil,5702.401964546082,gem_capacity_share
+Ternium,2024,Mexico,4748.346251247026,gem_capacity_share
+ThyssenKrupp,2014,Germany,16870.67,kampmann_scaled
+ThyssenKrupp,2014,Italy,229.33,kampmann_scaled
+ThyssenKrupp,2015,Germany,16772.01111111111,kampmann_scaled
+ThyssenKrupp,2015,Italy,227.9888888888889,kampmann_scaled
+ThyssenKrupp,2016,Germany,16673.35222222222,kampmann_scaled
+ThyssenKrupp,2016,Italy,226.64777777777778,kampmann_scaled
+ThyssenKrupp,2017,Germany,12924.314444444442,kampmann_scaled
+ThyssenKrupp,2017,Italy,175.68555555555554,kampmann_scaled
+ThyssenKrupp,2018,Germany,12726.996666666666,kampmann_scaled
+ThyssenKrupp,2018,Italy,173.00333333333333,kampmann_scaled
+ThyssenKrupp,2019,Germany,11247.113333333333,kampmann_scaled
+ThyssenKrupp,2019,Italy,152.88666666666668,kampmann_scaled
+ThyssenKrupp,2020,Germany,9767.23,kampmann_ald
+ThyssenKrupp,2020,Italy,132.77,kampmann_ald
+ThyssenKrupp,2021,Germany,10852.47,kampmann_ald
+ThyssenKrupp,2021,Italy,147.53,kampmann_ald
+ThyssenKrupp,2022,Germany,10852.47,kampmann_ald
+ThyssenKrupp,2022,Italy,147.53,kampmann_ald
+ThyssenKrupp,2023,Germany,10211.19,kampmann_ald
+ThyssenKrupp,2023,Italy,138.81,kampmann_ald
+ThyssenKrupp,2024,Germany,10420.84,kampmann_ald
+ThyssenKrupp,2024,Italy,141.66,kampmann_ald
+US Steel,2014,Syria,1306.6666666666667,gem_capacity_share
+US Steel,2014,United States,16193.333333333334,gem_capacity_share
+US Steel,2015,Syria,1291.7333333333333,gem_capacity_share
+US Steel,2015,United States,16008.266666666666,gem_capacity_share
+US Steel,2016,Syria,887.2921039883739,gem_capacity_share
+US Steel,2016,United States,14812.707896011625,gem_capacity_share
+US Steel,2017,Syria,892.9436460519942,gem_capacity_share
+US Steel,2017,United States,14907.056353948006,gem_capacity_share
+US Steel,2018,Syria,983.3683190699177,gem_capacity_share
+US Steel,2018,United States,16416.63168093008,gem_capacity_share
+US Steel,2019,Syria,949.4590666881963,gem_capacity_share
+US Steel,2019,United States,15850.540933311804,gem_capacity_share
+US Steel,2020,Syria,631.7306233884423,gem_capacity_share
+US Steel,2020,United States,11268.269376611557,gem_capacity_share
+US Steel,2021,Syria,812.2250872137115,gem_capacity_share
+US Steel,2021,United States,14487.774912786288,gem_capacity_share
+US Steel,2022,Syria,790.9904444107386,gem_capacity_share
+US Steel,2022,United States,14109.00955558926,gem_capacity_share
+US Steel,2023,Syria,785.6817837099954,gem_capacity_share
+US Steel,2023,United States,14014.318216290003,gem_capacity_share
+voestalpine,2014,Austria,7800.0,gem_capacity_share
+voestalpine,2015,Austria,7800.0,gem_capacity_share
+voestalpine,2016,Austria,7800.0,gem_capacity_share
+voestalpine,2017,Austria,8000.0,gem_capacity_share
+voestalpine,2018,Austria,8100.0,gem_capacity_share
+voestalpine,2019,Austria,7400.0,gem_capacity_share
+voestalpine,2020,Austria,6400.0,gem_capacity_share
+voestalpine,2021,Austria,7000.0,gem_capacity_share
+voestalpine,2022,Austria,6800.0,gem_capacity_share
+voestalpine,2023,Austria,6500.0,gem_capacity_share
+voestalpine,2024,Austria,6500.0,gem_capacity_share

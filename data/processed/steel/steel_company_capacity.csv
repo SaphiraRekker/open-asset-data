@@ -1,0 +1,36 @@
+company,gem_capacity_mt,n_plants,countries,bf_bof_capacity_mt,eaf_capacity_mt,dri_capacity_mt
+ArcelorMittal,119.3,37,"Morocco, South Africa, India, Argentina, Brazil",96.9,11.7,5.2
+Nippon Steel,60.7,11,"India, Japan, Thailand",54.6,3.3,0.0
+POSCO,45.5,5,"China, Indonesia, South Korea, Vietnam",43.4,2.1,0.0
+Tata Steel,36.0,12,"India, Thailand, Netherlands, United Kingdom",34.2,1.9,0.0
+JSW Steel,31.3,10,"India, United States",28.3,1.5,1.5
+JFE Holdings,43.7,10,"Japan, Vietnam",39.1,4.7,0.0
+ThyssenKrupp,20.4,3,"Germany, Italy",19.0,1.4,0.0
+SSAB,9.9,6,"Finland, Sweden, United States",6.4,3.5,0.0
+voestalpine,7.6,3,"Austria, United States",7.6,0.0,0.0
+BlueScope,6.9,4,"Australia, New Zealand, United States",3.2,3.0,0.7
+Cleveland-Cliffs,26.8,11,United States,22.4,3.4,0.0
+Nucor,25.6,19,"Trinidad and Tobago, United States",0.0,25.6,0.0
+US Steel,22.9,6,"Slovakia, United States",18.0,4.9,0.0
+Gerdau,17.2,16,"Argentina, Brazil, Guatemala, Canada, Mexico",5.1,12.1,0.0
+Hyundai Steel,24.6,3,South Korea,16.6,8.0,0.0
+Severstal,12.0,1,Russia,12.0,0.0,0.0
+Kobe Steel,7.2,2,Japan,7.2,0.0,0.0
+Baosteel,104.7,17,China,98.7,1.0,0.0
+SAIL,21.1,8,India,20.6,0.5,0.0
+Shougang,33.9,6,China,33.4,0.5,0.0
+Ansteel,61.9,15,China,57.4,4.5,0.0
+HBIS,38.9,10,"China, Serbia",31.9,2.0,0.0
+Shagang,34.1,5,China,33.0,1.1,0.0
+Jianlong,33.6,15,"China, Malaysia",31.1,0.0,0.0
+Shandong Steel,26.2,5,China,26.2,0.0,0.0
+Maanshan Steel,24.3,4,China,24.3,0.0,0.0
+Valin Steel,19.9,4,China,19.9,0.0,0.0
+NLMK,17.7,4,"Russia, United States",13.2,4.5,0.0
+Evraz,16.2,4,"Russia, Canada, United States",14.0,2.2,0.0
+Ternium,12.7,5,"Argentina, Brazil, Mexico",8.4,0.6,3.7
+Usiminas,5.0,1,Brazil,5.0,0.0,0.0
+CSN,7.3,2,"Brazil, Germany",6.2,1.1,0.0
+Steel Dynamics,12.5,6,United States,0.0,12.5,0.0
+Liberty Steel,13.1,9,"Australia, Czech Republic, Poland, Romania, United Kingdom",8.0,5.1,0.0
+Salzgitter,12.2,3,Germany,11.2,1.0,0.0

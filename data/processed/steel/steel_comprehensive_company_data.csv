@@ -1,0 +1,64 @@
+company,year,production_mt,source,source_url,scope1_mt,scope2_mt,total_emissions_mt,reported_intensity,gem_capacity_mt,utilization_rate
+ArcelorMittal,2023,68.9,ArcelorMittal 2023 Annual Report,https://corporate.arcelormittal.com/media/cases-ede/arcelormittal-annual-report-2023.pdf,105.0,12.5,117.5,1.7053701015965166,119.35000000000001,0.5772936740678676
+ArcelorMittal,2022,68.9,ArcelorMittal 2022 Annual Report,https://corporate.arcelormittal.com,109.0,13.0,122.0,1.7706821480406385,119.35000000000001,0.5772936740678676
+ArcelorMittal,2021,79.3,ArcelorMittal 2021 Annual Report,https://corporate.arcelormittal.com,119.0,14.0,133.0,1.6771752837326608,119.35000000000001,0.6644323418516966
+ArcelorMittal,2020,71.5,ArcelorMittal 2020 Annual Report,https://corporate.arcelormittal.com,104.0,13.0,117.0,1.6363636363636365,119.35000000000001,0.5990783410138248
+Nippon Steel,2023,44.3,Nippon Steel Integrated Report 2024,https://www.nipponsteel.com/en/ir/library/,87.0,5.0,92.0,2.0767494356659144,60.693000000000005,0.7299029542121825
+Nippon Steel,2022,44.4,Nippon Steel Integrated Report 2023,https://www.nipponsteel.com/en/ir/library/,89.0,5.0,94.0,2.1171171171171173,60.693000000000005,0.7315505906776728
+Nippon Steel,2021,49.5,Nippon Steel Integrated Report 2022,https://www.nipponsteel.com/en/ir/library/,95.0,5.0,100.0,2.0202020202020203,60.693000000000005,0.8155800504176758
+Nippon Steel,2020,41.6,Nippon Steel Integrated Report 2021,https://www.nipponsteel.com/en/ir/library/,,,0.0,0.0,60.693000000000005,0.6854167696439457
+POSCO,2023,40.6,POSCO Holdings Annual Report 2023,https://www.posco.co.kr,73.0,5.5,78.5,1.9334975369458127,45.54,0.891523935002196
+POSCO,2022,41.6,POSCO Holdings Annual Report 2022,https://www.posco.co.kr,76.0,5.5,81.5,1.9591346153846154,45.54,0.9134826526130875
+POSCO,2021,42.9,POSCO Holdings Annual Report 2021,https://www.posco.co.kr,78.0,6.0,84.0,1.9580419580419581,45.54,0.9420289855072463
+POSCO,2020,41.0,POSCO Holdings Annual Report 2020,https://www.posco.co.kr,,,0.0,0.0,45.54,0.9003074220465525
+Tata Steel,2023,29.9,Tata Steel Integrated Report FY2024,https://www.tatasteel.com/investors/integrated-report-annual-reports/,65.0,8.5,73.5,2.4581939799331103,36.305,0.8235780195565349
+Tata Steel,2022,30.2,Tata Steel Integrated Report FY2023,https://www.tatasteel.com/investors/integrated-report-annual-reports/,66.0,9.0,75.0,2.4834437086092715,36.305,0.83184134416747
+Tata Steel,2021,29.0,Tata Steel Integrated Report FY2022,https://www.tatasteel.com/investors/integrated-report-annual-reports/,64.0,8.0,72.0,2.4827586206896552,36.305,0.7987880457237295
+Tata Steel,2020,26.4,Tata Steel Integrated Report FY2021,https://www.tatasteel.com/investors/integrated-report-annual-reports/,,,0.0,0.0,36.305,0.7271725657622916
+JSW Steel,2023,24.1,JSW Steel Annual Report FY2024,https://www.jsw.in/investors/steel/annual-reports,58.0,7.0,65.0,2.697095435684647,31.26,0.7709532949456174
+JSW Steel,2022,22.2,JSW Steel Annual Report FY2023,https://www.jsw.in/investors/steel/annual-reports,52.0,6.5,58.5,2.635135135135135,31.26,0.710172744721689
+JSW Steel,2021,16.1,JSW Steel Annual Report FY2022,https://www.jsw.in/investors/steel/annual-reports,40.0,5.0,45.0,2.795031055900621,31.26,0.5150351887396033
+JSW Steel,2020,14.9,JSW Steel Annual Report FY2021,https://www.jsw.in/investors/steel/annual-reports,,,0.0,0.0,31.26,0.4766474728087012
+JFE Holdings,2023,26.0,JFE Holdings Annual Report 2024,https://www.jfe-holdings.co.jp/en/investor/library/,52.0,4.0,56.0,2.1538461538461537,43.727,0.5945983031079196
+JFE Holdings,2022,27.0,JFE Holdings Annual Report 2023,https://www.jfe-holdings.co.jp/en/investor/library/,54.0,4.0,58.0,2.1481481481481484,43.727,0.6174674686120704
+JFE Holdings,2021,27.3,JFE Holdings Annual Report 2022,https://www.jfe-holdings.co.jp/en/investor/library/,,,0.0,0.0,43.727,0.6243282182633156
+JFE Holdings,2020,24.4,JFE Holdings Annual Report 2021,https://www.jfe-holdings.co.jp/en/investor/library/,,,0.0,0.0,43.727,0.5580076383012784
+Nucor,2023,21.5,Nucor 10-K 2023,https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000073309&type=10-K,9.5,6.0,15.5,0.7209302325581395,25.56,0.8411580594679187
+Nucor,2022,22.2,Nucor 10-K 2022,https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000073309&type=10-K,10.0,6.5,16.5,0.7432432432432433,25.56,0.8685446009389671
+Nucor,2021,27.0,Nucor 10-K 2021,https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000073309&type=10-K,,,0.0,0.0,25.56,1.0563380281690142
+Nucor,2020,19.5,Nucor 10-K 2020,https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000073309&type=10-K,,,0.0,0.0,25.56,0.7629107981220657
+ThyssenKrupp,2023,10.6,ThyssenKrupp Annual Report 2022/23,https://www.thyssenkrupp.com/en/investors/reporting,21.5,3.5,25.0,2.358490566037736,20.45,0.5183374083129584
+ThyssenKrupp,2022,11.0,ThyssenKrupp Annual Report 2021/22,https://www.thyssenkrupp.com/en/investors/reporting,22.0,3.5,25.5,2.3181818181818183,20.45,0.5378973105134475
+ThyssenKrupp,2021,11.0,ThyssenKrupp Annual Report 2020/21,https://www.thyssenkrupp.com/en/investors/reporting,,,0.0,0.0,20.45,0.5378973105134475
+ThyssenKrupp,2020,9.8,ThyssenKrupp Annual Report 2019/20,https://www.thyssenkrupp.com/en/investors/reporting,,,0.0,0.0,20.45,0.4792176039119805
+SSAB,2023,7.8,SSAB Annual Report 2023,https://www.ssab.com/en/company/investors/reports-and-presentations,10.5,1.5,12.0,1.5384615384615385,9.9,0.7878787878787878
+SSAB,2022,8.0,SSAB Annual Report 2022,https://www.ssab.com/en/company/investors/reports-and-presentations,11.0,1.5,12.5,1.5625,9.9,0.8080808080808081
+SSAB,2021,8.6,SSAB Annual Report 2021,https://www.ssab.com/en/company/investors/reports-and-presentations,11.5,1.6,13.1,1.5232558139534884,9.9,0.8686868686868686
+SSAB,2020,7.3,SSAB Annual Report 2020,https://www.ssab.com/en/company/investors/reports-and-presentations,,,0.0,0.0,9.9,0.7373737373737373
+Cleveland-Cliffs,2023,16.4,Cleveland-Cliffs 10-K 2023,https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000764065&type=10-K,,,0.0,0.0,26.754,0.6129924497271435
+Cleveland-Cliffs,2022,16.1,Cleveland-Cliffs 10-K 2022,https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000764065&type=10-K,,,0.0,0.0,26.754,0.6017791732077447
+Cleveland-Cliffs,2021,16.0,Cleveland-Cliffs 10-K 2021,https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000764065&type=10-K,,,0.0,0.0,26.754,0.598041414367945
+Hyundai Steel,2023,21.0,Hyundai Steel Annual Report 2023,https://www.hyundai-steel.com/en/investor/ir-data.hds,,,0.0,0.0,24.6,0.8536585365853658
+Hyundai Steel,2022,20.2,Hyundai Steel Annual Report 2022,https://www.hyundai-steel.com/en/investor/ir-data.hds,,,0.0,0.0,24.6,0.8211382113821137
+Hyundai Steel,2021,21.3,Hyundai Steel Annual Report 2021,https://www.hyundai-steel.com/en/investor/ir-data.hds,,,0.0,0.0,24.6,0.8658536585365854
+voestalpine,2023,6.5,voestalpine Annual Report 2022/23,https://www.voestalpine.com/group/en/investors/,11.5,2.0,13.5,2.076923076923077,7.57,0.8586525759577278
+voestalpine,2022,6.8,voestalpine Annual Report 2021/22,https://www.voestalpine.com/group/en/investors/,12.0,2.0,14.0,2.058823529411765,7.57,0.8982826948480845
+voestalpine,2021,7.0,voestalpine Annual Report 2020/21,https://www.voestalpine.com/group/en/investors/,,,0.0,0.0,7.57,0.9247027741083222
+US Steel,2023,14.8,US Steel 10-K 2023,https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001163302&type=10-K,,,0.0,0.0,37.6,0.39361702127659576
+US Steel,2022,14.9,US Steel 10-K 2022,https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001163302&type=10-K,,,0.0,0.0,37.6,0.3962765957446808
+US Steel,2021,15.3,US Steel 10-K 2021,https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001163302&type=10-K,,,0.0,0.0,37.6,0.40691489361702127
+Gerdau,2023,12.5,Gerdau Annual Report 2023,https://ri.gerdau.com/en/,,,0.0,0.0,17.224,0.7257315373896888
+Gerdau,2022,13.1,Gerdau Annual Report 2022,https://ri.gerdau.com/en/,,,0.0,0.0,17.224,0.7605666511843938
+Gerdau,2021,14.4,Gerdau Annual Report 2021,https://ri.gerdau.com/en/,,,0.0,0.0,17.224,0.8360427310729215
+BlueScope,2023,5.5,BlueScope Annual Report 2023,https://www.bluescope.com/investors-news/,7.5,1.0,8.5,1.5454545454545454,6.883,0.7990701728897284
+BlueScope,2022,5.6,BlueScope Annual Report 2022,https://www.bluescope.com/investors-news/,7.6,1.0,8.6,1.5357142857142858,6.883,0.8135987214877233
+BlueScope,2021,5.3,BlueScope Annual Report 2021,https://www.bluescope.com/investors-news/,,,0.0,0.0,6.883,0.7700130756937381
+Severstal,2023,11.1,Severstal Press Release 2023,https://www.severstal.com/eng/ir/,,,0.0,0.0,59.896,0.1853212234539869
+Severstal,2022,10.7,Severstal Annual Report 2022,https://www.severstal.com/eng/ir/,,,0.0,0.0,59.896,0.17864298116735675
+Severstal,2021,11.6,Severstal Annual Report 2021,https://www.severstal.com/eng/ir/,,,0.0,0.0,59.896,0.1936690263122746
+China Steel,2023,17.2,China Steel Annual Report 2023,https://www.csc.com.tw/csc_e/ir/index.htm,,,0.0,0.0,115.65999999999998,0.1487117413107384
+China Steel,2022,16.8,China Steel Annual Report 2022,https://www.csc.com.tw/csc_e/ir/index.htm,,,0.0,0.0,115.65999999999998,0.14525332872211658
+China Steel,2021,17.5,China Steel Annual Report 2021,https://www.csc.com.tw/csc_e/ir/index.htm,,,0.0,0.0,115.65999999999998,0.15130555075220475
+Kobe Steel,2023,6.8,Kobe Steel Annual Report 2024,https://www.kobelco.co.jp/english/ir/library/,,,0.0,0.0,7.2,0.9444444444444444
+Kobe Steel,2022,6.9,Kobe Steel Annual Report 2023,https://www.kobelco.co.jp/english/ir/library/,,,0.0,0.0,7.2,0.9583333333333334
+Kobe Steel,2021,7.1,Kobe Steel Annual Report 2022,https://www.kobelco.co.jp/english/ir/library/,,,0.0,0.0,7.2,0.986111111111111
